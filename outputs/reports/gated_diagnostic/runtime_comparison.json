@@ -1,0 +1,62 @@
+[
+  {
+    "model_id": "late_prob_avg",
+    "model_name": "prob_avg",
+    "family": "late_fusion",
+    "parameter_count": 0,
+    "checkpoint_size_bytes": 70,
+    "total_training_time_sec": null,
+    "average_epoch_time_sec": null,
+    "test_evaluation_time_sec": 0.0010980839979310986
+  },
+  {
+    "model_id": "late_weighted_prob_avg",
+    "model_name": "weighted_prob_avg",
+    "family": "late_fusion",
+    "parameter_count": 0,
+    "checkpoint_size_bytes": 13733,
+    "total_training_time_sec": null,
+    "average_epoch_time_sec": null,
+    "test_evaluation_time_sec": 0.0003158650033583399
+  },
+  {
+    "model_id": "late_embedding_mlp",
+    "model_name": "embedding_mlp",
+    "family": "late_fusion",
+    "parameter_count": 1164936,
+    "checkpoint_size_bytes": 14026165,
+    "total_training_time_sec": null,
+    "average_epoch_time_sec": null,
+    "test_evaluation_time_sec": 0.12693387900071684
+  },
+  {
+    "model_id": "early_3cnn",
+    "model_name": "early_fusion_3cnn",
+    "family": "early_fusion",
+    "parameter_count": 1105992,
+    "checkpoint_size_bytes": 13329961,
+    "total_training_time_sec": 772.560523295997,
+    "average_epoch_time_sec": 8.979571743732587,
+    "test_evaluation_time_sec": 1.2751273049980227
+  },
+  {
+    "model_id": "early_bilinear",
+    "model_name": "early_fusion_bilinear",
+    "family": "early_fusion",
+    "parameter_count": 533384,
+    "checkpoint_size_bytes": 6466707,
+    "total_training_time_sec": null,
+    "average_epoch_time_sec": null,
+    "test_evaluation_time_sec": 1.067004102998908
+  },
+  {
+    "model_id": "early_xattn",
+    "model_name": "early_fusion_xattn",
+    "family": "early_fusion",
+    "parameter_count": 485256,
+    "checkpoint_size_bytes": 5892315,
+    "total_training_time_sec": null,
+    "average_epoch_time_sec": null,
+    "test_evaluation_time_sec": 1.1112051620002603
+  }
+]

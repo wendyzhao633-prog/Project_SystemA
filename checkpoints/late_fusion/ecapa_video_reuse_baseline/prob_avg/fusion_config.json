@@ -1,0 +1,5 @@
+{
+  "mode": "prob_avg",
+  "audio_weight": 0.5,
+  "video_weight": 0.5
+}

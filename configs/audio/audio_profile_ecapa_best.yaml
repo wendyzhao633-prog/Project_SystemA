@@ -1,0 +1,37 @@
+profile_name: ecapa_best
+description: Canonical best audio branch for RAVDESS speech-only AV fusion
+
+model_family: ecapa_tdnn
+feature_type: fbank
+feature_dim: 80
+embedding_dim: 96
+num_classes: 8
+
+source_hparams: external/audio_ser_speechbrain/speechbrain-develop-main/recipes/RAVDESS_emotion_recognition/hparams/train_ravdess.yaml
+predictions_dir: external/audio_ser_speechbrain/speechbrain-develop-main/outputs/predictions_ECAPA
+embeddings_dir: external/audio_ser_speechbrain/speechbrain-develop-main/outputs/embeddings_ECAPA
+
+label_order:
+  - neutral
+  - calm
+  - happy
+  - sad
+  - angry
+  - fearful
+  - disgust
+  - surprise
+
+actor_split:
+  train_actors: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+  valid_actors: [17, 18, 19, 20]
+  test_actors: [21, 22, 23, 24]
+
+filename_contract:
+  format: MM-VV-EE-II-SS-RR-AA
+  join_key_name: av_key
+  av_key_definition: drop_MM_and_keep_VV_EE_II_SS_RR_AA
+
+dataset_scope:
+  use_speech_only: true
+  use_song: false
+  canonical_audio_root: data/raw/ravdess/audio_speech

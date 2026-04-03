@@ -1,0 +1,36 @@
+model_name: early_fusion_bilinear
+run_name: early_fusion_bilinear
+seed: 42
+
+data:
+  train_manifest: data/manifests/av/av_train.csv
+  valid_manifest: data/manifests/av/av_valid.csv
+  test_manifest: data/manifests/av/av_test.csv
+  sample_rate: 16000
+  n_fft: 400
+  hop_length: 160
+  win_length: 400
+  n_mels: 80
+  audio_num_frames: 256
+  num_video_frames: 5
+  image_size: 224
+  use_face_crop: false
+  enable_cache: true
+  audio_cache_root: data/processed/av/early_fusion_cache/audio_logmel_sr16000_mel80_t256
+  video_cache_root: data/processed/av/early_fusion_cache/video_frames_5f_224
+
+train:
+  batch_size: 16
+  num_workers: 0
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 8
+  grad_clip_norm: 1.0
+
+model:
+  projection_dim: 256
+  fusion_hidden_dim: 128
+  rank: 4
+  dropout: 0.3
+  num_classes: 8

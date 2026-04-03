@@ -1,0 +1,145 @@
+{
+  "embedding_mlp": {
+    "mode": "embedding_mlp",
+    "device": "cuda:0",
+    "parameter_count": 1164936,
+    "best_epoch": 1,
+    "best_valid_uar": 0.5625,
+    "best_checkpoint_criterion": "max_valid_uar",
+    "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/smoke_report_capture_late/embedding_mlp/best_model.pt",
+    "checkpoint_size_bytes": 14026165,
+    "timing": {
+      "total_training_time_sec": 0.3552584240005672,
+      "average_epoch_time_sec": 0.33171556100023736,
+      "mode_runtime_sec": 2.2867825600005744
+    },
+    "splits": {
+      "train": {
+        "split": "train",
+        "mode": "embedding_mlp",
+        "loss": 0.00864505988702149,
+        "accuracy": 0.996875,
+        "macro_f1": 0.9970624129902457,
+        "uar": 0.9970703125,
+        "evaluation_time_sec": 0.0003669460002129199,
+        "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/smoke_report_capture_late/embedding_mlp/train_confusion_matrix.csv",
+        "per_class_precision": {
+          "neutral": 1.0,
+          "calm": 1.0,
+          "happy": 0.9846153846153847,
+          "sad": 0.9922480620155039,
+          "angry": 1.0,
+          "fearful": 1.0,
+          "disgust": 1.0,
+          "surprise": 1.0
+        },
+        "per_class_recall": {
+          "neutral": 1.0,
+          "calm": 1.0,
+          "happy": 1.0,
+          "sad": 1.0,
+          "angry": 1.0,
+          "fearful": 1.0,
+          "disgust": 1.0,
+          "surprise": 0.9765625
+        },
+        "per_class_f1": {
+          "neutral": 1.0,
+          "calm": 1.0,
+          "happy": 0.9922480620155039,
+          "sad": 0.9961089494163424,
+          "angry": 1.0,
+          "fearful": 1.0,
+          "disgust": 1.0,
+          "surprise": 0.9881422924901185
+        },
+        "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/smoke_report_capture_late/embedding_mlp/best_model.pt",
+        "best_epoch": 1
+      },
+      "valid": {
+        "split": "valid",
+        "mode": "embedding_mlp",
+        "loss": 4.456940905253092,
+        "accuracy": 0.5875,
+        "macro_f1": 0.5534845685040002,
+        "uar": 0.5625,
+        "evaluation_time_sec": 0.00020787600078620017,
+        "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/smoke_report_capture_late/embedding_mlp/valid_confusion_matrix.csv",
+        "per_class_precision": {
+          "neutral": 0.375,
+          "calm": 0.7222222222222222,
+          "happy": 0.84375,
+          "sad": 0.5151515151515151,
+          "angry": 0.4,
+          "fearful": 0.47619047619047616,
+          "disgust": 0.7631578947368421,
+          "surprise": 0.4074074074074074
+        },
+        "per_class_recall": {
+          "neutral": 0.1875,
+          "calm": 0.8125,
+          "happy": 0.84375,
+          "sad": 0.53125,
+          "angry": 0.5625,
+          "fearful": 0.3125,
+          "disgust": 0.90625,
+          "surprise": 0.34375
+        },
+        "per_class_f1": {
+          "neutral": 0.25,
+          "calm": 0.7647058823529411,
+          "happy": 0.84375,
+          "sad": 0.5230769230769231,
+          "angry": 0.4675324675324675,
+          "fearful": 0.37735849056603776,
+          "disgust": 0.8285714285714286,
+          "surprise": 0.37288135593220334
+        },
+        "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/smoke_report_capture_late/embedding_mlp/best_model.pt",
+        "best_epoch": 1
+      },
+      "test": {
+        "split": "test",
+        "mode": "embedding_mlp",
+        "loss": 3.31362730662028,
+        "accuracy": 0.5666666666666667,
+        "macro_f1": 0.5508209985549887,
+        "uar": 0.578125,
+        "evaluation_time_sec": 0.00030294600037450437,
+        "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/smoke_report_capture_late/embedding_mlp/test_confusion_matrix.csv",
+        "per_class_precision": {
+          "neutral": 0.35294117647058826,
+          "calm": 0.5172413793103449,
+          "happy": 0.9230769230769231,
+          "sad": 0.5348837209302325,
+          "angry": 0.7647058823529411,
+          "fearful": 0.8571428571428571,
+          "disgust": 1.0,
+          "surprise": 0.3333333333333333
+        },
+        "per_class_recall": {
+          "neutral": 0.75,
+          "calm": 0.9375,
+          "happy": 0.375,
+          "sad": 0.71875,
+          "angry": 0.40625,
+          "fearful": 0.1875,
+          "disgust": 0.8125,
+          "surprise": 0.4375
+        },
+        "per_class_f1": {
+          "neutral": 0.48,
+          "calm": 0.6666666666666667,
+          "happy": 0.5333333333333333,
+          "sad": 0.6133333333333333,
+          "angry": 0.5306122448979592,
+          "fearful": 0.30769230769230765,
+          "disgust": 0.896551724137931,
+          "surprise": 0.37837837837837834
+        },
+        "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/smoke_report_capture_late/embedding_mlp/best_model.pt",
+        "best_epoch": 1
+      }
+    }
+  }
+}

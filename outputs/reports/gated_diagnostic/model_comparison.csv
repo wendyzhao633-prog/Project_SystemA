@@ -1,0 +1,7 @@
+model_id,model_name,family,run_name,valid_accuracy,valid_macro_f1,valid_uar,test_accuracy,test_macro_f1,test_uar
+late_prob_avg,prob_avg,late_fusion,ecapa_video_reuse_baseline,0.6041666666666666,0.5667179884428009,0.58203125,0.6,0.5821999081230582,0.609375
+late_weighted_prob_avg,weighted_prob_avg,late_fusion,ecapa_video_reuse_baseline,0.7041666666666667,0.6932595830389562,0.69140625,0.7083333333333334,0.6992349453803853,0.7109375
+late_embedding_mlp,embedding_mlp,late_fusion,ecapa_video_reuse_baseline,0.6125,0.5736414052129444,0.5859375,0.5916666666666667,0.5772012681196581,0.6015625
+early_3cnn,early_fusion_3cnn,early_fusion,early_fusion_3cnn_gated,0.6041666666666666,0.5865869290163552,0.59375,0.5458333333333333,0.48187002867780515,0.5703125
+early_bilinear,early_fusion_bilinear,early_fusion,early_fusion_bilinear,0.3458333333333333,0.2563462269929492,0.32421875,0.29583333333333334,0.21432233140752782,0.27734375
+early_xattn,early_fusion_xattn,early_fusion,early_fusion_xattn,0.43333333333333335,0.4278660494541606,0.44921875,0.2833333333333333,0.2438916276595062,0.2734375

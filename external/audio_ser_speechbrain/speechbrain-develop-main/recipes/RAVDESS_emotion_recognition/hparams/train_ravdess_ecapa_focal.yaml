@@ -1,0 +1,160 @@
+# ############################################################################
+# RAVDESS Speech Emotion Recognition — ECAPA-TDNN + Focal Loss  (V8)
+#
+# Identical to train_ravdess.yaml EXCEPT:
+#   1. use_focal_loss: True  — replaces AAM-Softmax with Focal Loss
+#      FL(pt) = -(1 - pt)^gamma * log(pt),  gamma=2.0 by default
+#   2. Independent result directories — does NOT overwrite any existing version.
+#
+# Motivation vs V7 (class-weighted CE):
+#   V7 fixed per-class weights but caused sad/surprise recall to collapse.
+#   Focal Loss instead down-weights easy samples automatically per-batch,
+#   which is better suited to confusion-boundary problems (sad ↔ disgust).
+#
+# Everything else is unchanged vs V1 ECAPA baseline:
+#   • backbone, embedding (96-dim), classifier structure — identical
+#   • batch_size, lr, CyclicLR scheduler, epochs        — identical
+#   • data split, label order, sample_id                — identical
+#   • best checkpoint criterion                         — max validation UAR
+#
+# Result isolation:
+#   checkpoints → results/ECAPA_focal/1968/save/
+#   predictions → outputs/predictions_ecapa_focal/
+#   embeddings  → outputs/embeddings_ecapa_focal/
+#
+# Comparison:
+#   V1 ECAPA baseline      : hparams/train_ravdess.yaml
+#   V7 ECAPA + weighted CE : hparams/train_ravdess_ecapa_weighted.yaml
+#   V8 ECAPA + Focal Loss  : hparams/train_ravdess_ecapa_focal.yaml  ← this
+# ############################################################################
+
+# Reproducibility
+seed: 1968
+__set_seed: !apply:speechbrain.utils.seed.seed_everything [!ref <seed>]
+
+# ── Focal Loss settings ────────────────────────────────────────────────────
+# When True, compute_objectives() uses:
+#   FL(pt) = -(1 - pt)^focal_gamma * log(pt),  reduction=mean
+# The ECAPA Classifier's cosine-similarity outputs are used as logits.
+# This is mutually exclusive with use_class_weights (do not set both True).
+use_focal_loss: True
+focal_gamma: 2.0   # focusing parameter; higher = more focus on hard samples
+
+# ── Paths ──────────────────────────────────────────────────────────────────
+metadata_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/metadata
+
+train_annotation: !ref <metadata_dir>/train.json
+valid_annotation: !ref <metadata_dir>/valid.json
+test_annotation:  !ref <metadata_dir>/test.json
+
+# ── Output directories — SEPARATE from all existing versions ───────────────
+results_root:  C:/Users/NannanLi/Desktop/speechbrain-develop/recipes/RAVDESS_emotion_recognition/results/ECAPA_focal
+output_folder: !ref <results_root>/<seed>
+save_folder:   !ref <output_folder>/save
+train_log:     !ref <output_folder>/train_log.txt
+
+predictions_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/predictions_ecapa_focal
+embeddings_dir:  C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/embeddings_ecapa_focal
+
+skip_prep: True
+
+# ── Task ───────────────────────────────────────────────────────────────────
+out_n_neurons: 8
+
+# ── Training hyperparameters (identical to V1 ECAPA baseline) ──────────────
+number_of_epochs: 30
+batch_size: 8
+lr: 0.0001
+weight_decay: 0.00002
+base_lr: 0.000001
+max_lr: !ref <lr>
+step_size: 480
+mode: exp_range
+gamma: 0.9998
+shuffle: True
+drop_last: False
+
+# ── Feature parameters (identical to V1 ECAPA baseline) ────────────────────
+n_mels: 80
+left_frames: 0
+right_frames: 0
+deltas: False
+
+# ── DataLoader ─────────────────────────────────────────────────────────────
+dataloader_options:
+    batch_size:  !ref <batch_size>
+    shuffle:     !ref <shuffle>
+    num_workers: 0
+    drop_last:   !ref <drop_last>
+
+# ── Logger ─────────────────────────────────────────────────────────────────
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+    save_file: !ref <train_log>
+
+ckpt_interval_minutes: 15
+
+# ── Model components (identical to V1 ECAPA baseline) ──────────────────────
+compute_features: !new:speechbrain.lobes.features.Fbank
+    n_mels:       !ref <n_mels>
+    left_frames:  !ref <left_frames>
+    right_frames: !ref <right_frames>
+    deltas:       !ref <deltas>
+
+mean_var_norm: !new:speechbrain.processing.features.InputNormalization
+    norm_type: sentence
+    std_norm: False
+
+embedding_model: !new:speechbrain.lobes.models.ECAPA_TDNN.ECAPA_TDNN
+    input_size:         !ref <n_mels>
+    channels:           [512, 512, 512, 512, 1536]
+    kernel_sizes:       [5, 3, 3, 3, 1]
+    dilations:          [1, 2, 3, 4, 1]
+    attention_channels: 64
+    lin_neurons:        96
+
+# ECAPA cosine-similarity classifier — same as V1.
+# Output shape [batch, 1, 8]; cosine similarities serve as logits for Focal Loss.
+classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
+    input_size:  96
+    out_neurons: !ref <out_n_neurons>
+
+# ── Loss ───────────────────────────────────────────────────────────────────
+# compute_cost is kept but NOT called when use_focal_loss=True.
+# train.py uses the Focal Loss branch in compute_objectives() instead.
+compute_cost: !new:speechbrain.nnet.losses.LogSoftmaxWrapper
+    loss_fn: !new:speechbrain.nnet.losses.AdditiveAngularMargin
+        margin: 0.2
+        scale: 30
+
+# ── Optimizer & scheduler (identical to V1 ECAPA baseline) ─────────────────
+opt_class: !name:torch.optim.Adam
+    lr:           !ref <lr>
+    weight_decay: !ref <weight_decay>
+
+lr_annealing: !new:speechbrain.nnet.schedulers.CyclicLRScheduler
+    mode:      !ref <mode>
+    gamma:     !ref <gamma>
+    base_lr:   !ref <base_lr>
+    max_lr:    !ref <max_lr>
+    step_size: !ref <step_size>
+
+# ── Epoch loop ─────────────────────────────────────────────────────────────
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+    limit: !ref <number_of_epochs>
+
+# ── Modules dict ───────────────────────────────────────────────────────────
+modules:
+    compute_features: !ref <compute_features>
+    mean_var_norm:    !ref <mean_var_norm>
+    embedding_model:  !ref <embedding_model>
+    classifier:       !ref <classifier>
+
+# ── Checkpointer ───────────────────────────────────────────────────────────
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+    checkpoints_dir: !ref <save_folder>
+    recoverables:
+        embedding_model: !ref <embedding_model>
+        classifier:      !ref <classifier>
+        normalizer:      !ref <mean_var_norm>
+        counter:         !ref <epoch_counter>
+        lr_annealing:    !ref <lr_annealing>

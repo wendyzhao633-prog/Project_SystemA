@@ -1,0 +1,163 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 2.0555475056171417,
+    "valid_accuracy": 0.16666666666666666,
+    "valid_macro_f1": 0.08368543883249766,
+    "valid_uar": 0.15625
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.9422438979148864,
+    "valid_accuracy": 0.22083333333333333,
+    "valid_macro_f1": 0.16192723565254324,
+    "valid_uar": 0.20703125
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.864895261824131,
+    "valid_accuracy": 0.14166666666666666,
+    "valid_macro_f1": 0.05201390901188062,
+    "valid_uar": 0.1328125
+  },
+  {
+    "epoch": 4,
+    "train_loss": 1.7635573416948318,
+    "valid_accuracy": 0.25,
+    "valid_macro_f1": 0.18252827711568131,
+    "valid_uar": 0.234375
+  },
+  {
+    "epoch": 5,
+    "train_loss": 1.6744059473276138,
+    "valid_accuracy": 0.18333333333333332,
+    "valid_macro_f1": 0.10070517731808054,
+    "valid_uar": 0.171875
+  },
+  {
+    "epoch": 6,
+    "train_loss": 1.6279965162277221,
+    "valid_accuracy": 0.25,
+    "valid_macro_f1": 0.17839118924131162,
+    "valid_uar": 0.234375
+  },
+  {
+    "epoch": 7,
+    "train_loss": 1.5794082552194595,
+    "valid_accuracy": 0.32916666666666666,
+    "valid_macro_f1": 0.29352833039522275,
+    "valid_uar": 0.3203125
+  },
+  {
+    "epoch": 8,
+    "train_loss": 1.484237052500248,
+    "valid_accuracy": 0.3,
+    "valid_macro_f1": 0.26112270255325115,
+    "valid_uar": 0.28125
+  },
+  {
+    "epoch": 9,
+    "train_loss": 1.47383643835783,
+    "valid_accuracy": 0.35833333333333334,
+    "valid_macro_f1": 0.3197973411211549,
+    "valid_uar": 0.35546875
+  },
+  {
+    "epoch": 10,
+    "train_loss": 1.4373138070106506,
+    "valid_accuracy": 0.32083333333333336,
+    "valid_macro_f1": 0.24914222588641194,
+    "valid_uar": 0.30078125
+  },
+  {
+    "epoch": 11,
+    "train_loss": 1.3473530195653438,
+    "valid_accuracy": 0.225,
+    "valid_macro_f1": 0.17763329926178256,
+    "valid_uar": 0.21484375
+  },
+  {
+    "epoch": 12,
+    "train_loss": 1.3374137066304683,
+    "valid_accuracy": 0.35833333333333334,
+    "valid_macro_f1": 0.28356038176528087,
+    "valid_uar": 0.33984375
+  },
+  {
+    "epoch": 13,
+    "train_loss": 1.2732675421983004,
+    "valid_accuracy": 0.24166666666666667,
+    "valid_macro_f1": 0.18105859439900382,
+    "valid_uar": 0.234375
+  },
+  {
+    "epoch": 14,
+    "train_loss": 1.2780847366899253,
+    "valid_accuracy": 0.2833333333333333,
+    "valid_macro_f1": 0.21876819206718193,
+    "valid_uar": 0.265625
+  },
+  {
+    "epoch": 15,
+    "train_loss": 1.1980637896806001,
+    "valid_accuracy": 0.43333333333333335,
+    "valid_macro_f1": 0.4278660494541606,
+    "valid_uar": 0.44921875
+  },
+  {
+    "epoch": 16,
+    "train_loss": 1.1058205462992192,
+    "valid_accuracy": 0.31666666666666665,
+    "valid_macro_f1": 0.2317833840736279,
+    "valid_uar": 0.30078125
+  },
+  {
+    "epoch": 17,
+    "train_loss": 1.06817767880857,
+    "valid_accuracy": 0.32083333333333336,
+    "valid_macro_f1": 0.25501668829073076,
+    "valid_uar": 0.3046875
+  },
+  {
+    "epoch": 18,
+    "train_loss": 1.0469589620828628,
+    "valid_accuracy": 0.3625,
+    "valid_macro_f1": 0.3284127223551454,
+    "valid_uar": 0.38671875
+  },
+  {
+    "epoch": 19,
+    "train_loss": 1.0048883944749831,
+    "valid_accuracy": 0.425,
+    "valid_macro_f1": 0.4064646674271811,
+    "valid_uar": 0.41796875
+  },
+  {
+    "epoch": 20,
+    "train_loss": 1.0204781863838435,
+    "valid_accuracy": 0.3541666666666667,
+    "valid_macro_f1": 0.3011569400312121,
+    "valid_uar": 0.3359375
+  },
+  {
+    "epoch": 21,
+    "train_loss": 0.9733886409550905,
+    "valid_accuracy": 0.2791666666666667,
+    "valid_macro_f1": 0.24162636007239602,
+    "valid_uar": 0.265625
+  },
+  {
+    "epoch": 22,
+    "train_loss": 0.8845659773796797,
+    "valid_accuracy": 0.4083333333333333,
+    "valid_macro_f1": 0.37488811883767464,
+    "valid_uar": 0.40234375
+  },
+  {
+    "epoch": 23,
+    "train_loss": 0.9173979107290506,
+    "valid_accuracy": 0.39166666666666666,
+    "valid_macro_f1": 0.3169251905475192,
+    "valid_uar": 0.37109375
+  }
+]

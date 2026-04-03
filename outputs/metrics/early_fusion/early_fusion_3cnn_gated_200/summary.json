@@ -1,0 +1,424 @@
+{
+  "model_name": "early_fusion_3cnn",
+  "run_name": "early_fusion_3cnn_gated_200",
+  "device": "cuda:0",
+  "parameter_count": 1105992,
+  "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/early_fusion/early_fusion_3cnn_gated_200/best_model.pt",
+  "checkpoint_size_bytes": 13330025,
+  "history_path": "/home/tonyhe/ravdess_avfusion/outputs/logs/early_fusion/early_fusion_3cnn_gated_200/training_history.json",
+  "resolved_config_path": "/home/tonyhe/ravdess_avfusion/outputs/logs/early_fusion/early_fusion_3cnn_gated_200/resolved_config.json",
+  "best_epoch": 48,
+  "best_valid_uar": 0.609375,
+  "best_checkpoint_criterion": "max_valid_uar",
+  "timing": {
+    "total_training_time_sec": 748.8195050900031,
+    "average_epoch_time_sec": 8.911121705440522
+  },
+  "dataset": {
+    "split_sizes": {
+      "train": 960,
+      "valid": 240,
+      "test": 240
+    },
+    "class_distribution": {
+      "train": {
+        "neutral": 64,
+        "calm": 128,
+        "happy": 128,
+        "sad": 128,
+        "angry": 128,
+        "fearful": 128,
+        "disgust": 128,
+        "surprise": 128
+      },
+      "valid": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      },
+      "test": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 960,
+      "loss": 0.06686697056284174,
+      "evaluation_time_sec": 2.900594335002097,
+      "accuracy": 0.9822916666666667,
+      "macro_f1": 0.9831165393908474,
+      "uar": 0.9833984375,
+      "confusion_matrix": [
+        [
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          127,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          123,
+          1,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          125,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          123,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          126,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          127
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.9846153846153847,
+        "calm": 1.0,
+        "happy": 1.0,
+        "sad": 0.9770992366412213,
+        "angry": 1.0,
+        "fearful": 1.0,
+        "disgust": 1.0,
+        "surprise": 0.9071428571428571
+      },
+      "per_class_recall": {
+        "neutral": 1.0,
+        "calm": 0.9921875,
+        "happy": 0.9609375,
+        "sad": 1.0,
+        "angry": 0.9765625,
+        "fearful": 0.9609375,
+        "disgust": 0.984375,
+        "surprise": 0.9921875
+      },
+      "per_class_f1": {
+        "neutral": 0.9922480620155039,
+        "calm": 0.996078431372549,
+        "happy": 0.9800796812749004,
+        "sad": 0.9884169884169884,
+        "angry": 0.9881422924901185,
+        "fearful": 0.9800796812749004,
+        "disgust": 0.9921259842519685,
+        "surprise": 0.9477611940298508
+      }
+    },
+    "valid": {
+      "split": "valid",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 240,
+      "loss": 1.7450680375099181,
+      "evaluation_time_sec": 0.7773780880015693,
+      "accuracy": 0.6166666666666667,
+      "macro_f1": 0.612344140065372,
+      "uar": 0.609375,
+      "confusion_matrix": [
+        [
+          8,
+          2,
+          0,
+          5,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          24,
+          0,
+          3,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          13,
+          0,
+          0,
+          8,
+          4,
+          6
+        ],
+        [
+          1,
+          4,
+          0,
+          17,
+          4,
+          5,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          25,
+          0,
+          1,
+          4
+        ],
+        [
+          2,
+          2,
+          1,
+          1,
+          3,
+          19,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          19,
+          11
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          6,
+          2,
+          23
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.5333333333333333,
+        "calm": 0.75,
+        "happy": 0.9285714285714286,
+        "sad": 0.6538461538461539,
+        "angry": 0.7575757575757576,
+        "fearful": 0.4318181818181818,
+        "disgust": 0.7037037037037037,
+        "surprise": 0.46938775510204084
+      },
+      "per_class_recall": {
+        "neutral": 0.5,
+        "calm": 0.75,
+        "happy": 0.40625,
+        "sad": 0.53125,
+        "angry": 0.78125,
+        "fearful": 0.59375,
+        "disgust": 0.59375,
+        "surprise": 0.71875
+      },
+      "per_class_f1": {
+        "neutral": 0.5161290322580646,
+        "calm": 0.75,
+        "happy": 0.5652173913043478,
+        "sad": 0.5862068965517242,
+        "angry": 0.7692307692307692,
+        "fearful": 0.5,
+        "disgust": 0.6440677966101694,
+        "surprise": 0.5679012345679012
+      }
+    },
+    "test": {
+      "split": "test",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 240,
+      "loss": 2.779044307100897,
+      "evaluation_time_sec": 0.7687839259997418,
+      "accuracy": 0.475,
+      "macro_f1": 0.4158906978181989,
+      "uar": 0.5078125,
+      "confusion_matrix": [
+        [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          14,
+          0,
+          1,
+          1,
+          0,
+          10
+        ],
+        [
+          11,
+          6,
+          0,
+          4,
+          7,
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          0,
+          5
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          12,
+          7,
+          0,
+          11
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          21,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.32,
+        "calm": 0.5833333333333334,
+        "happy": 1.0,
+        "sad": 1.0,
+        "angry": 0.39705882352941174,
+        "fearful": 0.875,
+        "disgust": 0.0,
+        "surprise": 0.4507042253521127
+      },
+      "per_class_recall": {
+        "neutral": 1.0,
+        "calm": 0.4375,
+        "happy": 0.4375,
+        "sad": 0.125,
+        "angry": 0.84375,
+        "fearful": 0.21875,
+        "disgust": 0.0,
+        "surprise": 1.0
+      },
+      "per_class_f1": {
+        "neutral": 0.48484848484848486,
+        "calm": 0.5,
+        "happy": 0.6086956521739131,
+        "sad": 0.2222222222222222,
+        "angry": 0.54,
+        "fearful": 0.35,
+        "disgust": 0.0,
+        "surprise": 0.6213592233009708
+      }
+    }
+  }
+}

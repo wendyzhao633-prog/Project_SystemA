@@ -1,0 +1,2 @@
+model_id,valid_accuracy,valid_macro_f1,valid_uar,test_accuracy,test_macro_f1,test_uar
+late_prob_avg,0.6041666666666666,0.5667179884428009,0.58203125,0.6,0.5821999081230582,0.609375

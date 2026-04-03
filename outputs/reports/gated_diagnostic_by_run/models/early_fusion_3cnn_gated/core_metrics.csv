@@ -1,0 +1,2 @@
+model_id,valid_accuracy,valid_macro_f1,valid_uar,test_accuracy,test_macro_f1,test_uar
+early_fusion_3cnn_gated,0.6041666666666666,0.5865869290163552,0.59375,0.5458333333333333,0.48187002867780515,0.5703125

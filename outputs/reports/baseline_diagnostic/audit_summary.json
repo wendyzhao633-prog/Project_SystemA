@@ -1,0 +1,112 @@
+{
+  "dataset": {
+    "split_sizes": {
+      "train": 960,
+      "valid": 240,
+      "test": 240
+    },
+    "class_distribution": {
+      "train": {
+        "neutral": 64,
+        "calm": 128,
+        "happy": 128,
+        "sad": 128,
+        "angry": 128,
+        "fearful": 128,
+        "disgust": 128,
+        "surprise": 128
+      },
+      "valid": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      },
+      "test": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      }
+    }
+  },
+  "best_model_by_test_uar": {
+    "model_id": "late_weighted_prob_avg",
+    "test_uar": 0.7109375
+  },
+  "diagnostics": {
+    "late_prob_avg": {
+      "status": "no_training_curve",
+      "summary": "No epoch history exists for this model.",
+      "longer_training_recommended": false
+    },
+    "late_weighted_prob_avg": {
+      "status": "no_training_curve",
+      "summary": "No epoch history exists for this model.",
+      "longer_training_recommended": false
+    },
+    "late_embedding_mlp": {
+      "status": "stable",
+      "best_epoch": 14,
+      "total_epochs_recorded": 34,
+      "best_valid_uar": 0.61328125,
+      "last_valid_uar": 0.5859375,
+      "valid_uar_drop_after_best": 0.02734375,
+      "flags": [
+        "no strong overfitting or undertraining signal was detected"
+      ],
+      "summary": "no strong overfitting or undertraining signal was detected",
+      "longer_training_recommended": false
+    },
+    "early_3cnn": {
+      "status": "overfitting_after_peak",
+      "best_epoch": 25,
+      "total_epochs_recorded": 30,
+      "best_valid_uar": 0.5,
+      "last_valid_uar": 0.40625,
+      "valid_uar_drop_after_best": 0.09375,
+      "flags": [
+        "validation UAR fell after the best epoch while train loss kept decreasing"
+      ],
+      "summary": "validation UAR fell after the best epoch while train loss kept decreasing",
+      "longer_training_recommended": false
+    },
+    "early_bilinear": {
+      "status": "overfitting_after_peak",
+      "best_epoch": 10,
+      "total_epochs_recorded": 18,
+      "best_valid_uar": 0.32421875,
+      "last_valid_uar": 0.21484375,
+      "valid_uar_drop_after_best": 0.109375,
+      "flags": [
+        "validation UAR fell after the best epoch while train loss kept decreasing",
+        "test UAR remains low, suggesting architecture or optimization limits"
+      ],
+      "summary": "validation UAR fell after the best epoch while train loss kept decreasing; test UAR remains low, suggesting architecture or optimization limits",
+      "longer_training_recommended": false
+    },
+    "early_xattn": {
+      "status": "overfitting_after_peak",
+      "best_epoch": 15,
+      "total_epochs_recorded": 23,
+      "best_valid_uar": 0.44921875,
+      "last_valid_uar": 0.37109375,
+      "valid_uar_drop_after_best": 0.078125,
+      "flags": [
+        "validation UAR fell after the best epoch while train loss kept decreasing",
+        "test UAR remains low, suggesting architecture or optimization limits"
+      ],
+      "summary": "validation UAR fell after the best epoch while train loss kept decreasing; test UAR remains low, suggesting architecture or optimization limits",
+      "longer_training_recommended": false
+    }
+  },
+  "longer_training_recommendation": "Longer training is not justified yet."
+}

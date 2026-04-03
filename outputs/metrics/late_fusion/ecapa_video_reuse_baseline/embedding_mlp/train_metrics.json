@@ -1,0 +1,40 @@
+{
+  "split": "train",
+  "mode": "embedding_mlp",
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "uar": 1.0,
+  "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/train_confusion_matrix.csv",
+  "per_class_precision": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "per_class_recall": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "per_class_f1": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/best_model.pt",
+  "best_epoch": 14
+}

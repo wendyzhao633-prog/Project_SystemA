@@ -1,0 +1,4 @@
+split,num_rows
+train,960
+valid,240
+test,240

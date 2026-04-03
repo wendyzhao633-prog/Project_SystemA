@@ -1,0 +1,39 @@
+{
+  "split_sizes": {
+    "train": 960,
+    "valid": 240,
+    "test": 240
+  },
+  "class_distribution": {
+    "train": {
+      "neutral": 64,
+      "calm": 128,
+      "happy": 128,
+      "sad": 128,
+      "angry": 128,
+      "fearful": 128,
+      "disgust": 128,
+      "surprise": 128
+    },
+    "valid": {
+      "neutral": 16,
+      "calm": 32,
+      "happy": 32,
+      "sad": 32,
+      "angry": 32,
+      "fearful": 32,
+      "disgust": 32,
+      "surprise": 32
+    },
+    "test": {
+      "neutral": 16,
+      "calm": 32,
+      "happy": 32,
+      "sad": 32,
+      "angry": 32,
+      "fearful": 32,
+      "disgust": 32,
+      "surprise": 32
+    }
+  }
+}

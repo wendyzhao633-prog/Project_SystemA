@@ -1,0 +1,159 @@
+# ############################################################################
+# RAVDESS Speech Emotion Recognition — Wav2Vec2 Partial Fine-tune (last-2)
+#
+# 8-class clip-level SER using Wav2Vec2 with the last 2 transformer layers
+# unfrozen.  Everything else (CNN feature extractor, first 10 layers) stays
+# frozen.  The classifier is always trainable.
+#
+# Training strategy (stable, conservative):
+#   • backbone: facebook/wav2vec2-base
+#   • first full-freeze, then unfreeze last 2 transformer layers
+#   • num_unfrozen_layers: 2   ← change to 4, 6, … for more layers
+#   • batch_size: 2  (conservative for RTX 5060 Laptop with partial grad flow)
+#   • param groups:
+#       - trainable backbone layers  lr = 1e-5  (fine-tune lr)
+#       - classifier                 lr = 1e-4  (faster convergence for head)
+#   • NO CyclicLR — fixed LRs are simpler and more stable for partial FT
+#   • number_of_epochs: 30
+#
+# Result isolation (does NOT touch ECAPA or frozen wav2vec2 results):
+#   checkpoints → results/Wav2Vec2_FT_last2/1968/save/
+#   predictions → outputs/predictions_wav2vec2_ft_last2/
+#   embeddings  → outputs/embeddings_wav2vec2_ft_last2/
+#
+# Comparison table:
+#   ECAPA baseline      : hparams/train_ravdess.yaml
+#   Wav2Vec2 frozen     : hparams/train_ravdess_wav2vec2.yaml
+#   Wav2Vec2 FT last-2  : hparams/train_ravdess_wav2vec2_ft_last2.yaml  ← this
+# ############################################################################
+
+# Reproducibility
+seed: 1968
+__set_seed: !apply:speechbrain.utils.seed.seed_everything [!ref <seed>]
+
+# ── Backbone identity ──────────────────────────────────────────────────────
+# train.py / evaluate.py / export_embeddings.py use model_type to choose
+# the wav2vec2 forward path (raw waveform → encoder → classifier).
+model_type: wav2vec2
+
+# ── Wav2Vec2 backbone settings ─────────────────────────────────────────────
+wav2vec2_source: facebook/wav2vec2-base
+
+# freeze=True  + num_unfrozen_layers=2  → partial fine-tune (last 2 layers)
+# freeze=True  + num_unfrozen_layers=0  → fully frozen  (see train_ravdess_wav2vec2.yaml)
+# freeze=False + num_unfrozen_layers=0  → full fine-tune
+freeze_wav2vec2: True
+num_unfrozen_layers: 2
+
+# Embedding dimensionality (must match wav2vec2-base hidden_size)
+embedding_dim: 768
+
+# ── Paths ──────────────────────────────────────────────────────────────────
+metadata_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/metadata
+
+train_annotation: !ref <metadata_dir>/train.json
+valid_annotation: !ref <metadata_dir>/valid.json
+test_annotation:  !ref <metadata_dir>/test.json
+
+# ── Output directories — SEPARATE from all other baselines ─────────────────
+results_root:  C:/Users/NannanLi/Desktop/speechbrain-develop/recipes/RAVDESS_emotion_recognition/results/Wav2Vec2_FT_last2
+output_folder: !ref <results_root>/<seed>
+save_folder:   !ref <output_folder>/save
+train_log:     !ref <output_folder>/train_log.txt
+
+predictions_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/predictions_wav2vec2_ft_last2
+embeddings_dir:  C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/embeddings_wav2vec2_ft_last2
+
+skip_prep: True
+
+# ── Task ───────────────────────────────────────────────────────────────────
+out_n_neurons: 8   # fixed 8-class RAVDESS
+
+# ── Training hyperparameters ───────────────────────────────────────────────
+number_of_epochs: 30
+
+# batch_size=2: conservative default for partial FT on RTX 5060 Laptop.
+# The last 2 layers need activation checkpoints (longer graph vs frozen).
+# If you see OOM: add  batch_size: 1  after the yaml path on the command line.
+batch_size: 2
+
+# ── Learning rates (param groups — set in RavdessEmoBrain.init_optimizers) ─
+# classifier / pooling:     lr        (faster, only ~6 K params)
+# unfrozen backbone layers: backbone_lr (slower, prevents overwriting pretrain)
+lr:          0.0001   # 1e-4  — classifier group
+backbone_lr: 0.00001  # 1e-5  — unfrozen transformer layers group
+
+weight_decay: 0.00002
+
+shuffle:   True
+drop_last: False
+
+# ── DataLoader ─────────────────────────────────────────────────────────────
+# num_workers=0 required on Windows
+dataloader_options:
+    batch_size:  !ref <batch_size>
+    shuffle:     !ref <shuffle>
+    num_workers: 0
+    drop_last:   !ref <drop_last>
+
+# ── Logger ─────────────────────────────────────────────────────────────────
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+    save_file: !ref <train_log>
+
+ckpt_interval_minutes: 15
+
+# ── Model components ───────────────────────────────────────────────────────
+# Wav2Vec2 backbone: first fully frozen, then last 2 transformer layers
+# are selectively unfrozen.  CNN feature extractor stays frozen always.
+# Output shape: [batch, 1, 768]
+embedding_model: !new:speechbrain.lobes.models.huggingface_wav2vec2.Wav2Vec2Encoder
+    source:              !ref <wav2vec2_source>
+    freeze:              !ref <freeze_wav2vec2>
+    num_unfrozen_layers: !ref <num_unfrozen_layers>
+    output_norm: False   # ECAPA Classifier normalises internally
+
+# Cosine similarity classifier — same structure as other baselines.
+# input_size must match embedding_dim (768 for wav2vec2-base).
+# Output shape: [batch, 1, out_n_neurons]
+classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
+    input_size:  !ref <embedding_dim>
+    out_neurons: !ref <out_n_neurons>
+
+# ── Loss ───────────────────────────────────────────────────────────────────
+# Same as ECAPA and frozen wav2vec2 baselines — allows fair comparison.
+compute_cost: !new:speechbrain.nnet.losses.LogSoftmaxWrapper
+    loss_fn: !new:speechbrain.nnet.losses.AdditiveAngularMargin
+        margin: 0.2
+        scale:  30
+
+# ── Optimizer ─────────────────────────────────────────────────────────────
+# NOTE: lr is intentionally NOT set here — per-group LRs are assigned in
+# RavdessEmoBrain.init_optimizers() using hparams.lr and hparams.backbone_lr.
+# weight_decay applies globally across all param groups.
+opt_class: !name:torch.optim.Adam
+    weight_decay: !ref <weight_decay>
+
+# ── NO LR scheduler ────────────────────────────────────────────────────────
+# Fixed LRs are more stable for partial fine-tuning on a small dataset.
+# CyclicLR is used for the ECAPA and frozen wav2vec2 baselines but NOT here.
+# (The on_fit_batch_end hasattr check means absence of lr_annealing is safe.)
+
+# ── Epoch loop ─────────────────────────────────────────────────────────────
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+    limit: !ref <number_of_epochs>
+
+# ── Modules dict ───────────────────────────────────────────────────────────
+# No compute_features / mean_var_norm — wav2vec2 takes raw waveform directly.
+modules:
+    embedding_model: !ref <embedding_model>
+    classifier:      !ref <classifier>
+
+# ── Checkpointer ───────────────────────────────────────────────────────────
+# embedding_model IS included here because the last 2 layers are trainable
+# and their weights must be saved/restored for proper checkpoint recovery.
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+    checkpoints_dir: !ref <save_folder>
+    recoverables:
+        embedding_model: !ref <embedding_model>
+        classifier:      !ref <classifier>
+        counter:         !ref <epoch_counter>

@@ -1,0 +1,9 @@
+label_name,precision,recall,f1,support
+neutral,1.0,1.0,1.0,64
+calm,1.0,1.0,1.0,128
+happy,1.0,1.0,1.0,128
+sad,1.0,1.0,1.0,128
+angry,1.0,1.0,1.0,128
+fearful,1.0,1.0,1.0,128
+disgust,1.0,1.0,1.0,128
+surprise,1.0,1.0,1.0,128

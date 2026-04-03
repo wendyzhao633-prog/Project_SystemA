@@ -1,0 +1,4 @@
+split,neutral,calm,happy,sad,angry,fearful,disgust,surprise
+train,64,128,128,128,128,128,128,128
+valid,16,32,32,32,32,32,32,32
+test,16,32,32,32,32,32,32,32

@@ -1,0 +1,7 @@
+model_id,model_name,family,parameter_count,checkpoint_size_bytes,total_training_time_sec,average_epoch_time_sec,test_evaluation_time_sec
+late_prob_avg,prob_avg,late_fusion,0,70,,,0.0012817040005757008
+late_weighted_prob_avg,weighted_prob_avg,late_fusion,0,13733,,,0.0002942829996754881
+late_embedding_mlp,embedding_mlp,late_fusion,1164936,14026165,,,0.10893167599897424
+early_3cnn,early_fusion_3cnn,early_fusion,1072904,12925201,319.4626759540006,10.642701269600002,1.2508869760004018
+early_bilinear,early_fusion_bilinear,early_fusion,533384,6466707,,,0.9656399279992911
+early_xattn,early_fusion_xattn,early_fusion,485256,5892315,,,0.9977765629992064

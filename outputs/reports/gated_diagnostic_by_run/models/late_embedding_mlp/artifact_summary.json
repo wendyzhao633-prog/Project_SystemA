@@ -1,0 +1,208 @@
+{
+  "family": "late_fusion",
+  "model_id": "late_embedding_mlp",
+  "model_name": "embedding_mlp",
+  "run_name": "ecapa_video_reuse_baseline",
+  "best_epoch": 14,
+  "best_checkpoint_criterion": "max_valid_uar",
+  "best_valid_uar": 0.61328125,
+  "parameter_count": 1164936,
+  "checkpoint_size_bytes": 14026165,
+  "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/best_model.pt",
+  "core_metrics": {
+    "valid_accuracy": 0.6125,
+    "valid_macro_f1": 0.5736414052129444,
+    "valid_uar": 0.5859375,
+    "test_accuracy": 0.5916666666666667,
+    "test_macro_f1": 0.5772012681196581,
+    "test_uar": 0.6015625
+  },
+  "timing": {
+    "total_training_time_sec": null,
+    "average_epoch_time_sec": null,
+    "mode_runtime_sec": null,
+    "test_evaluation_time_sec": 0.161245830997359
+  },
+  "dataset": {
+    "split_sizes": {
+      "train": 960,
+      "valid": 240,
+      "test": 240
+    },
+    "class_distribution": {
+      "train": {
+        "neutral": 64,
+        "calm": 128,
+        "happy": 128,
+        "sad": 128,
+        "angry": 128,
+        "fearful": 128,
+        "disgust": 128,
+        "surprise": 128
+      },
+      "valid": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      },
+      "test": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      }
+    }
+  },
+  "per_split_metrics": {
+    "train": {
+      "split": "train",
+      "mode": "embedding_mlp",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "uar": 1.0,
+      "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/train_confusion_matrix.csv",
+      "per_class_precision": {
+        "neutral": 1.0,
+        "calm": 1.0,
+        "happy": 1.0,
+        "sad": 1.0,
+        "angry": 1.0,
+        "fearful": 1.0,
+        "disgust": 1.0,
+        "surprise": 1.0
+      },
+      "per_class_recall": {
+        "neutral": 1.0,
+        "calm": 1.0,
+        "happy": 1.0,
+        "sad": 1.0,
+        "angry": 1.0,
+        "fearful": 1.0,
+        "disgust": 1.0,
+        "surprise": 1.0
+      },
+      "per_class_f1": {
+        "neutral": 1.0,
+        "calm": 1.0,
+        "happy": 1.0,
+        "sad": 1.0,
+        "angry": 1.0,
+        "fearful": 1.0,
+        "disgust": 1.0,
+        "surprise": 1.0
+      },
+      "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/best_model.pt",
+      "best_epoch": 14
+    },
+    "valid": {
+      "split": "valid",
+      "mode": "embedding_mlp",
+      "accuracy": 0.6125,
+      "macro_f1": 0.5736414052129444,
+      "uar": 0.5859375,
+      "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/valid_confusion_matrix.csv",
+      "per_class_precision": {
+        "neutral": 0.42857142857142855,
+        "calm": 0.7352941176470589,
+        "happy": 0.8378378378378378,
+        "sad": 0.5151515151515151,
+        "angry": 0.4418604651162791,
+        "fearful": 0.5263157894736842,
+        "disgust": 0.7435897435897436,
+        "surprise": 0.4642857142857143
+      },
+      "per_class_recall": {
+        "neutral": 0.1875,
+        "calm": 0.78125,
+        "happy": 0.96875,
+        "sad": 0.53125,
+        "angry": 0.59375,
+        "fearful": 0.3125,
+        "disgust": 0.90625,
+        "surprise": 0.40625
+      },
+      "per_class_f1": {
+        "neutral": 0.26086956521739124,
+        "calm": 0.7575757575757576,
+        "happy": 0.8985507246376812,
+        "sad": 0.5230769230769231,
+        "angry": 0.5066666666666667,
+        "fearful": 0.39215686274509803,
+        "disgust": 0.8169014084507042,
+        "surprise": 0.4333333333333333
+      },
+      "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/best_model.pt",
+      "best_epoch": 14
+    },
+    "test": {
+      "split": "test",
+      "mode": "embedding_mlp",
+      "accuracy": 0.5916666666666667,
+      "macro_f1": 0.5772012681196581,
+      "uar": 0.6015625,
+      "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/test_confusion_matrix.csv",
+      "per_class_precision": {
+        "neutral": 0.3870967741935484,
+        "calm": 0.5555555555555556,
+        "happy": 0.8823529411764706,
+        "sad": 0.5333333333333333,
+        "angry": 0.7894736842105263,
+        "fearful": 0.75,
+        "disgust": 1.0,
+        "surprise": 0.35
+      },
+      "per_class_recall": {
+        "neutral": 0.75,
+        "calm": 0.9375,
+        "happy": 0.46875,
+        "sad": 0.75,
+        "angry": 0.46875,
+        "fearful": 0.1875,
+        "disgust": 0.8125,
+        "surprise": 0.4375
+      },
+      "per_class_f1": {
+        "neutral": 0.5106382978723403,
+        "calm": 0.6976744186046512,
+        "happy": 0.6122448979591837,
+        "sad": 0.6233766233766235,
+        "angry": 0.5882352941176471,
+        "fearful": 0.3,
+        "disgust": 0.896551724137931,
+        "surprise": 0.38888888888888884
+      },
+      "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/best_model.pt",
+      "best_epoch": 14,
+      "evaluation_time_sec_measured": 0.161245830997359,
+      "loss_measured": 4.56839230855306
+    }
+  },
+  "history_path": "captured",
+  "resolved_config": {
+    "mode": "embedding_mlp",
+    "run_name": "ecapa_video_reuse_baseline"
+  },
+  "plots": {},
+  "diagnostic": {
+    "status": "stable",
+    "best_epoch": 14,
+    "total_epochs_recorded": 34,
+    "best_valid_uar": 0.61328125,
+    "last_valid_uar": 0.5859375,
+    "valid_uar_drop_after_best": 0.02734375,
+    "flags": [
+      "no strong overfitting or undertraining signal was detected"
+    ],
+    "summary": "no strong overfitting or undertraining signal was detected",
+    "longer_training_recommended": false
+  }
+}

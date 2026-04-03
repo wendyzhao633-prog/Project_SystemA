@@ -1,0 +1,40 @@
+{
+  "split": "test",
+  "mode": "embedding_mlp",
+  "accuracy": 0.5916666666666667,
+  "macro_f1": 0.5772012681196581,
+  "uar": 0.6015625,
+  "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/test_confusion_matrix.csv",
+  "per_class_precision": {
+    "neutral": 0.3870967741935484,
+    "calm": 0.5555555555555556,
+    "happy": 0.8823529411764706,
+    "sad": 0.5333333333333333,
+    "angry": 0.7894736842105263,
+    "fearful": 0.75,
+    "disgust": 1.0,
+    "surprise": 0.35
+  },
+  "per_class_recall": {
+    "neutral": 0.75,
+    "calm": 0.9375,
+    "happy": 0.46875,
+    "sad": 0.75,
+    "angry": 0.46875,
+    "fearful": 0.1875,
+    "disgust": 0.8125,
+    "surprise": 0.4375
+  },
+  "per_class_f1": {
+    "neutral": 0.5106382978723403,
+    "calm": 0.6976744186046512,
+    "happy": 0.6122448979591837,
+    "sad": 0.6233766233766235,
+    "angry": 0.5882352941176471,
+    "fearful": 0.3,
+    "disgust": 0.896551724137931,
+    "surprise": 0.38888888888888884
+  },
+  "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/ecapa_video_reuse_baseline/embedding_mlp/best_model.pt",
+  "best_epoch": 14
+}

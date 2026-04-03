@@ -1,0 +1,500 @@
+{
+  "family": "early_fusion",
+  "model_id": "early_fusion_3cnn_gated",
+  "model_name": "early_fusion_3cnn (early_fusion_3cnn_gated)",
+  "run_name": "early_fusion_3cnn_gated",
+  "best_epoch": 68,
+  "best_checkpoint_criterion": "max_valid_uar",
+  "best_valid_uar": 0.59375,
+  "parameter_count": 1105992,
+  "checkpoint_size_bytes": 13329961,
+  "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/early_fusion/early_fusion_3cnn_gated/best_model.pt",
+  "core_metrics": {
+    "valid_accuracy": 0.6041666666666666,
+    "valid_macro_f1": 0.5865869290163552,
+    "valid_uar": 0.59375,
+    "test_accuracy": 0.5458333333333333,
+    "test_macro_f1": 0.48187002867780515,
+    "test_uar": 0.5703125
+  },
+  "timing": {
+    "total_training_time_sec": 772.560523295997,
+    "average_epoch_time_sec": 8.979571743732587,
+    "mode_runtime_sec": null,
+    "test_evaluation_time_sec": 1.3694558079987473
+  },
+  "dataset": {
+    "split_sizes": {
+      "train": 960,
+      "valid": 240,
+      "test": 240
+    },
+    "class_distribution": {
+      "train": {
+        "neutral": 64,
+        "calm": 128,
+        "happy": 128,
+        "sad": 128,
+        "angry": 128,
+        "fearful": 128,
+        "disgust": 128,
+        "surprise": 128
+      },
+      "valid": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      },
+      "test": {
+        "neutral": 16,
+        "calm": 32,
+        "happy": 32,
+        "sad": 32,
+        "angry": 32,
+        "fearful": 32,
+        "disgust": 32,
+        "surprise": 32
+      }
+    }
+  },
+  "per_split_metrics": {
+    "train": {
+      "split": "train",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 960,
+      "loss": 0.011670136913501968,
+      "evaluation_time_sec": 3.079668465998111,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "uar": 1.0,
+      "confusion_matrix": [
+        [
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 1.0,
+        "calm": 1.0,
+        "happy": 1.0,
+        "sad": 1.0,
+        "angry": 1.0,
+        "fearful": 1.0,
+        "disgust": 1.0,
+        "surprise": 1.0
+      },
+      "per_class_recall": {
+        "neutral": 1.0,
+        "calm": 1.0,
+        "happy": 1.0,
+        "sad": 1.0,
+        "angry": 1.0,
+        "fearful": 1.0,
+        "disgust": 1.0,
+        "surprise": 1.0
+      },
+      "per_class_f1": {
+        "neutral": 1.0,
+        "calm": 1.0,
+        "happy": 1.0,
+        "sad": 1.0,
+        "angry": 1.0,
+        "fearful": 1.0,
+        "disgust": 1.0,
+        "surprise": 1.0
+      }
+    },
+    "valid": {
+      "split": "valid",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 240,
+      "loss": 1.7309431140621503,
+      "evaluation_time_sec": 0.831378124999901,
+      "accuracy": 0.6041666666666666,
+      "macro_f1": 0.5865869290163552,
+      "uar": 0.59375,
+      "confusion_matrix": [
+        [
+          7,
+          6,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          25,
+          0,
+          1,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          24,
+          0,
+          0,
+          5,
+          2,
+          1
+        ],
+        [
+          2,
+          8,
+          0,
+          11,
+          4,
+          4,
+          3,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0,
+          26,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          6,
+          4,
+          0,
+          2,
+          14,
+          3,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          0,
+          1,
+          0,
+          25,
+          2
+        ],
+        [
+          3,
+          0,
+          2,
+          0,
+          0,
+          9,
+          5,
+          13
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.4375,
+        "calm": 0.5102040816326531,
+        "happy": 0.75,
+        "sad": 0.7333333333333333,
+        "angry": 0.7878787878787878,
+        "fearful": 0.3783783783783784,
+        "disgust": 0.6410256410256411,
+        "surprise": 0.6842105263157895
+      },
+      "per_class_recall": {
+        "neutral": 0.4375,
+        "calm": 0.78125,
+        "happy": 0.75,
+        "sad": 0.34375,
+        "angry": 0.8125,
+        "fearful": 0.4375,
+        "disgust": 0.78125,
+        "surprise": 0.40625
+      },
+      "per_class_f1": {
+        "neutral": 0.4375,
+        "calm": 0.617283950617284,
+        "happy": 0.75,
+        "sad": 0.4680851063829787,
+        "angry": 0.8,
+        "fearful": 0.40579710144927533,
+        "disgust": 0.7042253521126761,
+        "surprise": 0.5098039215686275
+      }
+    },
+    "test": {
+      "split": "test",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 240,
+      "loss": 1.8929198148349922,
+      "evaluation_time_sec": 0.8120188100001542,
+      "accuracy": 0.5458333333333333,
+      "macro_f1": 0.48187002867780515,
+      "uar": 0.5703125,
+      "confusion_matrix": [
+        [
+          15,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          22,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          21,
+          0,
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          10,
+          9,
+          4,
+          2,
+          6,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          2
+        ],
+        [
+          7,
+          2,
+          3,
+          0,
+          11,
+          7,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          25,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          31
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.3488372093023256,
+        "calm": 0.5945945945945946,
+        "happy": 0.65625,
+        "sad": 1.0,
+        "angry": 0.410958904109589,
+        "fearful": 1.0,
+        "disgust": 0.75,
+        "surprise": 0.7380952380952381
+      },
+      "per_class_recall": {
+        "neutral": 0.9375,
+        "calm": 0.6875,
+        "happy": 0.65625,
+        "sad": 0.0625,
+        "angry": 0.9375,
+        "fearful": 0.21875,
+        "disgust": 0.09375,
+        "surprise": 0.96875
+      },
+      "per_class_f1": {
+        "neutral": 0.5084745762711865,
+        "calm": 0.6376811594202898,
+        "happy": 0.65625,
+        "sad": 0.11764705882352941,
+        "angry": 0.5714285714285715,
+        "fearful": 0.358974358974359,
+        "disgust": 0.16666666666666666,
+        "surprise": 0.8378378378378379
+      },
+      "evaluation_time_sec_measured": 1.3694558079987473,
+      "loss_measured": 1.8929198148349922
+    }
+  },
+  "history_path": "captured",
+  "resolved_config": {
+    "model_name": "early_fusion_3cnn",
+    "run_name": "early_fusion_3cnn_gated",
+    "seed": 42,
+    "data": {
+      "train_manifest": "data/manifests/av/av_train.csv",
+      "valid_manifest": "data/manifests/av/av_valid.csv",
+      "test_manifest": "data/manifests/av/av_test.csv",
+      "sample_rate": 16000,
+      "n_fft": 400,
+      "hop_length": 160,
+      "win_length": 400,
+      "n_mels": 80,
+      "audio_num_frames": 256,
+      "num_video_frames": 5,
+      "image_size": 224,
+      "use_face_crop": false,
+      "enable_cache": true,
+      "audio_cache_root": "data/processed/av/early_fusion_cache/audio_logmel_sr16000_mel80_t256",
+      "video_cache_root": "data/processed/av/early_fusion_cache/video_frames_5f_224",
+      "train_audio_gain_jitter_db": 2.0,
+      "train_specaug_freq_mask_width": 6,
+      "train_specaug_time_mask_width": 12,
+      "train_video_random_crop_scale_min": 0.9,
+      "train_video_horizontal_flip_prob": 0.5,
+      "train_video_brightness_jitter": 0.08,
+      "train_video_contrast_jitter": 0.08
+    },
+    "train": {
+      "batch_size": 16,
+      "num_workers": 4,
+      "epochs": 100,
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "patience": 18,
+      "grad_clip_norm": 1.0,
+      "scheduler_name": "reduce_on_plateau",
+      "scheduler_factor": 0.5,
+      "scheduler_patience": 5,
+      "scheduler_min_lr": 1e-06
+    },
+    "model": {
+      "dropout": 0.3,
+      "num_classes": 8,
+      "gating_enabled": true,
+      "gating_hidden_dim": 64,
+      "gating_scale_floor": 0.5
+    },
+    "config_path": "/home/tonyhe/ravdess_avfusion/configs/early_fusion/early_fusion_3cnn_gated.yaml"
+  },
+  "plots": {},
+  "diagnostic": {
+    "status": "stable",
+    "best_epoch": 68,
+    "total_epochs_recorded": 86,
+    "best_valid_uar": 0.59375,
+    "last_valid_uar": 0.5703125,
+    "valid_uar_drop_after_best": 0.0234375,
+    "flags": [
+      "no strong overfitting or undertraining signal was detected"
+    ],
+    "summary": "no strong overfitting or undertraining signal was detected",
+    "longer_training_recommended": false
+  }
+}

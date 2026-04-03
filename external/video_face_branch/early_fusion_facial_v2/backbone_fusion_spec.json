@@ -1,0 +1,23 @@
+{
+  "description": "仅特征 backbone（无分类头），用于 early fusion：与 FERsystem.backbone 一致",
+  "backbone": "resnet50",
+  "backbone_pretrained_at_init": true,
+  "feat_dim": 2048,
+  "input": {
+    "layout": "NCHW",
+    "channels": 3,
+    "height": 256,
+    "width": 256,
+    "dtype": "float32",
+    "value_range": "[0, 1]，与训练一致（图像 uint8 / 255，未做 ImageNet normalize）"
+  },
+  "forward": "z = backbone(x); features = z.flatten(1)  # 形状 (N, feat_dim)",
+  "weight_files_relative_to_output_dir": {
+    "full_model_best": "best_uar.pth",
+    "full_model_last": "last_epoch.pth",
+    "backbone_init": "init_backbone.pth",
+    "backbone_best": "best_backbone.pth"
+  },
+  "python_load_example": "from emonet.ravdess_fusion_backbone import load_backbone_for_fusion, extract_features; bb = load_backbone_for_fusion('best_backbone.pth', backbone='resnet50', backbone_pretrained=true, device='cuda:0'); vec = extract_features(bb, images_batch, flatten=True)",
+  "python_load_from_full_model_example": "from emonet.ravdess_fusion_backbone import load_backbone_from_full_model_ckpt, extract_features; bb = load_backbone_from_full_model_ckpt('best_uar.pth', backbone='resnet50', backbone_pretrained=true, device='cuda:0')"
+}

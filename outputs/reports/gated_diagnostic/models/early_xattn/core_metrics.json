@@ -1,0 +1,9 @@
+{
+  "model_id": "early_xattn",
+  "valid_accuracy": 0.43333333333333335,
+  "valid_macro_f1": 0.4278660494541606,
+  "valid_uar": 0.44921875,
+  "test_accuracy": 0.2833333333333333,
+  "test_macro_f1": 0.2438916276595062,
+  "test_uar": 0.2734375
+}

@@ -1,0 +1,145 @@
+# ############################################################################
+# RAVDESS Speech Emotion Recognition — ECAPA-TDNN Baseline
+#
+# 8-class clip-level SER using ECAPA-TDNN + Fbank features.
+# Actor-independent split: train=01-16, val=17-20, test=21-24.
+# Best checkpoint is selected by highest validation UAR.
+#
+# Adapted from recipes/IEMOCAP/emotion_recognition/hparams/train.yaml
+# ############################################################################
+
+# Reproducibility
+seed: 1968
+__set_seed: !apply:speechbrain.utils.seed.seed_everything [!ref <seed>]
+
+# ── Paths ──────────────────────────────────────────────────────────────────
+# Manifest files produced by prepare_ravdess.py
+metadata_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/metadata
+
+train_annotation: !ref <metadata_dir>/train.json
+valid_annotation: !ref <metadata_dir>/valid.json
+test_annotation:  !ref <metadata_dir>/test.json
+
+# Training outputs (checkpoints, logs)
+results_root: C:/Users/NannanLi/Desktop/speechbrain-develop/recipes/RAVDESS_emotion_recognition/results/ECAPA-TDNN
+output_folder: !ref <results_root>/<seed>
+save_folder:   !ref <output_folder>/save
+train_log:     !ref <output_folder>/train_log.txt
+
+# Prediction and embedding output roots (also used by evaluate.py / export_embeddings.py)
+predictions_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/predictions
+embeddings_dir:  C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/embeddings
+
+# Skip data preparation inside train.py (we run prepare_ravdess.py separately)
+skip_prep: True
+
+# ── Task ───────────────────────────────────────────────────────────────────
+# Number of emotion classes (fixed at 8 for RAVDESS)
+out_n_neurons: 8
+
+# ── Training hyperparameters ───────────────────────────────────────────────
+# To run a smoke test (1 epoch), use:
+#   python train.py hparams/train_ravdess.yaml --number_of_epochs 1
+number_of_epochs: 30
+batch_size: 8
+lr: 0.0001
+weight_decay: 0.00002
+base_lr: 0.000001
+max_lr: !ref <lr>
+# step_size ≈ 4 × (train_samples / batch_size) ≈ 4 × (960/8) = 480
+step_size: 480
+mode: exp_range   # CyclicLR mode
+gamma: 0.9998
+shuffle: True
+drop_last: False
+
+# ── Feature parameters ─────────────────────────────────────────────────────
+n_mels: 80
+left_frames: 0
+right_frames: 0
+deltas: False
+
+# ── DataLoader ─────────────────────────────────────────────────────────────
+# num_workers=0 is required on Windows
+dataloader_options:
+    batch_size: !ref <batch_size>
+    shuffle: !ref <shuffle>
+    num_workers: 0
+    drop_last: !ref <drop_last>
+
+# ── Logger ─────────────────────────────────────────────────────────────────
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+    save_file: !ref <train_log>
+
+ckpt_interval_minutes: 15
+
+# ── Model components ───────────────────────────────────────────────────────
+compute_features: !new:speechbrain.lobes.features.Fbank
+    n_mels: !ref <n_mels>
+    left_frames: !ref <left_frames>
+    right_frames: !ref <right_frames>
+    deltas: !ref <deltas>
+
+mean_var_norm: !new:speechbrain.processing.features.InputNormalization
+    norm_type: sentence
+    std_norm: False
+
+# ECAPA-TDNN (smaller variant, same as IEMOCAP recipe).
+# Outputs embedding of shape [batch, 1, 96].
+# The 96-dim L2-normalised vector is the clip-level embedding for fusion.
+embedding_model: !new:speechbrain.lobes.models.ECAPA_TDNN.ECAPA_TDNN
+    input_size: !ref <n_mels>
+    channels: [512, 512, 512, 512, 1536]
+    kernel_sizes: [5, 3, 3, 3, 1]
+    dilations: [1, 2, 3, 4, 1]
+    attention_channels: 64
+    lin_neurons: 96
+
+# Cosine similarity classifier. Output shape [batch, 1, out_n_neurons].
+classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
+    input_size: 96
+    out_neurons: !ref <out_n_neurons>
+
+# ── Loss ───────────────────────────────────────────────────────────────────
+# LogSoftmaxWrapper + AdditiveAngularMargin (same as IEMOCAP recipe).
+# Works with ECAPA Classifier's cosine-similarity outputs.
+compute_cost: !new:speechbrain.nnet.losses.LogSoftmaxWrapper
+    loss_fn: !new:speechbrain.nnet.losses.AdditiveAngularMargin
+        margin: 0.2
+        scale: 30
+
+# ── Optimizer & scheduler ──────────────────────────────────────────────────
+opt_class: !name:torch.optim.Adam
+    lr: !ref <lr>
+    weight_decay: !ref <weight_decay>
+
+lr_annealing: !new:speechbrain.nnet.schedulers.CyclicLRScheduler
+    mode: !ref <mode>
+    gamma: !ref <gamma>
+    base_lr: !ref <base_lr>
+    max_lr: !ref <max_lr>
+    step_size: !ref <step_size>
+
+# ── Epoch loop ─────────────────────────────────────────────────────────────
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+    limit: !ref <number_of_epochs>
+
+# ── Modules dict (passed to Brain) ────────────────────────────────────────
+modules:
+    compute_features: !ref <compute_features>
+    mean_var_norm:    !ref <mean_var_norm>
+    embedding_model:  !ref <embedding_model>
+    classifier:       !ref <classifier>
+
+# ── Checkpointer ───────────────────────────────────────────────────────────
+# Best checkpoint is saved by max validation UAR.
+# Note: the Adam optimizer is automatically added to recoverables by
+# Brain.init_optimizers() — no need to list it here explicitly.
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+    checkpoints_dir: !ref <save_folder>
+    recoverables:
+        embedding_model: !ref <embedding_model>
+        classifier:      !ref <classifier>
+        normalizer:      !ref <mean_var_norm>
+        counter:         !ref <epoch_counter>
+        lr_annealing:    !ref <lr_annealing>

@@ -1,0 +1,9 @@
+{
+  "model_id": "late_weighted_prob_avg",
+  "valid_accuracy": 0.7041666666666667,
+  "valid_macro_f1": 0.6932595830389562,
+  "valid_uar": 0.69140625,
+  "test_accuracy": 0.7083333333333334,
+  "test_macro_f1": 0.6992349453803853,
+  "test_uar": 0.7109375
+}

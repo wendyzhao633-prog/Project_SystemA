@@ -1,0 +1,40 @@
+{
+  "split": "train",
+  "mode": "prob_avg",
+  "accuracy": 0.990625,
+  "macro_f1": 0.9897508870272513,
+  "uar": 0.9912109375,
+  "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/prob_avg/train_confusion_matrix.csv",
+  "per_class_precision": {
+    "neutral": 0.9552238805970149,
+    "calm": 1.0,
+    "happy": 0.9696969696969697,
+    "sad": 0.9846153846153847,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "per_class_recall": {
+    "neutral": 1.0,
+    "calm": 0.9921875,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 0.9921875,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 0.9453125
+  },
+  "per_class_f1": {
+    "neutral": 0.9770992366412213,
+    "calm": 0.996078431372549,
+    "happy": 0.9846153846153847,
+    "sad": 0.9922480620155039,
+    "angry": 0.996078431372549,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 0.9718875502008032
+  },
+  "audio_weight": 0.5,
+  "video_weight": 0.5
+}

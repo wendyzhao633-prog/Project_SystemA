@@ -1,0 +1,78 @@
+{
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "neutral",
+      "precision": 0.25396825396825395,
+      "recall": 0.8,
+      "f1": 0.38554216867469876,
+      "support": 160
+    },
+    {
+      "class_id": 1,
+      "class_name": "calm",
+      "precision": 0.4139344262295082,
+      "recall": 0.63125,
+      "f1": 0.5,
+      "support": 320
+    },
+    {
+      "class_id": 2,
+      "class_name": "happy",
+      "precision": 0.673469387755102,
+      "recall": 0.4125,
+      "f1": 0.5116279069767442,
+      "support": 320
+    },
+    {
+      "class_id": 3,
+      "class_name": "sad",
+      "precision": 0.4527027027027027,
+      "recall": 0.628125,
+      "f1": 0.5261780104712043,
+      "support": 320
+    },
+    {
+      "class_id": 4,
+      "class_name": "angry",
+      "precision": 0.6744186046511628,
+      "recall": 0.3625,
+      "f1": 0.4715447154471545,
+      "support": 320
+    },
+    {
+      "class_id": 5,
+      "class_name": "fearful",
+      "precision": 0.7108433734939759,
+      "recall": 0.184375,
+      "f1": 0.2928039702233251,
+      "support": 320
+    },
+    {
+      "class_id": 6,
+      "class_name": "disgust",
+      "precision": 0.7805907172995781,
+      "recall": 0.578125,
+      "f1": 0.6642728904847397,
+      "support": 320
+    },
+    {
+      "class_id": 7,
+      "class_name": "surprise",
+      "precision": 0.34057971014492755,
+      "recall": 0.29375,
+      "f1": 0.31543624161073824,
+      "support": 320
+    }
+  ],
+  "macro_avg": {
+    "precision": 0.5375633970306514,
+    "recall": 0.486328125,
+    "f1": 0.45842573798607555
+  },
+  "weighted_avg": {
+    "precision": 0.5564697399014779,
+    "recall": 0.46541666666666665,
+    "f1": 0.46328464260683405
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "seed": 42,
+  "device": "cuda:0",
+  "backbone": "resnet50",
+  "epochs": 60,
+  "lr_scheduler": "plateau",
+  "step_size": 10,
+  "step_gamma": 0.5,
+  "plateau_factor": 0.5,
+  "plateau_patience": 8,
+  "plateau_min_lr": 1e-07,
+  "early_stop_patience": 12,
+  "train_actors": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "val_actors": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "test_actors": [
+    21,
+    22,
+    23,
+    24
+  ],
+  "label_order": [
+    "neutral",
+    "calm",
+    "happy",
+    "sad",
+    "angry",
+    "fearful",
+    "disgust",
+    "surprise"
+  ],
+  "csv_path": "D:\\Computervision\\emonet\\faces_manifest_5f.csv",
+  "image_dir": "D:\\Ravdess\\ravdess_face_png",
+  "class_balance": "both",
+  "train_class_counts": [
+    640,
+    1280,
+    1280,
+    1280,
+    1280,
+    1280,
+    1200,
+    1200
+  ],
+  "cross_entropy_class_weights": [
+    1.84375,
+    0.921875,
+    0.921875,
+    0.921875,
+    0.921875,
+    0.921875,
+    0.9833333492279053,
+    0.9833333492279053
+  ]
+}

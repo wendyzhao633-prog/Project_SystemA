@@ -1,0 +1,9 @@
+{
+  "model_id": "early_bilinear",
+  "valid_accuracy": 0.3458333333333333,
+  "valid_macro_f1": 0.2563462269929492,
+  "valid_uar": 0.32421875,
+  "test_accuracy": 0.29583333333333334,
+  "test_macro_f1": 0.21432233140752782,
+  "test_uar": 0.27734375
+}

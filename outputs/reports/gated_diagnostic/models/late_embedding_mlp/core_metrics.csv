@@ -1,0 +1,2 @@
+model_id,valid_accuracy,valid_macro_f1,valid_uar,test_accuracy,test_macro_f1,test_uar
+late_embedding_mlp,0.6125,0.5736414052129444,0.5859375,0.5916666666666667,0.5772012681196581,0.6015625

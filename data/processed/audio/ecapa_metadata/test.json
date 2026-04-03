@@ -1,0 +1,1922 @@
+{
+  "03-01-01-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-01-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-01-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-01-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-01-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-02-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-02-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-02-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-02-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-02-02-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-03-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-02-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-02-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-02-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-03-02-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-04-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-02-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-02-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-02-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-04-02-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-05-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-02-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-02-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-02-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-05-02-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-06-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-02-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-02-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-02-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-06-02-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-07-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-02-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-02-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-02-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-07-02-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-08-01-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-01-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-01-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-01-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-01-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-02-01-01-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-02-01-02-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-01-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-02-02-01-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-02-21": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_21/03-01-08-02-02-02-21.wav",
+    "actor": 21,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-01-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-01-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-01-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-01-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-01-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-02-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-02-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-02-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-02-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-02-02-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-03-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-02-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-02-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-02-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-03-02-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-04-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-02-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-02-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-02-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-04-02-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-05-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-02-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-02-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-02-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-05-02-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-06-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-02-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-02-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-02-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-06-02-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-07-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-02-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-02-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-02-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-07-02-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-08-01-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-01-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-01-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-01-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-01-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-02-01-01-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-02-01-02-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-01-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-02-02-01-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-02-22": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_22/03-01-08-02-02-02-22.wav",
+    "actor": 22,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-01-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-01-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-01-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-01-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-01-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-02-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-02-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-02-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-02-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-02-02-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-03-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-02-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-02-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-02-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-03-02-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-04-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-02-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-02-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-02-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-04-02-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-05-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-02-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-02-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-02-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-05-02-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-06-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-02-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-02-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-02-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-06-02-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-07-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-02-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-02-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-02-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-07-02-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-08-01-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-01-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-01-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-01-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-01-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-02-01-01-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-02-01-02-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-01-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-02-02-01-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-02-23": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_23/03-01-08-02-02-02-23.wav",
+    "actor": 23,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-01-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-01-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-01-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-01-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-01-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-01-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "03-01-02-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-02-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-02-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-02-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-02-02-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-02-02-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "03-01-03-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-02-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-02-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-02-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-03-02-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-03-02-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "03-01-04-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-02-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-02-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-02-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-04-02-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-04-02-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "03-01-05-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-02-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-02-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-02-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-05-02-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-05-02-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "03-01-06-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-02-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-02-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-02-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-06-02-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-06-02-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "06",
+    "label_id": 5,
+    "label_name": "fearful",
+    "split": "test"
+  },
+  "03-01-07-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-02-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-02-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-02-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-07-02-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-07-02-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "07",
+    "label_id": 6,
+    "label_name": "disgust",
+    "split": "test"
+  },
+  "03-01-08-01-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-01-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-01-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-01-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-01-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-01-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-02-01-01-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-01-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-02-01-02-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-01-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-02-02-01-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "03-01-08-02-02-02-24": {
+    "wav": "data/raw/ravdess/audio_speech/Audio_Speech_Actors_01-24/Actor_24/03-01-08-02-02-02-24.wav",
+    "actor": 24,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "split": "train",
+  "mode": "embedding_mlp",
+  "loss": 0.00864505988702149,
+  "accuracy": 0.996875,
+  "macro_f1": 0.9970624129902457,
+  "uar": 0.9970703125,
+  "evaluation_time_sec": 0.0003669460002129199,
+  "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/smoke_report_capture_late/embedding_mlp/train_confusion_matrix.csv",
+  "per_class_precision": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 0.9846153846153847,
+    "sad": 0.9922480620155039,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "per_class_recall": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 0.9765625
+  },
+  "per_class_f1": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 0.9922480620155039,
+    "sad": 0.9961089494163424,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 0.9881422924901185
+  },
+  "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/late_fusion/smoke_report_capture_late/embedding_mlp/best_model.pt",
+  "best_epoch": 1
+}

@@ -1,0 +1,2 @@
+model_id,valid_accuracy,valid_macro_f1,valid_uar,test_accuracy,test_macro_f1,test_uar
+early_3cnn,0.5,0.46523075970838323,0.5,0.4166666666666667,0.3704280194095753,0.4375

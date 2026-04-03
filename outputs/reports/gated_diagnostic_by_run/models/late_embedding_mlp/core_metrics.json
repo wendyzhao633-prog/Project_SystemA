@@ -1,0 +1,9 @@
+{
+  "model_id": "late_embedding_mlp",
+  "valid_accuracy": 0.6125,
+  "valid_macro_f1": 0.5736414052129444,
+  "valid_uar": 0.5859375,
+  "test_accuracy": 0.5916666666666667,
+  "test_macro_f1": 0.5772012681196581,
+  "test_uar": 0.6015625
+}

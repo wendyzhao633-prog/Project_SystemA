@@ -1,0 +1,2 @@
+model_id,valid_accuracy,valid_macro_f1,valid_uar,test_accuracy,test_macro_f1,test_uar
+early_fusion_xattn,0.43333333333333335,0.4278660494541606,0.44921875,0.2833333333333333,0.2438916276595062,0.2734375

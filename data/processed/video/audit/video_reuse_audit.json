@@ -1,0 +1,129 @@
+{
+  "package_root": "/home/tonyhe/ravdess_avfusion/external/video_face_branch/early_fusion_facial_v2",
+  "video_manifest_dir": "/home/tonyhe/ravdess_avfusion/data/manifests/video",
+  "canonical_expected_counts": {
+    "train": 960,
+    "valid": 240,
+    "test": 240
+  },
+  "predictions": {
+    "source_files": {
+      "train": {
+        "path": "/home/tonyhe/ravdess_avfusion/external/video_face_branch/early_fusion_facial_v2/predictions_train.jsonl",
+        "frame_rows": 9440,
+        "unique_video_ids": 1888,
+        "unique_speech_video_ids": 1800,
+        "unique_speech_av_keys": 900,
+        "frame_count_distribution": {
+          "5": 1800
+        }
+      },
+      "valid": {
+        "path": "/home/tonyhe/ravdess_avfusion/external/video_face_branch/early_fusion_facial_v2/predictions_val.jsonl",
+        "frame_rows": 2390,
+        "unique_video_ids": 478,
+        "unique_speech_video_ids": 478,
+        "unique_speech_av_keys": 240,
+        "frame_count_distribution": {
+          "5": 478
+        }
+      },
+      "test": {
+        "path": "/home/tonyhe/ravdess_avfusion/external/video_face_branch/early_fusion_facial_v2/predictions_test.jsonl",
+        "frame_rows": 2400,
+        "unique_video_ids": 480,
+        "unique_speech_video_ids": 480,
+        "unique_speech_av_keys": 240,
+        "frame_count_distribution": {
+          "5": 480
+        }
+      }
+    },
+    "frame_level": true,
+    "selected_av_key_counts": {
+      "train": 960,
+      "valid": 240,
+      "test": 240
+    },
+    "backfill_rows": {
+      "train": 60
+    }
+  },
+  "sequences": {
+    "sequence_root": "/home/tonyhe/ravdess_avfusion/external/video_face_branch/early_fusion_facial_v2/fusion_pack_5f/sequences",
+    "total_files": 2846,
+    "speech_files": 2758,
+    "non_speech_files": 88,
+    "all_shape_counts": {
+      "(5, 2048)": 2846
+    },
+    "speech_shape_counts": {
+      "(5, 2048)": 2758
+    },
+    "selected_av_key_counts": {
+      "train": 960,
+      "valid": 240,
+      "test": 240
+    },
+    "backfill_rows": {
+      "train": 60
+    }
+  },
+  "selected_against_canonical_manifest": {
+    "train": {
+      "expected_manifest_rows": 960,
+      "normalized_prediction_rows": 960,
+      "normalized_sequence_rows": 960,
+      "prediction_fallback_to_01": 0,
+      "sequence_fallback_to_01": 0,
+      "missing_prediction_count": 0,
+      "missing_sequence_count": 0,
+      "prediction_frame_count_distribution": {
+        "5": 960
+      },
+      "selected_sequence_shape_counts": {
+        "(5, 2048)": 960
+      },
+      "missing_prediction_av_keys": [],
+      "missing_sequence_av_keys": [],
+      "late_fusion_ready_rows": 960
+    },
+    "valid": {
+      "expected_manifest_rows": 240,
+      "normalized_prediction_rows": 240,
+      "normalized_sequence_rows": 240,
+      "prediction_fallback_to_01": 2,
+      "sequence_fallback_to_01": 2,
+      "missing_prediction_count": 0,
+      "missing_sequence_count": 0,
+      "prediction_frame_count_distribution": {
+        "5": 240
+      },
+      "selected_sequence_shape_counts": {
+        "(5, 2048)": 240
+      },
+      "missing_prediction_av_keys": [],
+      "missing_sequence_av_keys": [],
+      "late_fusion_ready_rows": 240
+    },
+    "test": {
+      "expected_manifest_rows": 240,
+      "normalized_prediction_rows": 240,
+      "normalized_sequence_rows": 240,
+      "prediction_fallback_to_01": 0,
+      "sequence_fallback_to_01": 0,
+      "missing_prediction_count": 0,
+      "missing_sequence_count": 0,
+      "prediction_frame_count_distribution": {
+        "5": 240
+      },
+      "selected_sequence_shape_counts": {
+        "(5, 2048)": 240
+      },
+      "missing_prediction_av_keys": [],
+      "missing_sequence_av_keys": [],
+      "late_fusion_ready_rows": 240
+    }
+  },
+  "late_fusion_ready": true
+}

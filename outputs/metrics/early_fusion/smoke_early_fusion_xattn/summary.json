@@ -1,0 +1,368 @@
+{
+  "model_name": "early_fusion_xattn",
+  "run_name": "smoke_early_fusion_xattn",
+  "best_epoch": 1,
+  "best_valid_uar": 0.0,
+  "splits": {
+    "train": {
+      "split": "train",
+      "model_name": "early_fusion_xattn",
+      "num_rows": 8,
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "uar": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_recall": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_f1": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      }
+    },
+    "valid": {
+      "split": "valid",
+      "model_name": "early_fusion_xattn",
+      "num_rows": 8,
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "uar": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_recall": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_f1": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      }
+    },
+    "test": {
+      "split": "test",
+      "model_name": "early_fusion_xattn",
+      "num_rows": 8,
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "uar": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_recall": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_f1": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      }
+    }
+  }
+}

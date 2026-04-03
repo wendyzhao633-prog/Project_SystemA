@@ -1,0 +1,161 @@
+# ############################################################################
+# RAVDESS Speech Emotion Recognition — WavLM-Large + Partial FT (last-2) + Weighted CE
+#
+# New independent experimental branch.  Does NOT touch any existing version.
+#
+# Key design choices vs existing baselines:
+#   • backbone: microsoft/wavlm-large  (1024-dim, 24 transformer layers)
+#   • first full-freeze backbone, then unfreeze last 2 transformer layers
+#   • class-weighted cross-entropy loss (balanced formula, auto-computed)
+#   • batch_size: 1  (WavLM-Large is ~316 M params; conservative for RTX 5060)
+#   • param groups:
+#       backbone (last 2 layers) lr = 5e-6
+#       classifier               lr = 5e-5
+#   • fixed LR (no scheduler) — more stable for partial FT on small dataset
+#   • number_of_epochs: 20  (Large model costs more; increase to 30 if needed)
+#
+# Result isolation — completely separate from all other baselines:
+#   checkpoints → results/WavLM_Large_FT_last2_weighted/1968/save/
+#   predictions → outputs/predictions_wavlm_large_ft_last2_weighted/
+#   embeddings  → outputs/embeddings_wavlm_large_ft_last2_weighted/
+#
+# Comparison table:
+#   ECAPA baseline                    : hparams/train_ravdess.yaml
+#   Wav2Vec2 frozen                   : hparams/train_ravdess_wav2vec2.yaml
+#   Wav2Vec2 FT last-2                : hparams/train_ravdess_wav2vec2_ft_last2.yaml
+#   Wav2Vec2 FT last-2 stable lr      : hparams/train_ravdess_wav2vec2_ft_last2_lrstable.yaml
+#   WavLM-Large FT last-2 weighted    : hparams/train_ravdess_wavlm_large_ft_last2_weighted.yaml ← this
+# ############################################################################
+
+# Reproducibility
+seed: 1968
+__set_seed: !apply:speechbrain.utils.seed.seed_everything [!ref <seed>]
+
+# ── Backbone identity ──────────────────────────────────────────────────────
+# "wavlm" tells train.py / evaluate.py / export_embeddings.py to use the
+# raw-waveform → HF SSL encoder path (same code path as wav2vec2).
+model_type: wavlm
+
+# ── WavLM backbone settings ────────────────────────────────────────────────
+wavlm_source: microsoft/wavlm-large
+
+# First freeze entire backbone, then unfreeze last num_unfrozen_layers.
+# CNN feature extractor is always frozen regardless of this setting.
+freeze_backbone: True
+num_unfrozen_layers: 2   # ← change to 1 or 4 to compare other depths
+
+# WavLM-Large hidden_size = 1024 (must match classifier input_size below)
+embedding_dim: 1024
+
+# ── Class-weighted loss ────────────────────────────────────────────────────
+# When True, train.py computes balanced class weights from train.json
+# (formula: w_c = N / (C * n_c)) and uses F.cross_entropy(weight=...).
+# Class counts and weights are printed at training start.
+use_class_weights: True
+
+# ── Paths ──────────────────────────────────────────────────────────────────
+metadata_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/metadata
+
+train_annotation: !ref <metadata_dir>/train.json
+valid_annotation: !ref <metadata_dir>/valid.json
+test_annotation:  !ref <metadata_dir>/test.json
+
+# ── Output directories — completely new, isolated from all other baselines ─
+results_root:  C:/Users/NannanLi/Desktop/speechbrain-develop/recipes/RAVDESS_emotion_recognition/results/WavLM_Large_FT_last2_weighted
+output_folder: !ref <results_root>/<seed>
+save_folder:   !ref <output_folder>/save
+train_log:     !ref <output_folder>/train_log.txt
+
+predictions_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/predictions_wavlm_large_ft_last2_weighted
+embeddings_dir:  C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/embeddings_wavlm_large_ft_last2_weighted
+
+skip_prep: True
+
+# ── Task ───────────────────────────────────────────────────────────────────
+out_n_neurons: 8   # fixed 8-class RAVDESS
+
+# ── Training hyperparameters ───────────────────────────────────────────────
+# number_of_epochs: 20 — WavLM-Large is expensive; 20 is a sensible starting
+# point. Increase to 30 if training converges steadily.
+number_of_epochs: 20
+
+# batch_size: 1 — WavLM-Large with partial FT is memory-heavy on RTX 5060.
+# If you get OOM even at 1, check for other processes holding VRAM.
+batch_size: 1
+
+# ── Learning rates (param groups) ─────────────────────────────────────────
+# Same conservative values as wav2vec2 stable-lr variant.
+lr:          0.00005   # 5e-5  — classifier group
+backbone_lr: 0.000005  # 5e-6  — unfrozen WavLM transformer layers
+
+weight_decay: 0.00002
+
+shuffle:   True
+drop_last: False
+
+# ── DataLoader ─────────────────────────────────────────────────────────────
+# num_workers=0 required on Windows
+dataloader_options:
+    batch_size:  !ref <batch_size>
+    shuffle:     !ref <shuffle>
+    num_workers: 0
+    drop_last:   !ref <drop_last>
+
+# ── Logger ─────────────────────────────────────────────────────────────────
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+    save_file: !ref <train_log>
+
+ckpt_interval_minutes: 15
+
+# ── Model components ───────────────────────────────────────────────────────
+# Wav2Vec2Encoder with model_arch="wavlm" loads WavLMModel internally.
+# Identical freeze/unfreeze/pooling logic to the wav2vec2 variants.
+# Output shape: [batch, 1, 1024]
+embedding_model: !new:speechbrain.lobes.models.huggingface_wav2vec2.Wav2Vec2Encoder
+    source:              !ref <wavlm_source>
+    model_arch:          wavlm
+    freeze:              !ref <freeze_backbone>
+    num_unfrozen_layers: !ref <num_unfrozen_layers>
+    output_norm:         False   # ECAPA Classifier normalises internally
+
+# Cosine similarity classifier — same structure as all other baselines.
+# input_size must match embedding_dim = 1024 (WavLM-Large hidden_size).
+# Output shape: [batch, 1, out_n_neurons]
+classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
+    input_size:  !ref <embedding_dim>
+    out_neurons: !ref <out_n_neurons>
+
+# ── Loss ───────────────────────────────────────────────────────────────────
+# compute_cost is included for completeness but is NOT called when
+# use_class_weights=True — train.py uses F.cross_entropy(weight=...) instead.
+# evaluate.py uses F.softmax on classifier outputs directly (no change needed).
+compute_cost: !new:speechbrain.nnet.losses.LogSoftmaxWrapper
+    loss_fn: !new:speechbrain.nnet.losses.AdditiveAngularMargin
+        margin: 0.2
+        scale:  30
+
+# ── Optimizer ─────────────────────────────────────────────────────────────
+# Per-group LRs are assigned in RavdessEmoBrain.init_optimizers()
+# using hparams.lr (classifier) and hparams.backbone_lr (unfrozen layers).
+opt_class: !name:torch.optim.Adam
+    weight_decay: !ref <weight_decay>
+
+# ── Epoch loop ─────────────────────────────────────────────────────────────
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+    limit: !ref <number_of_epochs>
+
+# ── Modules dict ───────────────────────────────────────────────────────────
+# No compute_features / mean_var_norm — WavLM takes raw waveform directly.
+modules:
+    embedding_model: !ref <embedding_model>
+    classifier:      !ref <classifier>
+
+# ── Checkpointer ───────────────────────────────────────────────────────────
+# embedding_model IS saved: the last 2 WavLM layers are trainable and
+# their fine-tuned weights must be checkpointed for proper resume/eval.
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+    checkpoints_dir: !ref <save_folder>
+    recoverables:
+        embedding_model: !ref <embedding_model>
+        classifier:      !ref <classifier>
+        counter:         !ref <epoch_counter>

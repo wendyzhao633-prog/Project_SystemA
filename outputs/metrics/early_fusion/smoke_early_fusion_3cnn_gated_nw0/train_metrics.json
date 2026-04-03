@@ -1,0 +1,122 @@
+{
+  "split": "train",
+  "model_name": "early_fusion_3cnn",
+  "num_rows": 8,
+  "loss": 2.029802918434143,
+  "evaluation_time_sec": 0.3958066119994328,
+  "accuracy": 0.5,
+  "macro_f1": 0.08333333333333333,
+  "uar": 0.0625,
+  "confusion_matrix": [
+    [
+      4,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "per_class_precision": {
+    "neutral": 1.0,
+    "calm": 0.0,
+    "happy": 0.0,
+    "sad": 0.0,
+    "angry": 0.0,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "per_class_recall": {
+    "neutral": 0.5,
+    "calm": 0.0,
+    "happy": 0.0,
+    "sad": 0.0,
+    "angry": 0.0,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "per_class_f1": {
+    "neutral": 0.6666666666666666,
+    "calm": 0.0,
+    "happy": 0.0,
+    "sad": 0.0,
+    "angry": 0.0,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "model_name": "early_fusion_3cnn",
+  "run_name": "smoke_early_fusion_3cnn_tuned",
+  "device": "cuda:0",
+  "parameter_count": 1072904,
+  "checkpoint_path": "/home/tonyhe/ravdess_avfusion/checkpoints/early_fusion/smoke_early_fusion_3cnn_tuned/best_model.pt",
+  "checkpoint_size_bytes": 12925585,
+  "history_path": "/home/tonyhe/ravdess_avfusion/outputs/logs/early_fusion/smoke_early_fusion_3cnn_tuned/training_history.json",
+  "resolved_config_path": "/home/tonyhe/ravdess_avfusion/outputs/logs/early_fusion/smoke_early_fusion_3cnn_tuned/resolved_config.json",
+  "best_epoch": 1,
+  "best_valid_uar": 0.0,
+  "best_checkpoint_criterion": "max_valid_uar",
+  "timing": {
+    "total_training_time_sec": 1.5073485059983796,
+    "average_epoch_time_sec": 0.7427910334999979
+  },
+  "dataset": {
+    "split_sizes": {
+      "train": 16,
+      "valid": 8,
+      "test": 8
+    },
+    "class_distribution": {
+      "train": {
+        "neutral": 16,
+        "calm": 0,
+        "happy": 0,
+        "sad": 0,
+        "angry": 0,
+        "fearful": 0,
+        "disgust": 0,
+        "surprise": 0
+      },
+      "valid": {
+        "neutral": 8,
+        "calm": 0,
+        "happy": 0,
+        "sad": 0,
+        "angry": 0,
+        "fearful": 0,
+        "disgust": 0,
+        "surprise": 0
+      },
+      "test": {
+        "neutral": 8,
+        "calm": 0,
+        "happy": 0,
+        "sad": 0,
+        "angry": 0,
+        "fearful": 0,
+        "disgust": 0,
+        "surprise": 0
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 16,
+      "loss": 2.1166694164276123,
+      "evaluation_time_sec": 0.08720426499894529,
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "uar": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_recall": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_f1": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      }
+    },
+    "valid": {
+      "split": "valid",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 8,
+      "loss": 2.1162283420562744,
+      "evaluation_time_sec": 0.03501754900025844,
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "uar": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_recall": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_f1": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      }
+    },
+    "test": {
+      "split": "test",
+      "model_name": "early_fusion_3cnn",
+      "num_rows": 8,
+      "loss": 2.1170963048934937,
+      "evaluation_time_sec": 0.05978589999904216,
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "uar": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_precision": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_recall": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      },
+      "per_class_f1": {
+        "neutral": 0.0,
+        "calm": 0.0,
+        "happy": 0.0,
+        "sad": 0.0,
+        "angry": 0.0,
+        "fearful": 0.0,
+        "disgust": 0.0,
+        "surprise": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+# ############################################################################
+# RAVDESS Speech Emotion Recognition — Wav2Vec2 Partial FT (last-2) + Stable LR
+#
+# Same as train_ravdess_wav2vec2_ft_last2.yaml EXCEPT learning rates are halved
+# for more stable training:
+#
+#   Original last-2:
+#     backbone_unfrozen lr = 1e-5
+#     classifier         lr = 1e-4
+#
+#   This variant (stable LR):
+#     backbone_unfrozen lr = 5e-6   ← slower, less overwriting of pretrain
+#     classifier         lr = 5e-5  ← slower, less late-epoch fluctuation
+#
+# All other settings identical:
+#   • backbone: facebook/wav2vec2-base
+#   • unfreeze last 2 transformer layers only
+#   • batch_size: 2
+#   • number_of_epochs: 30
+#   • same pooling, classifier, loss, data split
+#
+# Result isolation (does NOT touch any other baseline):
+#   checkpoints → results/Wav2Vec2_FT_last2_lrstable/1968/save/
+#   predictions → outputs/predictions_wav2vec2_ft_last2_lrstable/
+#   embeddings  → outputs/embeddings_wav2vec2_ft_last2_lrstable/
+#
+# Comparison table:
+#   ECAPA baseline              : hparams/train_ravdess.yaml
+#   Wav2Vec2 frozen             : hparams/train_ravdess_wav2vec2.yaml
+#   Wav2Vec2 FT last-2          : hparams/train_ravdess_wav2vec2_ft_last2.yaml
+#   Wav2Vec2 FT last-2 + lr stable : hparams/train_ravdess_wav2vec2_ft_last2_lrstable.yaml  ← this
+# ############################################################################
+
+# Reproducibility
+seed: 1968
+__set_seed: !apply:speechbrain.utils.seed.seed_everything [!ref <seed>]
+
+# ── Backbone identity ──────────────────────────────────────────────────────
+model_type: wav2vec2
+
+# ── Wav2Vec2 backbone settings ─────────────────────────────────────────────
+wav2vec2_source: facebook/wav2vec2-base
+
+freeze_wav2vec2: True
+num_unfrozen_layers: 2
+
+embedding_dim: 768
+
+# ── Paths ──────────────────────────────────────────────────────────────────
+metadata_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/metadata
+
+train_annotation: !ref <metadata_dir>/train.json
+valid_annotation: !ref <metadata_dir>/valid.json
+test_annotation:  !ref <metadata_dir>/test.json
+
+# ── Output directories — SEPARATE from all other baselines ─────────────────
+results_root:  C:/Users/NannanLi/Desktop/speechbrain-develop/recipes/RAVDESS_emotion_recognition/results/Wav2Vec2_FT_last2_lrstable
+output_folder: !ref <results_root>/<seed>
+save_folder:   !ref <output_folder>/save
+train_log:     !ref <output_folder>/train_log.txt
+
+predictions_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/predictions_wav2vec2_ft_last2_lrstable
+embeddings_dir:  C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/embeddings_wav2vec2_ft_last2_lrstable
+
+skip_prep: True
+
+# ── Task ───────────────────────────────────────────────────────────────────
+out_n_neurons: 8
+
+# ── Training hyperparameters ───────────────────────────────────────────────
+number_of_epochs: 30
+
+batch_size: 2
+
+# ── Learning rates (param groups) — HALVED for more stable training ───────
+# Compared to train_ravdess_wav2vec2_ft_last2.yaml:
+#   lr:          1e-4 → 5e-5   (classifier)
+#   backbone_lr: 1e-5 → 5e-6   (unfrozen backbone layers)
+lr:          0.00005   # 5e-5  — classifier group (was 1e-4)
+backbone_lr: 0.000005  # 5e-6  — unfrozen transformer layers (was 1e-5)
+
+weight_decay: 0.00002
+
+shuffle:   True
+drop_last: False
+
+# ── DataLoader ─────────────────────────────────────────────────────────────
+dataloader_options:
+    batch_size:  !ref <batch_size>
+    shuffle:     !ref <shuffle>
+    num_workers: 0
+    drop_last:   !ref <drop_last>
+
+# ── Logger ─────────────────────────────────────────────────────────────────
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+    save_file: !ref <train_log>
+
+ckpt_interval_minutes: 15
+
+# ── Model components ───────────────────────────────────────────────────────
+embedding_model: !new:speechbrain.lobes.models.huggingface_wav2vec2.Wav2Vec2Encoder
+    source:              !ref <wav2vec2_source>
+    freeze:              !ref <freeze_wav2vec2>
+    num_unfrozen_layers: !ref <num_unfrozen_layers>
+    output_norm: False
+
+classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
+    input_size:  !ref <embedding_dim>
+    out_neurons: !ref <out_n_neurons>
+
+# ── Loss ───────────────────────────────────────────────────────────────────
+compute_cost: !new:speechbrain.nnet.losses.LogSoftmaxWrapper
+    loss_fn: !new:speechbrain.nnet.losses.AdditiveAngularMargin
+        margin: 0.2
+        scale:  30
+
+# ── Optimizer ─────────────────────────────────────────────────────────────
+opt_class: !name:torch.optim.Adam
+    weight_decay: !ref <weight_decay>
+
+# ── Epoch loop ─────────────────────────────────────────────────────────────
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+    limit: !ref <number_of_epochs>
+
+# ── Modules dict ───────────────────────────────────────────────────────────
+modules:
+    embedding_model: !ref <embedding_model>
+    classifier:      !ref <classifier>
+
+# ── Checkpointer ───────────────────────────────────────────────────────────
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+    checkpoints_dir: !ref <save_folder>
+    recoverables:
+        embedding_model: !ref <embedding_model>
+        classifier:      !ref <classifier>
+        counter:         !ref <epoch_counter>

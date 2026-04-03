@@ -1,0 +1,162 @@
+# ############################################################################
+# RAVDESS Speech Emotion Recognition — Wav2Vec2 Baseline
+#
+# 8-class clip-level SER using frozen Wav2Vec2 backbone + cosine classifier.
+# Actor-independent split: train=01-16, val=17-20, test=21-24.
+# Best checkpoint is selected by highest validation UAR.
+#
+# Strategy (v1 — safest first):
+#   • Wav2Vec2 backbone is FROZEN  (freeze_wav2vec2: True)
+#   • Only the Classifier head is trained  (~6 K parameters)
+#   • batch_size=4 (conservative for RTX 5060 Laptop with frozen backbone)
+#   • Standard Adam + CyclicLR (same structure as ECAPA baseline)
+#
+# To unfreeze the backbone for full fine-tuning (later experiments):
+#   Add  --freeze_wav2vec2 False  to the training command, or change below.
+#   WARNING: full fine-tuning needs batch_size=1-2 and careful LR tuning.
+#
+# Comparison with ECAPA baseline
+# --------------------------------
+#   ECAPA yaml  : hparams/train_ravdess.yaml
+#   Wav2Vec2 yaml: hparams/train_ravdess_wav2vec2.yaml  ← this file
+#   Results are written to SEPARATE directories — they will NOT overwrite.
+# ############################################################################
+
+# Reproducibility
+seed: 1968
+__set_seed: !apply:speechbrain.utils.seed.seed_everything [!ref <seed>]
+
+# ── Backbone identity ──────────────────────────────────────────────────────
+# Tells train.py / evaluate.py / export_embeddings.py to use the wav2vec2
+# forward path instead of the Fbank → ECAPA path.
+model_type: wav2vec2
+
+# ── Wav2Vec2 backbone settings ─────────────────────────────────────────────
+# HuggingFace model hub ID.  First run downloads ~360 MB and caches locally.
+# Recommended for SER (general SSL, not ASR-fine-tuned):
+wav2vec2_source: facebook/wav2vec2-base
+# freeze_wav2vec2: True  → only the Classifier is trained (default, stable)
+# freeze_wav2vec2: False → full fine-tuning (large memory, small dataset risk)
+freeze_wav2vec2: True
+
+# Embedding dimensionality produced by the backbone + pooling.
+# facebook/wav2vec2-base  → 768
+# facebook/wav2vec2-large → 1024
+embedding_dim: 768
+
+# ── Paths ──────────────────────────────────────────────────────────────────
+metadata_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/metadata
+
+train_annotation: !ref <metadata_dir>/train.json
+valid_annotation: !ref <metadata_dir>/valid.json
+test_annotation:  !ref <metadata_dir>/test.json
+
+# Training outputs — SEPARATE from ECAPA results
+results_root: C:/Users/NannanLi/Desktop/speechbrain-develop/recipes/RAVDESS_emotion_recognition/results/Wav2Vec2
+output_folder: !ref <results_root>/<seed>
+save_folder:   !ref <output_folder>/save
+train_log:     !ref <output_folder>/train_log.txt
+
+# Predictions and embeddings — SEPARATE from ECAPA outputs
+predictions_dir: C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/predictions_wav2vec2
+embeddings_dir:  C:/Users/NannanLi/Desktop/speechbrain-develop/outputs/embeddings_wav2vec2
+
+skip_prep: True
+
+# ── Task ───────────────────────────────────────────────────────────────────
+out_n_neurons: 8   # fixed 8-class RAVDESS
+
+# ── Training hyperparameters ───────────────────────────────────────────────
+# batch_size=4: conservative default for RTX 5060 Laptop with wav2vec2-base.
+#   Frozen backbone → activations for the backbone are still allocated.
+#   If you get OOM, try batch_size=2 first, then batch_size=1.
+# To override on command line: add  batch_size: 2  after the yaml path.
+number_of_epochs: 30
+batch_size: 4
+lr: 0.001        # Higher than ECAPA because only ~6 K classifier params train
+weight_decay: 0.00002
+base_lr: 0.00001
+max_lr: !ref <lr>
+# step_size = 4 × batches_per_epoch ≈ 4 × ceil(960/4) = 4 × 240 = 960
+step_size: 960
+mode: exp_range
+gamma: 0.9998
+shuffle: True
+drop_last: False
+
+# ── DataLoader ─────────────────────────────────────────────────────────────
+# num_workers=0 required on Windows (avoids multiprocessing spawn issues)
+dataloader_options:
+    batch_size: !ref <batch_size>
+    shuffle:    !ref <shuffle>
+    num_workers: 0
+    drop_last:  !ref <drop_last>
+
+# ── Logger ─────────────────────────────────────────────────────────────────
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+    save_file: !ref <train_log>
+
+ckpt_interval_minutes: 15
+
+# ── Model components ───────────────────────────────────────────────────────
+# NOTE: compute_features and mean_var_norm are NOT included here because
+# wav2vec2 takes raw waveforms directly.  train.py checks model_type and
+# skips those modules when model_type == "wav2vec2".
+
+# Wav2Vec2 backbone (frozen) + mean-pooling.
+# Output shape: [batch, 1, 768]  — same convention as ECAPA embedding_model.
+embedding_model: !new:speechbrain.lobes.models.huggingface_wav2vec2.Wav2Vec2Encoder
+    source:      !ref <wav2vec2_source>
+    freeze:      !ref <freeze_wav2vec2>
+    output_norm: False   # ECAPA Classifier normalises internally
+
+# Cosine similarity classifier — same class as ECAPA baseline.
+# input_size must match embedding_dim above (768 for wav2vec2-base).
+# Output shape: [batch, 1, out_n_neurons]
+classifier: !new:speechbrain.lobes.models.ECAPA_TDNN.Classifier
+    input_size:  !ref <embedding_dim>
+    out_neurons: !ref <out_n_neurons>
+
+# ── Loss ───────────────────────────────────────────────────────────────────
+# LogSoftmaxWrapper + AdditiveAngularMargin — same as ECAPA baseline.
+# The ECAPA Classifier produces L2-normalised cosine-similarity scores,
+# which are compatible with AAM.
+compute_cost: !new:speechbrain.nnet.losses.LogSoftmaxWrapper
+    loss_fn: !new:speechbrain.nnet.losses.AdditiveAngularMargin
+        margin: 0.2
+        scale:  30
+
+# ── Optimizer & scheduler ──────────────────────────────────────────────────
+opt_class: !name:torch.optim.Adam
+    lr:           !ref <lr>
+    weight_decay: !ref <weight_decay>
+
+lr_annealing: !new:speechbrain.nnet.schedulers.CyclicLRScheduler
+    mode:      !ref <mode>
+    gamma:     !ref <gamma>
+    base_lr:   !ref <base_lr>
+    max_lr:    !ref <max_lr>
+    step_size: !ref <step_size>
+
+# ── Epoch loop ─────────────────────────────────────────────────────────────
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+    limit: !ref <number_of_epochs>
+
+# ── Modules dict (passed to Brain) ────────────────────────────────────────
+# Only embedding_model and classifier — no Fbank feature extraction.
+modules:
+    embedding_model: !ref <embedding_model>
+    classifier:      !ref <classifier>
+
+# ── Checkpointer ───────────────────────────────────────────────────────────
+# Frozen backbone weights are NOT saved here: they are always reloaded from
+# HuggingFace on startup.  We only checkpoint the classifier + loop state.
+# If you unfreeze the backbone (freeze_wav2vec2: False), add
+#     embedding_model: !ref <embedding_model>
+# to recoverables so the fine-tuned weights are preserved.
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+    checkpoints_dir: !ref <save_folder>
+    recoverables:
+        classifier:   !ref <classifier>
+        counter:      !ref <epoch_counter>
+        lr_annealing: !ref <lr_annealing>
