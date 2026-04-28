@@ -1,0 +1,31 @@
+{
+  "split": "train",
+  "mode": "weighted_prob_avg",
+  "audio_weight": 0.87,
+  "video_weight": 0.13,
+  "accuracy": 0.17,
+  "macro_f1": 0.0662626544069843,
+  "uar": 0.1127403846153846,
+  "per_class_recall": {
+    "neutral": 0.07692307692307693,
+    "calm": 0.0,
+    "happy": 0.0,
+    "sad": 0.125,
+    "angry": 0.7,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "per_class_f1": {
+    "neutral": 0.10810810810810811,
+    "calm": 0.0,
+    "happy": 0.0,
+    "sad": 0.13333333333333333,
+    "angry": 0.28865979381443296,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "labels_are_placeholder": false,
+  "evaluation_time_sec": 0.040940599981695414
+}

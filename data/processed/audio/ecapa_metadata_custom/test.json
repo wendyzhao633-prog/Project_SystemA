@@ -1,0 +1,402 @@
+{
+  "audio_4_01": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_01.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_02": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_02.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_03": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_03.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_04": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_04.wav",
+    "actor": 4,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "audio_4_05": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_05.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_06": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_06.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_07": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_07.wav",
+    "actor": 4,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "audio_4_08": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_08.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_09": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_09.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_10": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_10.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_11": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_11.wav",
+    "actor": 4,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "audio_4_12": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_12.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_13": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_13.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_14": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_14.wav",
+    "actor": 4,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "audio_4_15": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_15.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_16": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_16.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_17": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_17.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_18": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_18.wav",
+    "actor": 4,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "audio_4_19": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_19.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_20": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_20.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_21": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_21.wav",
+    "actor": 4,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "audio_4_22": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_22.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_23": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_23.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_24": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_24.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_25": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_25.wav",
+    "actor": 4,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "audio_4_26": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_26.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_27": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_27.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_28": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_28.wav",
+    "actor": 4,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "audio_4_29": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_29.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_30": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_30.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_31": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_31.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_32": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_32.wav",
+    "actor": 4,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "audio_4_33": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_33.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_34": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_34.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_35": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_35.wav",
+    "actor": 4,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "audio_4_36": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_36.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_37": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_37.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_38": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_38.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_39": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_39.wav",
+    "actor": 4,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "audio_4_40": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_40.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_41": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_41.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_42": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_42.wav",
+    "actor": 4,
+    "emotion_code": "02",
+    "label_id": 1,
+    "label_name": "calm",
+    "split": "test"
+  },
+  "audio_4_43": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_43.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  },
+  "audio_4_44": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_44.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_45": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_45.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_46": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_46.wav",
+    "actor": 4,
+    "emotion_code": "03",
+    "label_id": 2,
+    "label_name": "happy",
+    "split": "test"
+  },
+  "audio_4_47": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_47.wav",
+    "actor": 4,
+    "emotion_code": "04",
+    "label_id": 3,
+    "label_name": "sad",
+    "split": "test"
+  },
+  "audio_4_48": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_48.wav",
+    "actor": 4,
+    "emotion_code": "05",
+    "label_id": 4,
+    "label_name": "angry",
+    "split": "test"
+  },
+  "audio_4_49": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_49.wav",
+    "actor": 4,
+    "emotion_code": "08",
+    "label_id": 7,
+    "label_name": "surprise",
+    "split": "test"
+  },
+  "audio_4_50": {
+    "wav": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/audio/audio_4_50.wav",
+    "actor": 4,
+    "emotion_code": "01",
+    "label_id": 0,
+    "label_name": "neutral",
+    "split": "test"
+  }
+}

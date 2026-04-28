@@ -1,0 +1,4 @@
+﻿Scenario category,Feature vs Early pattern,Feature vs Late pattern,Main interpretation
+Emotion-dominant,"Feature 36.1%, Fusion 33.3%, Tie 30.6%","Feature 30.6%, Fusion 25.0%, Tie 44.4%",mixed or close outcome
+Hybrid emotion-task,"Feature 43.4%, Fusion 24.1%, Tie 32.4%","Feature 39.3%, Fusion 35.9%, Tie 24.8%","feature system is stronger, especially against early fusion"
+Task-dominant,"Feature 36.8%, Fusion 52.6%, Tie 10.5%","Feature 31.6%, Fusion 52.6%, Tie 15.8%",fusion system is more competitive and often stronger by primary win rate

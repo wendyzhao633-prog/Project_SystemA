@@ -1,0 +1,90 @@
+PAIRWISE POST-HOC SCENARIO-WEIGHTED ANALYSIS
+Generated: 2026-04-08 18:55:20 UTC
+
+Primary overall result = original winner_overall from D1-D5.
+Secondary weighted result = scenario-aware weighting over D1-D5 winners.
+D6 remains separate and unweighted.
+
+early_vs_baseline
+A: early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+B: text-only baseline
+
+all (n=200)
+  primary overall: A 58.5% | B 17.0% | tie 24.5%
+  weighted overall: A 58.0% | B 27.0% | tie 15.0%
+  mean weighted score: A 0.5732 | B 0.4268 | margin A-B 0.1465
+  D6 mechanism: A 99.5% | B 0.0% | tie 0.5%
+
+task_dominant (n=19)
+  primary overall: A 47.4% | B 42.1% | tie 10.5%
+  weighted overall: A 42.1% | B 47.4% | tie 10.5%
+  mean weighted score: A 0.4868 | B 0.5132 | margin A-B -0.0263
+  D6 mechanism: A 94.7% | B 0.0% | tie 5.3%
+
+emotion_dominant (n=36)
+  primary overall: A 63.9% | B 11.1% | tie 25.0%
+  weighted overall: A 75.0% | B 11.1% | tie 13.9%
+  mean weighted score: A 0.5965 | B 0.4035 | margin A-B 0.1931
+  D6 mechanism: A 100.0% | B 0.0% | tie 0.0%
+
+hybrid_emotion_task (n=145)
+  primary overall: A 58.6% | B 15.2% | tie 26.2%
+  weighted overall: A 55.9% | B 28.3% | tie 15.9%
+  mean weighted score: A 0.5788 | B 0.4212 | margin A-B 0.1576
+  D6 mechanism: A 100.0% | B 0.0% | tie 0.0%
+
+early_vs_late
+A: early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+B: late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+
+all (n=200)
+  primary overall: A 29.5% | B 29.0% | tie 41.5%
+  weighted overall: A 29.5% | B 30.0% | tie 40.5%
+  mean weighted score: A 0.5035 | B 0.4965 | margin A-B 0.0070
+  D6 mechanism: A 6.0% | B 3.5% | tie 90.5%
+
+task_dominant (n=19)
+  primary overall: A 21.1% | B 42.1% | tie 36.8%
+  weighted overall: A 21.1% | B 42.1% | tie 36.8%
+  mean weighted score: A 0.4645 | B 0.5355 | margin A-B -0.0711
+  D6 mechanism: A 5.3% | B 0.0% | tie 94.7%
+
+emotion_dominant (n=36)
+  primary overall: A 27.8% | B 25.0% | tie 47.2%
+  weighted overall: A 27.8% | B 25.0% | tie 47.2%
+  mean weighted score: A 0.5139 | B 0.4861 | margin A-B 0.0278
+  D6 mechanism: A 5.6% | B 5.6% | tie 88.9%
+
+hybrid_emotion_task (n=145)
+  primary overall: A 31.0% | B 28.3% | tie 40.7%
+  weighted overall: A 31.0% | B 29.7% | tie 39.3%
+  mean weighted score: A 0.5060 | B 0.4940 | margin A-B 0.0121
+  D6 mechanism: A 6.2% | B 3.4% | tie 90.3%
+
+late_vs_baseline
+A: late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+B: text-only baseline
+
+all (n=200)
+  primary overall: A 61.5% | B 21.0% | tie 17.5%
+  weighted overall: A 60.5% | B 27.5% | tie 12.0%
+  mean weighted score: A 0.5766 | B 0.4234 | margin A-B 0.1532
+  D6 mechanism: A 97.0% | B 0.0% | tie 3.0%
+
+task_dominant (n=19)
+  primary overall: A 36.8% | B 31.6% | tie 31.6%
+  weighted overall: A 31.6% | B 47.4% | tie 21.1%
+  mean weighted score: A 0.4895 | B 0.5105 | margin A-B -0.0211
+  D6 mechanism: A 100.0% | B 0.0% | tie 0.0%
+
+emotion_dominant (n=36)
+  primary overall: A 66.7% | B 19.4% | tie 13.9%
+  weighted overall: A 75.0% | B 19.4% | tie 5.6%
+  mean weighted score: A 0.6007 | B 0.3993 | margin A-B 0.2014
+  D6 mechanism: A 94.4% | B 0.0% | tie 5.6%
+
+hybrid_emotion_task (n=145)
+  primary overall: A 63.4% | B 20.0% | tie 16.6%
+  weighted overall: A 60.7% | B 26.9% | tie 12.4%
+  mean weighted score: A 0.5821 | B 0.4179 | margin A-B 0.1641
+  D6 mechanism: A 97.2% | B 0.0% | tie 2.8%

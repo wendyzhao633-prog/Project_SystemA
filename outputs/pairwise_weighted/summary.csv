@@ -1,0 +1,13 @@
+﻿pair,scope,label_a,label_b,n,unweighted_a_win_rate,unweighted_b_win_rate,unweighted_tie_rate,weighted_a_win_rate,weighted_b_win_rate,weighted_tie_rate,mean_weighted_a,mean_weighted_b,mean_weighted_margin_a_minus_b,d6_a_win_rate,d6_b_win_rate,d6_tie_rate
+early_vs_baseline,all,early fusion (no PPG in classifier) + PPG in prompt,text-only baseline,50,28.0,8.0,64.0,28.0,12.0,60.0,0.543,0.457,0.086,94.0,0.0,6.0
+early_vs_baseline,emotion_dominant,early fusion (no PPG in classifier) + PPG in prompt,text-only baseline,8,0.0,12.5,87.5,0.0,12.5,87.5,0.4656,0.5344,-0.0688,75.0,0.0,25.0
+early_vs_baseline,hybrid_emotion_task,early fusion (no PPG in classifier) + PPG in prompt,text-only baseline,31,29.0,3.2,67.7,29.0,9.7,61.3,0.5476,0.4524,0.0952,100.0,0.0,0.0
+early_vs_baseline,task_dominant,early fusion (no PPG in classifier) + PPG in prompt,text-only baseline,11,45.5,18.2,36.4,45.5,18.2,36.4,0.5864,0.4136,0.1727,90.9,0.0,9.1
+early_vs_late,all,early fusion (no PPG in classifier) + PPG in prompt,late fusion (no PPG in classifier) + PPG in prompt,50,6.0,10.0,84.0,6.0,10.0,84.0,0.49,0.51,-0.02,0.0,2.0,98.0
+early_vs_late,emotion_dominant,early fusion (no PPG in classifier) + PPG in prompt,late fusion (no PPG in classifier) + PPG in prompt,8,0.0,12.5,87.5,0.0,12.5,87.5,0.4906,0.5094,-0.0188,0.0,0.0,100.0
+early_vs_late,hybrid_emotion_task,early fusion (no PPG in classifier) + PPG in prompt,late fusion (no PPG in classifier) + PPG in prompt,31,3.2,9.7,87.1,3.2,9.7,87.1,0.4806,0.5194,-0.0387,0.0,3.2,96.8
+early_vs_late,task_dominant,early fusion (no PPG in classifier) + PPG in prompt,late fusion (no PPG in classifier) + PPG in prompt,11,18.2,9.1,72.7,18.2,9.1,72.7,0.5159,0.4841,0.0318,0.0,0.0,100.0
+late_vs_baseline,all,late fusion (no PPG in classifier) + PPG in prompt,text-only baseline,50,38.0,4.0,58.0,40.0,8.0,52.0,0.577,0.423,0.154,94.0,0.0,6.0
+late_vs_baseline,emotion_dominant,late fusion (no PPG in classifier) + PPG in prompt,text-only baseline,8,25.0,0.0,75.0,37.5,0.0,62.5,0.5719,0.4281,0.1438,87.5,0.0,12.5
+late_vs_baseline,hybrid_emotion_task,late fusion (no PPG in classifier) + PPG in prompt,text-only baseline,31,51.6,3.2,45.2,51.6,6.5,41.9,0.6056,0.3944,0.2113,96.8,0.0,3.2
+late_vs_baseline,task_dominant,late fusion (no PPG in classifier) + PPG in prompt,text-only baseline,11,9.1,9.1,81.8,9.1,18.2,72.7,0.5,0.5,-0.0,90.9,0.0,9.1

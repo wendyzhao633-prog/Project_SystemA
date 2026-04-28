@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-04-07T18:25:48.630737+00:00",
+  "run_id": "20260407T182548Z",
+  "settings": {
+    "systems": [
+      "late"
+    ],
+    "labels_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/dataset_200_labeled.csv",
+    "ppg_root": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/ppg",
+    "llm_model": "gpt-5.4",
+    "prompt_strategy": "empathy_then_help",
+    "temperature": 0.2,
+    "max_tokens": 3000,
+    "reasoning_effort": "none",
+    "concurrency": 2,
+    "early_config": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/configs/early_fusion/early_fusion_3cnn_gated_custom.yaml",
+    "early_checkpoint": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/checkpoints/early_fusion/early_fusion_3cnn_gated_custom/best_model.pt",
+    "early_cache_enabled": false
+  },
+  "systems": {
+    "late": {
+      "system": "late",
+      "num_samples": 50,
+      "prediction_stage_sec": 928.4473886999767,
+      "llm_stage_sec": 536.0702754999511,
+      "total_end_to_end_sec": 1464.5176641999278,
+      "avg_sec_per_sample": 29.290353283998556,
+      "predictions_path": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/runtime_measurements/20260407T182548Z/late/predictions_test.jsonl",
+      "responses_path": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/runtime_measurements/20260407T182548Z/late/responses_test.jsonl",
+      "audio_weight": 0.87,
+      "video_weight": 0.13
+    }
+  }
+}

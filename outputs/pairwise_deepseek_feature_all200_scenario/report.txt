@@ -1,0 +1,62 @@
+PAIRWISE POST-HOC SCENARIO-WEIGHTED ANALYSIS
+Generated: 2026-04-13 17:21:33 UTC
+
+Primary overall result = original winner_overall from D1-D5.
+Secondary weighted result = scenario-aware weighting over D1-D5 winners.
+D6 remains separate and unweighted.
+
+feature_vs_early
+A: feature-based external system
+B: early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+
+all (n=200)
+  primary overall: A 41.5% | B 28.5% | tie 30.0%
+  weighted overall: A 44.5% | B 28.0% | tie 27.5%
+  mean weighted score: A 0.5239 | B 0.4761 | margin A-B 0.0478
+  D6 mechanism: A 0.0% | B 100.0% | tie 0.0%
+
+task_dominant (n=19)
+  primary overall: A 36.8% | B 52.6% | tie 10.5%
+  weighted overall: A 36.8% | B 52.6% | tie 10.5%
+  mean weighted score: A 0.5276 | B 0.4724 | margin A-B 0.0553
+  D6 mechanism: A 0.0% | B 100.0% | tie 0.0%
+
+emotion_dominant (n=36)
+  primary overall: A 36.1% | B 33.3% | tie 30.6%
+  weighted overall: A 33.3% | B 33.3% | tie 33.3%
+  mean weighted score: A 0.4458 | B 0.5542 | margin A-B -0.1083
+  D6 mechanism: A 0.0% | B 100.0% | tie 0.0%
+
+hybrid_emotion_task (n=145)
+  primary overall: A 43.4% | B 24.1% | tie 32.4%
+  weighted overall: A 48.3% | B 23.4% | tie 28.3%
+  mean weighted score: A 0.5428 | B 0.4572 | margin A-B 0.0855
+  D6 mechanism: A 0.0% | B 100.0% | tie 0.0%
+
+feature_vs_late
+A: feature-based external system
+B: late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+
+all (n=200)
+  primary overall: A 37.0% | B 35.5% | tie 27.5%
+  weighted overall: A 40.0% | B 34.5% | tie 25.5%
+  mean weighted score: A 0.5112 | B 0.4888 | margin A-B 0.0225
+  D6 mechanism: A 0.0% | B 99.0% | tie 1.0%
+
+task_dominant (n=19)
+  primary overall: A 31.6% | B 52.6% | tie 15.8%
+  weighted overall: A 42.1% | B 47.4% | tie 10.5%
+  mean weighted score: A 0.5184 | B 0.4816 | margin A-B 0.0368
+  D6 mechanism: A 0.0% | B 100.0% | tie 0.0%
+
+emotion_dominant (n=36)
+  primary overall: A 30.6% | B 25.0% | tie 44.4%
+  weighted overall: A 25.0% | B 27.8% | tie 47.2%
+  mean weighted score: A 0.4708 | B 0.5292 | margin A-B -0.0583
+  D6 mechanism: A 0.0% | B 100.0% | tie 0.0%
+
+hybrid_emotion_task (n=145)
+  primary overall: A 39.3% | B 35.9% | tie 24.8%
+  weighted overall: A 43.4% | B 34.5% | tie 22.1%
+  mean weighted score: A 0.5203 | B 0.4797 | margin A-B 0.0407
+  D6 mechanism: A 0.0% | B 98.6% | tie 1.4%

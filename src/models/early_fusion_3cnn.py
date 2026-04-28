@@ -20,6 +20,8 @@ class EarlyFusion3CNNConfig:
 
 
 class ModalityFusionGate(nn.Module):
+    """2-modality gating for audio and video feature maps."""
+
     def __init__(self, channels: int, *, hidden_dim: int, scale_floor: float) -> None:
         super().__init__()
         if hidden_dim <= 0:
@@ -50,30 +52,43 @@ class ModalityFusionGate(nn.Module):
 class EarlyFusion3CNN(nn.Module):
     def __init__(self, config: EarlyFusion3CNNConfig = EarlyFusion3CNNConfig()) -> None:
         super().__init__()
+        self.config = config
         self.audio_backbone = AudioFeatureBackbone()
         self.video_backbone = VideoFeatureBackbone()
+
+        audio_ch = self.audio_backbone.output_channels
+        video_ch = self.video_backbone.output_channels
+
+        fusion_in_channels = audio_ch + video_ch
         self.fusion_gate = (
             ModalityFusionGate(
-                self.audio_backbone.output_channels,
+                audio_ch,
                 hidden_dim=config.gating_hidden_dim,
                 scale_floor=config.gating_scale_floor,
             )
             if config.gating_enabled
             else None
         )
+
         self.fusion_backbone = nn.Sequential(
-            ConvBnRelu(256, 256, pool=False),
+            ConvBnRelu(fusion_in_channels, 256, pool=False),
             ConvBnRelu(256, 128, pool=False),
         )
         self.dropout = nn.Dropout(p=config.dropout)
         self.classifier = nn.Linear(128, config.num_classes)
 
-    def forward(self, audio_input: torch.Tensor, video_input: torch.Tensor) -> torch.Tensor:
+    def forward(
+        self,
+        audio_input: torch.Tensor,
+        video_input: torch.Tensor,
+    ) -> torch.Tensor:
         audio_map = F.adaptive_avg_pool2d(self.audio_backbone(audio_input), output_size=(8, 8))
         video_frame_maps = self.video_backbone(video_input)
         video_map = F.adaptive_avg_pool2d(video_frame_maps.mean(dim=1), output_size=(8, 8))
+
         if self.fusion_gate is not None:
             audio_map, video_map = self.fusion_gate(audio_map, video_map)
         fused_map = self.fusion_backbone(torch.cat([audio_map, video_map], dim=1))
+
         fused_vector = F.adaptive_avg_pool2d(fused_map, output_size=(1, 1)).flatten(1)
         return self.classifier(self.dropout(fused_vector))

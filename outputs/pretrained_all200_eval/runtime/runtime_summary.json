@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-04-08T18:51:22.934970+00:00",
+  "rows": [
+    {
+      "system": "early",
+      "num_samples": 200,
+      "classification_fusion_time_sec": 89.3916,
+      "llm_inference_time_sec": 4.2219,
+      "total_end_to_end_time_sec": 93.6135,
+      "avg_time_per_sample_sec": 0.4681
+    },
+    {
+      "system": "late",
+      "num_samples": 200,
+      "classification_fusion_time_sec": 3061.5096,
+      "llm_inference_time_sec": 0.3814,
+      "total_end_to_end_time_sec": 3061.891,
+      "avg_time_per_sample_sec": 15.3095
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+﻿prompt_strategy,D1_mean,D1_std,D1_count,D2_mean,D2_std,D2_count,D3_mean,D3_std,D3_count,D4_mean,D4_std,D4_count,D5_mean,D5_std,D5_count,D6_mean,D6_std,D6_count,overall_d1_d5_mean,overall_d1_d5_std,overall_d1_d5_count,weighted_overall_mean,weighted_overall_std,weighted_overall_count
+text_only_baseline,1.96,1.3395095051121189,50,2.02,1.4355543620952194,50,1.46,1.2650723944760263,50,1.48,1.3130428906372635,50,2.0,1.414213562373095,50,2.44,0.9071147352221454,50,19.6,31.92529545354152,50,1.763,1.2829657128731706,50

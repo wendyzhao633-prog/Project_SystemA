@@ -1,0 +1,41 @@
+{
+  "split": "test",
+  "mode": "embedding_mlp_ppg",
+  "loss": 3.673192443847656,
+  "accuracy": 0.3,
+  "macro_f1": 0.13656174334140436,
+  "uar": 0.17193223443223446,
+  "per_class_precision": {
+    "neutral": 0.0,
+    "calm": 1.0,
+    "happy": 0.6666666666666666,
+    "sad": 0.2608695652173913,
+    "angry": 0.0,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "per_class_recall": {
+    "neutral": 0.0,
+    "calm": 0.16666666666666666,
+    "happy": 0.2857142857142857,
+    "sad": 0.9230769230769231,
+    "angry": 0.0,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "per_class_f1": {
+    "neutral": 0.0,
+    "calm": 0.2857142857142857,
+    "happy": 0.4,
+    "sad": 0.4067796610169491,
+    "angry": 0.0,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "best_epoch": 5,
+  "checkpoint_path": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/checkpoints/late_fusion_custom/embedding_mlp_ppg/best_model.pt",
+  "labels_are_placeholder": false
+}

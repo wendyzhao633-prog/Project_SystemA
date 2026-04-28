@@ -1,0 +1,12 @@
+{
+  "mode": "weighted_prob_avg",
+  "audio_weight": 0.87,
+  "video_weight": 0.13,
+  "split_runtime_sec": {
+    "train": 0.040940599981695414,
+    "valid": 0.030793000012636185,
+    "test": 0.030828600050881505
+  },
+  "total_runtime_sec": 0.10487799998372793,
+  "generated_at": "2026-04-06 18:13:18"
+}

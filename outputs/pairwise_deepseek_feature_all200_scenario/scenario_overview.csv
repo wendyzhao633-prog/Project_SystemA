@@ -1,0 +1,7 @@
+﻿pair,scope,label_a,label_b,n,primary_better,unweighted_a_win_rate,unweighted_b_win_rate,unweighted_tie_rate,weighted_better,weighted_a_win_rate,weighted_b_win_rate,weighted_tie_rate,d6_better,d6_a_win_rate,d6_b_win_rate,d6_tie_rate,mean_weighted_margin_a_minus_b
+feature_vs_early,emotion_dominant,feature-based external system,"early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",36,A,36.1,33.3,30.6,tie,33.3,33.3,33.3,B,0.0,100.0,0.0,-0.1083
+feature_vs_early,hybrid_emotion_task,feature-based external system,"early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",145,A,43.4,24.1,32.4,A,48.3,23.4,28.3,B,0.0,100.0,0.0,0.0855
+feature_vs_early,task_dominant,feature-based external system,"early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",19,B,36.8,52.6,10.5,B,36.8,52.6,10.5,B,0.0,100.0,0.0,0.0553
+feature_vs_late,emotion_dominant,feature-based external system,"late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",36,A,30.6,25.0,44.4,B,25.0,27.8,47.2,B,0.0,100.0,0.0,-0.0583
+feature_vs_late,hybrid_emotion_task,feature-based external system,"late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",145,A,39.3,35.9,24.8,A,43.4,34.5,22.1,B,0.0,98.6,1.4,0.0407
+feature_vs_late,task_dominant,feature-based external system,"late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",19,B,31.6,52.6,15.8,B,42.1,47.4,10.5,B,0.0,100.0,0.0,0.0368

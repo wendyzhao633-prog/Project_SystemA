@@ -1,0 +1,3 @@
+﻿"system","num_samples","prediction_stage_sec","llm_stage_sec","total_end_to_end_sec","avg_sec_per_sample","source_summary"
+"early","50","29.131137900054455","498.20410210010596","527.3352400001604","10.546704800003209","outputs/runtime_measurements/20260407T180315Z/summary.json"
+"late","50","914.9438037001528","501.9391443999484","1416.8829481001012","28.337658962002024","outputs/runtime_measurements/20260407T185228Z/summary.json"

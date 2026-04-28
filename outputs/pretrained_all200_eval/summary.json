@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-04-08T18:55:20.986898+00:00",
+  "labels_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/dataset_200_labeled.csv",
+  "ppg_root": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/data/raw/custom/ppg",
+  "early": {
+    "system": "early",
+    "num_samples": 200,
+    "classification_fusion_time_sec": 89.3916,
+    "llm_inference_time_sec": 4.2219,
+    "total_end_to_end_time_sec": 93.6135,
+    "avg_time_per_sample_sec": 0.4681,
+    "predictions_jsonl": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/predictions/early_pretrained_all200.jsonl",
+    "predictions_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/predictions/early_pretrained_all200.csv",
+    "checkpoint_path": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/checkpoints/early_fusion/early_fusion_3cnn_gated/best_model.pt",
+    "config_path": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/configs/early_fusion/early_fusion_3cnn_gated.yaml",
+    "responses_jsonl": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/llm_responses/responses_early_pretrained_all200.jsonl",
+    "responses_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/llm_responses/responses_early_pretrained_all200.csv"
+  },
+  "late": {
+    "system": "late",
+    "num_samples": 200,
+    "classification_fusion_time_sec": 3061.5096,
+    "llm_inference_time_sec": 0.3814,
+    "total_end_to_end_time_sec": 3061.891,
+    "avg_time_per_sample_sec": 15.3095,
+    "predictions_jsonl": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/predictions/late_pretrained_all200.jsonl",
+    "predictions_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/predictions/late_pretrained_all200.csv",
+    "responses_jsonl": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/llm_responses/responses_late_pretrained_all200.jsonl",
+    "responses_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/llm_responses/responses_late_pretrained_all200.csv"
+  },
+  "baseline": {
+    "responses_jsonl": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/llm_responses/responses_baseline_pretrained_all200.jsonl",
+    "responses_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/llm_responses/responses_baseline_pretrained_all200.csv"
+  },
+  "runtime_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/runtime/runtime_summary.csv",
+  "runtime_json": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/runtime/runtime_summary.json",
+  "pairwise": {
+    "pairwise_dir": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/pairwise",
+    "summary_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/pairwise/summary.csv",
+    "report_txt": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/pairwise/report.txt",
+    "elapsed_sec": 35.07590029994026,
+    "pair_configs": [
+      {
+        "name": "early_vs_baseline",
+        "file_a": "C:\\Users\\User\\OneDrive\\\u684c\u9762\\Project_SystemA\\ravdess_avfusion\\outputs\\pretrained_all200_eval\\llm_responses\\responses_early_pretrained_all200.jsonl",
+        "file_b": "C:\\Users\\User\\OneDrive\\\u684c\u9762\\Project_SystemA\\ravdess_avfusion\\outputs\\pretrained_all200_eval\\llm_responses\\responses_baseline_pretrained_all200.jsonl",
+        "label_a": "early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",
+        "label_b": "text-only baseline",
+        "signal_a": true,
+        "signal_b": false
+      },
+      {
+        "name": "late_vs_baseline",
+        "file_a": "C:\\Users\\User\\OneDrive\\\u684c\u9762\\Project_SystemA\\ravdess_avfusion\\outputs\\pretrained_all200_eval\\llm_responses\\responses_late_pretrained_all200.jsonl",
+        "file_b": "C:\\Users\\User\\OneDrive\\\u684c\u9762\\Project_SystemA\\ravdess_avfusion\\outputs\\pretrained_all200_eval\\llm_responses\\responses_baseline_pretrained_all200.jsonl",
+        "label_a": "late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",
+        "label_b": "text-only baseline",
+        "signal_a": true,
+        "signal_b": false
+      },
+      {
+        "name": "early_vs_late",
+        "file_a": "C:\\Users\\User\\OneDrive\\\u684c\u9762\\Project_SystemA\\ravdess_avfusion\\outputs\\pretrained_all200_eval\\llm_responses\\responses_early_pretrained_all200.jsonl",
+        "file_b": "C:\\Users\\User\\OneDrive\\\u684c\u9762\\Project_SystemA\\ravdess_avfusion\\outputs\\pretrained_all200_eval\\llm_responses\\responses_late_pretrained_all200.jsonl",
+        "label_a": "early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",
+        "label_b": "late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt",
+        "signal_a": true,
+        "signal_b": true
+      }
+    ]
+  },
+  "weighted": {
+    "weighted_dir": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/pairwise_weighted",
+    "summary_csv": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/pairwise_weighted/summary.csv",
+    "report_txt": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/pretrained_all200_eval/pairwise_weighted/report.txt",
+    "elapsed_sec": 0.3519666001666337
+  }
+}

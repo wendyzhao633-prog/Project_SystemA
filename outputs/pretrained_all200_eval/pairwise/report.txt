@@ -1,0 +1,44 @@
+PAIRWISE JUDGE SUMMARY
+Generated: 2026-04-08 18:55:20 UTC
+
+early_vs_baseline
+A: early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+B: text-only baseline
+n: 200
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 33.5% | 6.0% | 60.5% | 4.942 | 4.745
+Emotion-to-Response Strategy Fit | 37.0% | 4.5% | 58.5% | 4.948 | 4.675
+Task Usefulness & Correctness | 27.0% | 34.5% | 38.5% | 4.698 | 4.670
+Clarity & Cognitive Load Fit | 35.5% | 3.0% | 61.5% | 4.985 | 4.770
+Tone Safety, Respect & Risk Calibration | 1.0% | 1.0% | 98.0% | 4.995 | 4.992
+Emotion Signal Utilization | 99.5% | 0.0% | 0.5% | 3.990 | 2.612
+Overall (D1-D5 only) | 58.5% | 17.0% | 24.5% | 97.838 | 94.262
+
+early_vs_late
+A: early fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+B: late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+n: 200
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 6.5% | 3.0% | 90.5% | 4.955 | 4.922
+Emotion-to-Response Strategy Fit | 6.0% | 7.0% | 87.0% | 4.928 | 4.925
+Task Usefulness & Correctness | 25.0% | 25.0% | 50.0% | 4.745 | 4.735
+Clarity & Cognitive Load Fit | 3.0% | 5.0% | 92.0% | 4.972 | 4.982
+Tone Safety, Respect & Risk Calibration | 4.0% | 1.0% | 95.0% | 4.995 | 4.975
+Emotion Signal Utilization | 6.0% | 3.5% | 90.5% | 3.822 | 3.802
+Overall (D1-D5 only) | 29.5% | 29.0% | 41.5% | 97.975 | 97.700
+
+late_vs_baseline
+A: late fusion (RAVDESS-pretrained, inference-only) + 5-feature PPG in prompt
+B: text-only baseline
+n: 200
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 40.0% | 7.0% | 53.0% | 4.915 | 4.655
+Emotion-to-Response Strategy Fit | 42.0% | 6.5% | 51.5% | 4.912 | 4.610
+Task Usefulness & Correctness | 23.0% | 34.5% | 42.5% | 4.720 | 4.692
+Clarity & Cognitive Load Fit | 30.5% | 1.0% | 68.5% | 4.995 | 4.810
+Tone Safety, Respect & Risk Calibration | 1.5% | 1.5% | 97.0% | 4.990 | 4.990
+Emotion Signal Utilization | 97.0% | 0.0% | 3.0% | 3.805 | 2.532
+Overall (D1-D5 only) | 61.5% | 21.0% | 17.5% | 97.662 | 93.788

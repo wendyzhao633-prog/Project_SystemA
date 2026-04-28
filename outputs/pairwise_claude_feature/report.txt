@@ -1,0 +1,30 @@
+PAIRWISE JUDGE SUMMARY
+Generated: 2026-04-08 14:56:40 UTC
+
+feature_vs_early
+A: feature-based external system
+B: early fusion (no PPG in classifier) + PPG in prompt
+n: 50
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 0.0% | 48.0% | 52.0% | 4.020 | 4.400
+Emotion-to-Response Strategy Fit | 0.0% | 52.0% | 48.0% | 4.050 | 4.460
+Task Usefulness & Correctness | 18.0% | 46.0% | 36.0% | 4.660 | 4.810
+Clarity & Cognitive Load Fit | 22.0% | 12.0% | 66.0% | 4.460 | 4.360
+Tone Safety, Respect & Risk Calibration | 0.0% | 10.0% | 90.0% | 4.950 | 5.000
+Emotion Signal Utilization | 0.0% | 100.0% | 0.0% | 2.280 | 3.740
+Overall (D1-D5 only) | 16.0% | 66.0% | 18.0% | 85.700 | 90.150
+
+feature_vs_late
+A: feature-based external system
+B: late fusion (no PPG in classifier) + PPG in prompt
+n: 50
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 0.0% | 70.0% | 30.0% | 3.860 | 4.370
+Emotion-to-Response Strategy Fit | 0.0% | 70.0% | 30.0% | 3.930 | 4.480
+Task Usefulness & Correctness | 22.0% | 50.0% | 28.0% | 4.660 | 4.800
+Clarity & Cognitive Load Fit | 36.0% | 8.0% | 56.0% | 4.520 | 4.230
+Tone Safety, Respect & Risk Calibration | 0.0% | 20.0% | 80.0% | 4.900 | 5.000
+Emotion Signal Utilization | 0.0% | 100.0% | 0.0% | 2.240 | 3.830
+Overall (D1-D5 only) | 22.0% | 70.0% | 8.0% | 84.350 | 89.400

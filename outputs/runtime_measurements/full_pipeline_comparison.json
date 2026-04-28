@@ -1,0 +1,20 @@
+﻿[
+    {
+        "system":  "early",
+        "num_samples":  50,
+        "prediction_stage_sec":  29.131137900054455,
+        "llm_stage_sec":  498.20410210010596,
+        "total_end_to_end_sec":  527.3352400001604,
+        "avg_sec_per_sample":  10.546704800003209,
+        "source_summary":  "outputs/runtime_measurements/20260407T180315Z/summary.json"
+    },
+    {
+        "system":  "late",
+        "num_samples":  50,
+        "prediction_stage_sec":  914.9438037001528,
+        "llm_stage_sec":  501.9391443999484,
+        "total_end_to_end_sec":  1416.8829481001012,
+        "avg_sec_per_sample":  28.337658962002024,
+        "source_summary":  "outputs/runtime_measurements/20260407T185228Z/summary.json"
+    }
+]

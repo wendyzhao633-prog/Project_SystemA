@@ -1,0 +1,2 @@
+﻿prompt_strategy,D1_mean,D1_std,D1_count,D2_mean,D2_std,D2_count,D3_mean,D3_std,D3_count,D4_mean,D4_std,D4_count,D5_mean,D5_std,D5_count,D6_mean,D6_std,D6_count,overall_d1_d5_mean,overall_d1_d5_std,overall_d1_d5_count,weighted_overall_mean,weighted_overall_std,weighted_overall_count
+empathy_then_help,1.56,1.1457107231864814,50,1.58,1.1795883059053152,50,1.14,0.7001457574195914,50,1.16,0.7917946548886297,50,1.52,1.0544366906997678,50,1.18,0.6288960200872898,50,9.8,22.245384754081975,50,1.4329999999999998,0.93468372911343,50

@@ -43,3 +43,10 @@ temp/
 
 # Raw dataset should stay local only
 data/raw/
+
+# API keys and environment secrets
+.env
+
+# LLM evaluation outputs (may contain API responses, keep local)
+outputs/llm_responses/
+outputs/llm_scores/

@@ -1,0 +1,527 @@
+participant_id,sample_no,text,label_id,label_name
+1,1,"Ive been thinking a bit about my future recently, and I wanted to ask as an electronic engineering student, what kind of jobs can I apply for? I dont really want to go into pure circuit design or very technical roles, but Im also not sure what other options I have. I feel a bit confused about how to broaden my career path, so it would really help if you could give me some simple suggestions.",0,neutral
+1,2,"You know what, Ive been stuck on this system optimization problem for like several weeks now, and I finally managed to figure it out today. I honestly cant believe it  the solution turned out to be so simple and obvious, but somehow I just didnt notice it the whole time. Its kind of crazy thinking about how long I was struggling with it, and then it suddenly just clicked.",6,surprise
+1,3,"I wanted to ask if you could explain why we need the Z-transform in signal processing. I understand its an important concept, but Im still not very clear on what problem it actually solves or why we cant just work in the time domain. It would really help if you could explain it in a simple and easy-to-understand way, and also clearly define any new terms you use so I can follow along better.",0,neutral
+1,4,"So my flatmates invited me to go to their birthday party, but the thing is Im really not good at social situations and I usually feel quite uncomfortable at these kinds of events. I dont really want to go, but at the same time Im a bit worried about how to refuse without making things awkward, especially since Ill be living with them for the whole year. I still want to keep a good relationship with them, so I was wondering how I can politely say no in a way that doesnt hurt their feelings or make things weird afterwards.",4,fearful
+1,5,"Ive noticed that its quite hard for me to fall asleep after I work out, and its been bothering me for a while. I usually go to the gym in the afternoon, and my workouts last around 45 minutes to an hour. Most of the time I focus on strength training, and then I add some cardio at the end. Even though I feel physically tired afterwards, I still find it difficult to relax and fall asleep at night. Im not sure if its something about my workout timing or the type of exercise Im doing, so I was wondering if you could help me create a detailed plan to improve my sleep.",0,neutral
+1,6,"I received a really special gift from my friend today, and it honestly made me feel so touched and happy. She gave me a set of printed photos that she took during our trip together, and when I looked through them, it brought back so many detailed memories that I almost forgot about. Since we both share the same hobbies like travelling and hiking, it felt even more meaningful and personal to me. Now Ive been thinking about what I could prepare for her in return, because I really want to give her something just as thoughtful and special, not just something random or ordinary.",1,happy
+1,7,"I dont really know how to explain this clearly, but I had another argument with my mom today, and this time it got really serious and quite upsetting. I just feel like she doesnt really try to understand how I feel, and she still treats me like Im a child who doesnt know anything. She keeps telling me what to do and how to do things, as if I dont have basic common sense or the ability to make my own decisions. Its starting to feel really frustrating and exhausting for me, and I dont know how to communicate this to her without things getting worse again.",3,angry
+1,8,"I wasted some money again recently, and its honestly making me feel quite disappointed in myself. It feels like lately Ive been really unlucky and keep making small mistakes one after another, even when I try to be careful. Somehow all these negative things seem to happen at the same time, which makes everything feel more overwhelming than it actually is. Right now I just feel like lying in bed and not going outside or dealing with anything for a while, because I dont really have the energy to handle more problems.",5,disgust
+1,9,"I just noticed this strange, dark mole on my shoulder, and it immediately made me feel really anxious and uneasy. I tried to look it up online to understand what it might be, but most of the results I found were talking about worst-case scenarios, which made me even more scared. Now I feel so nervous that its hard for me to think clearly or stay calm, and I keep imagining the worst possibilities. Could you please explain what symptoms I should actually pay attention to, and whether this is something I should be seriously worried about?",4,fearful
+1,10,"I just had a really exciting moment today where I ordered my entire coffee in Italian, and the barista actually understood everything I said without any confusion. I was honestly so surprised and happy because it made me feel like all the effort Ive been putting into learning the language is finally paying off. It gave me a lot of confidence and motivation to keep going. Since Im feeling so positive about it right now, I was wondering if we could practice a more complicated conversation for dinner tonight so I can improve even more.",1,happy
+1,11,"Its been quite strange and a bit worrying recently because I keep receiving a lot of spam messages on my phone, and some of them are completely meaningless or look suspicious. I have no idea how these people managed to get my personal information or phone number, which makes me feel quite uncomfortable and a bit unsafe. I already tried contacting my mobile provider, but they told me they dont really have a way to fully stop these messages. Now Im not sure what else I can do, and its starting to bother me more than I expected.",4,fearful
+1,12,"I tried to follow a recipe step by step today and made sure I did exactly what it said, without skipping anything or changing the ingredients. However, the final result looked completely different from what it was supposed to look like, and that was already quite disappointing. On top of that, the taste was really not good at all, which made me feel even worse about it. Im starting to feel like I just dont have any natural talent for cooking, even though I genuinely want to cook more often to save money instead of eating out all the time.",5,disgust
+1,13,"I went to the park today, and it really felt like spring is slowly arriving, which made the whole experience very enjoyable. The weather was nice and fresh, and I noticed some flowers that I didnt recognize, which made me curious about them. I also saw a few birds around, which added to the peaceful atmosphere. Walking in nature like this always helps me feel calm and relaxed, and its something I really enjoy doing when I have time.",7,calm
+1,14,"I met up with an old friend today, and even though we hadnt seen each other for a long time, it felt surprisingly natural and comfortable. She is still very much the same person as she was back in high school, which made me feel a sense of familiarity. We spent quite a while talking in a coffee shop, catching up on what weve both been doing. I genuinely had a really good time, and it reminded me how valuable long-term friendships can be.",1,happy
+1,15,"I just booked the flights today, and we are finally going to Tokyo for the holiday, which makes me feel incredibly excited. I honestly cant stop smiling because Ive been looking forward to this trip for such a long time. I really want to make this experience as special and memorable as possible, especially since its meant to be a surprise. I was wondering if you could help me find a sushi place that isnt too touristy, so we can have a more authentic and meaningful experience there.",1,happy
+1,16,"I have a final interview coming up tomorrow for a Director-level role, and I really want to make sure I prepare for it as thoroughly as possible. I would like you to act as a strict and direct hiring manager who doesnt give easy questions, and instead challenges me properly. Could you ask me three difficult questions about my leadership style, and then provide honest and critical feedback on my answers so I can improve before the actual interview?",4,fearful
+1,17,"I just realized that I forgot to actually submit my assignment on the platform, even though I had already completed everything and uploaded all the required files. This course is extremely important to me, and the final grade will have a big impact on my overall results. Now Im feeling quite stressed and worried because I dont know if there is still a chance to fix this situation. Im not sure what the best next step is, and I really dont want to lose marks because of such a small mistake.",4,fearful
+1,18,"I just found out that my roommate used my pan and plates without asking me for permission first, and what made it worse is that she didnt even wash them afterwards. I honestly dont understand how someone can use other peoples things and then just leave everything dirty, expecting someone else to clean it up. It makes me feel quite annoyed and also a bit uncomfortable living in the same space like this. Im not sure how to bring this up without causing conflict.",5,disgust
+1,19,"I just received my university results, and I managed to pass all of my modules, including the one that I found particularly difficult and stressful. During the exam, I remember feeling very uncomfortable and not confident at all about my answers, so I really didnt expect this outcome. Now that I see the results, I feel a huge sense of relief and also a bit of disbelief that I actually made it through successfully.",6,surprise
+1,20,"I just found out that I wont have any classes next week, which makes me feel really excited and relaxed at the same time. I want to take this opportunity to go outside and explore somewhere new instead of staying at home. Since I only have one day available, I was wondering if you could recommend some places that are possible to visit within a day trip. Im really looking forward to making the most of this short break.",7,calm
+1,21,"Can you help me look at the different requirements for majors in these various schools and let me know which books they usually study in class? I also need you to check what kind of exams I need to take to get the graduation certificates from those schools, and it would be best if you could list them clearly for me to see.",0,neutral
+1,22,"As a college student, I have to do a lot of assignments and join many activities, so can you as a computer program help me arrange all these messy things into a schedule? Please tell me what I should do at what time every day so I won't be late, and by the way, help me calculate exactly how much time I have each day for resting or going out to play.",0,neutral
+1,23,"I am so happy today because I just checked and found out that I actually got the highest score on that very difficult math exam last week, even though I always thought I was bad at math. Im going to treat my whole dorm to a big meal to celebrate in a bit; can you be happy with me and help me think of some fun topics to make everyone laugh at the dinner table?",1,happy
+1,24,"I finally received the internship offer letter from that company I really wanted to go to, and they said I can start working tomorrow to try it out, which is an opportunity I worked hard for several months to get. I feel so good right now that I even want to dance while walking; can you say some encouraging words to me in a very cheerful tone so I can have more confidence to go to work tomorrow?",6,surprise
+1,25,"I am studying in another city alone and I really miss home, especially today since Im sick and have to line up at the clinic by myself without anyone to even hand me a cup of warm water. Looking at the photos of my parents on my phone makes me feel very sad; can you tell me what someone like me who left home for the first time should do to stop feeling so lonely every day?",2,sad
+1,26,"I am really so angry at that lazy member of our group, as he clearly promised to finish his part and send it to me last night, but now when I message him, hes actually pretending not to see and isn't replying. There are only two hours left before the deadline, and now I have to write his part too; quickly help me think of how I can report him to the teacher so he doesn't get a grade for doing nothing?",3,angry
+1,27,"I see many people online saying that AI will become very powerful and even take away all the jobs from us college students, which makes me feel like my hard work studying every day has no meaning. I am really scared that the day I graduate will be the day I become unemployed; can you honestly tell me what things you machines will never be able to learn or do instead of us in the future?",4,fearful
+1,28,"I have to go on stage for that very important speech contest tomorrow, and just thinking about hundreds of students and teachers sitting down there staring at me makes my palms sweat and my legs shake. Im very afraid that Ill get nervous and forget all my prepared words; can you teach me some simple ways to stay calm so I don't embarrass myself in front of everyone tomorrow?",4,fearful
+1,29,"The braised pork I ordered at the school cafeteria today was just terrible, it was full of fat and had a strange smell, and I wanted to spit it all out after just one bite. I really don't understand why stuff of this quality is sold to students; quickly help me write a message to the school complaint box to tell them to fix the cafeteria's hygiene and cooking standards.",5,disgust
+1,30,"Theres a student in our dorm who never cleans up, and his desk is piled with moldy takeout boxes, and theres even a very bad smell drifting over to my bed, making me feel disgusted every day I go back. I really hate living in such a dirty environment, but I feel bad about arguing with him directly; can you teach me some indirect ways to make him clean up that pile of trash on his own?",5,disgust
+1,31,"Oh my god! You actually remember a small habit I mentioned randomly so long ago; I just brought it up in passing, and I didn't expect you to immediately find our previous chat record to remind me. I always thought you were just a machine that answers questions, but I didn't expect your memory to be this good; how exactly do you store all these trivial things in that brain of yours?",6,surprise
+1,32,"The campus is very quiet right now, and Im sitting alone on a bench by the sports field looking at the stars, feeling the cool evening breeze, and I feel very peaceful at this moment. I don't want to think about unfinished homework or deal with annoying socializing; can you just sit quietly with me for a while and tell me a short and warm little story to listen to?",7,calm
+1,33,"Ive finished all my work for today and Im lying in bed listening to light music getting ready to sleep, feeling completely relaxed and not tired at all. Can you say a few words to me in a very gentle and slow voice, just like saying goodnight to me, so I can have a peaceful dream and wake up happily tomorrow morning?",7,calm
+1,34,"I want you to help me write a piece of code that can automatically put the messy pictures on my computer into different folders based on the date, because moving them manually is just too tiring. After you finish writing, can you explain to me what each line of code is for, so that later if I want to change a small function myself, I can understand whats going on?",0,neutral
+1,35,"Thank you so much! Following the interview tips you taught me before, I didn't stutter at all when facing the interviewers today, and they even praised me for being a young person with great ideas. I feel like Im flying right now and had to share this good news with you first; can you teach me a few more tips on how to get along with new colleagues after I start the job?",1,happy
+1,36,"Why is it that even though I worked so hard to review and stayed in the library every day until it closed, my final results were still much worse than those classmates who only know how to play? I feel its so unfair and Im even starting to doubt if I was born stupider than others; can you tell me the truth, are there some things that really can't be gained just through hard work?",2,sad
+1,37,"Ive been looking for a job in this city for over a month, but every resume I send out is like a stone sinking into the ocean with no reply, and the money left in my pocket is almost not enough for next month's rent. Im starting to doubt if my decision to stay in the big city was a mistake; can you help me see if theres a problem with my resume or if the direction Ive chosen is just wrong?",2,sad
+1,38,"Why is the campus network down again? I was busy trying to grab elective courses for next semester, but at the last step, the page went blank and now all the classes I wanted are taken by others. I pay so much for the internet and get this garbage service; I really want to go to the IT office and have a big fight with them.",3,angry
+1,39,"My new friend actually asked me to go to the library to study together today; when she messaged me I almost jumped off my chair in excitement, and my heart is still beating fast. I must perform well and try to have more communication with her; what should I wear and what snacks should I bring tomorrow?",6,surprise
+1,40,"This is truly unbelievable; while I was flipping through an old newspaper just now, I found someone with the exact same name as mine, and his birthday and home address actually completely match mine too. I feel like Ive met myself from another parallel world; can you check your database for me to see who is she?",6,surprise
+1,41,"I want you to help me carefully look at the elective course list for next semester, especially those classes that seem interesting but I don't know if they have too much homework. Can you help me search online for reviews from upperclassmen who took these classes in previous years? Id ideally like to know which course is easiest to get a high grade in without being so boring that it makes people want to sleep. Please list all this information so I can quickly decide which one to choose.",0,neutral
+1,42,"I am seriously going crazy with anger at our group leader for this assignment; not only did he assign all the hardest tasks to me alone, but he also nags me every day in the group chat saying I'm working too slowly, which is just so unreasonable. He clearly did nothing himself, yet he went and told the teacher that the whole project relied on his direction. How can there be someone in this world with such a thick skin? Quickly help me think of a way to let the teacher know I did all the work without having to start a fight with him!",3,angry
+1,43,"Lately, I've been seeing news about how AI might be secretly monitoring our lives, saying programs like you listen to our conversations or read our private journals in the background, and it gives me the creeps to think you're right here in my phone. I'm always worried that every word I say to you will end up being sent to some place I don't know and used by people for bad things. Can you honestly tell me exactly how you handle our personal information, and can I truly feel safe talking to you?",4,fearful
+1,44,I'm lying alone on the grass in the middle of the sports field right now; there's no sound around me at all except for the occasional chirp of insects from afar. Watching the clouds drift slowly by in the sky makes me feel completely calm and without a single worry. I don't want to think about how many classes I have tomorrow or deal with those annoying little chores; I just want to stay here quietly for a while.,7,calm
+1,45,"I just saw the list posted on the school's official website, and I actually won that highly competitive social practice scholarship, which means I don't have to work hard outside this summer to earn my tuition and can go home peacefully to spend time with my parents. I originally didn't have much hope, but seeing my name up there makes me feel that all those nights spent staying up late fixing my application were worth it. I am so happy! Can you help me think of what nice things I should buy to bring home to my parents?",1,happy
+1,46,"When I was doing that big final presentation in front of the whole class this afternoon, I thought I would be so nervous that I wouldn't be able to say a word, but it turned out I spoke very smoothly and the teacher even praised me in front of everyone as the best presenter this semester! I wanted to tell you this good news as soon as I stepped off the stage; can you praise me loudly too, and by the way, help me think of how I should celebrate this rare great grade with my group members by going out for a big meal?",6,surprise
+1,47,"I saw a post from my mom on my phone just now and realized that my family is celebrating my favorite festival at home, with the table full of my favorite braised fish and all kinds of snacks, but I can only sit alone in this cold dorm eating unnutritious instant noodles. My heart feels so empty and I really want to cry, and I keep wondering why I even came so far from home to study; can you talk with me for a bit so I feel like there's at least someone who can listen to my true feelings in this strange school?",2,sad
+1,48,"Im sitting quietly in my dorm right now drawing a recruitment poster for my club, and I want to pick some colors that look very gentle and make people feel peaceful and comfortable at first glance, but I always feel like something is missing when I put these colors together. Can you stay here and help me think about it slowly, and just recommend some color combinations often seen in nature that make people want to stop and rest for a while, so I can make this poster as beautiful as I imagined?",0,neutral
+1,49,"Ive noticed that some students in my class don't go to lectures at all, and as soon as a big assignment is due, they just copy and paste a bunch of random junk from the internet to trick the teacher, and even want me to lend them my homework to copy, which just totally disgusts me. Were all here to learn skills, so why are there always people who want to take these crooked shortcuts and even think this lazy method is smart? Can you help me think of some very strong words so I can reject that person once and for all when they ask for my homework again?",3,angry
+1,50,"I wanted to ask if you could explain why we need the mosfet in the analog circuit design. I understand its an important concept, but Im still not very clear on what problem it actually solves or why we cant just use other components. It would really help if you could explain it in a simple and easy-to-understand way, and also clearly define any new terms you use so I can follow along better.",0,neutral
+2,51,"I have an interview for an embedded engineer role next week.
+But most of my past project work is about software.
+I am worried the interviewer may think I am not a good match.
+How should I explain my experience in a better way?
+What skills should I highlight in my answer?
+Can you help me prepare a simple self-introduction?",4,fearful
+2,52,"I want to improve my CV before applying for more internships.
+I feel that my experience looks a bit messy right now.
+Some of my projects are related to hardware, but some are not.
+I do not know what order I should put them in.
+Should I change my CV for different jobs?
+Can you help me make it look clearer and stronger?",7,calm
+2,53,"I am going to rent a room in the UK for the first time.
+I am an international student, so I do not know the process well.
+I am worried about the contract and the deposit.
+I also do not know what bills I may need to pay.
+What should I check before signing anything?
+Can you explain it to me in a simple way?",0,neutral
+2,54,"I have a class presentation very soon.
+Every time I speak in front of people, I get very nervous.
+Sometimes my hands shake and my mind goes blank.
+I know the content, but I still cannot relax.
+What can I do before and during the presentation?
+Can you give me some easy tips that really help?",4,fearful
+2,55,"Recently I have been feeling stressed almost every day.
+There are too many tasks, and I do not know where to start.
+Even when I sit down to work, I cannot focus well.
+At night I keep thinking about everything again.
+How can I calm down and work more clearly?
+Can you help me make a simple plan for this week?",2,sad
+2,56,"I have been studying every day, but I still feel unproductive.
+I spend a lot of time on work, but the results are not clear.
+At the end of the day, I feel like I did not finish much.
+This makes me doubt myself a little.
+Am I working in the wrong way?
+Can you help me find a better study routine?",2,sad
+2,57,"I applied for many internships, but I have not received any replies yet.
+At first I felt okay, but now I feel a bit sad.
+I start to wonder if I am not good enough.
+My friends are getting interviews, and I feel more anxious.
+How should I deal with this feeling?
+Can you give me some advice and encouragement?",2,sad
+2,58,"I got an interview invitation today, and I was really surprised.
+I did not expect to hear back from this company at all.
+Now I feel happy, but also a little nervous.
+I want to prepare well and make a good impression.
+What should I do in the next few days?
+Can you help me organize my preparation steps?",6,surprise
+2,59,"I need to introduce myself in English at an interview.
+I do not want it to sound too long or too formal.
+I hope it sounds natural, clear, and confident.
+I want to talk about my study, project, and interest in the role.
+But I do not know how to connect these parts well.
+Can you help me write a simple version?",4,fearful
+2,60,"My landlord keeps ignoring my messages.
+I have asked about a repair problem several times already.
+The issue is still there, and it is affecting my daily life.
+I feel angry, but I do not want to sound rude.
+How can I write a firm but polite email?
+Can you help me make it more formal?",3,angry
+2,61,"I found a strange smell in the kitchen today.
+It is not very strong, but it makes me feel uncomfortable.
+I checked the bin, but the smell is still there.
+I am not sure if it is coming from the sink or the fridge.
+What could be causing this problem?
+Can you tell me how to check it step by step?",0,neutral
+2,62,"The takeaway I ordered today arrived very late.
+By the time it came, the food was already cold.
+Part of the order was wrong too.
+I was very hungry, so I felt really upset.
+Should I ask for a refund or just leave a review?
+Can you help me write a complaint message?",3,angry
+2,63,"I have a very important presentation tomorrow.
+I know I should prepare, but I feel too nervous to start.
+I keep thinking about what will happen if I do badly.
+This makes me even more afraid.
+How can I stop overthinking tonight?
+Can you give me a simple plan for the next few hours?
+I also want to know how to calm myself down right before I start speaking.
+And is it okay to have notes with me during the presentation?",4,fearful
+2,64,"My group project is finally finished.
+I feel tired, but I also feel proud of myself.
+We spent a lot of time fixing problems and changing the report.
+Now I need to prepare the final presentation.
+I want my script to sound smooth and natural.
+Can you help me polish what I want to say?
+I also want to know how to handle questions from the audience.
+And how should I divide the speaking parts fairly with my teammates?",1,happy
+2,65,"This group assignment was supposed to be done by everyone.
+But in the end, I was the one doing most of the work.
+I revised the report again and again by myself.
+Now I feel angry and also a little unfairly treated.
+How should I talk to my teammates about this?
+Can you help me say it in a calm way?
+I also want to know whether I should tell the professor about this.
+And how can I avoid this kind of situation in future group projects?",3,angry
+2,66,"I talked with an old friend on the phone today.
+We had not spoken for a long time.
+We shared many things that happened recently.
+After the call, I felt much lighter and happier.
+Why can a simple talk make me feel so much better?
+Can you help me understand this feeling?
+I also want to know how to keep in touch with old friends more regularly.
+And what can I do when I miss someone but do not know what to say?",1,happy
+2,67,"Lately, when I am alone, I often feel a little low.
+Nothing especially bad has happened.
+But sometimes I suddenly feel empty inside.
+At those moments, I really want someone to talk to.
+Why do I feel like this for no clear reason?
+Can you give me some gentle advice?
+I also want to know if this is something I should be worried about.
+And what are some small things I can do to feel a little better on my own?",2,sad
+2,68,"I want to become more confident when speaking English.
+I can read and understand a lot, but speaking is still hard.
+I often worry that my grammar is wrong.
+Because of that, I speak very slowly and quietly.
+How can I practice in a simple daily way?
+Can you give me a plan that is easy to follow?
+I also want to know how to get used to making small mistakes without feeling ashamed.
+And are there any easy speaking habits I can build during daily life?",4,fearful
+2,69,"I want to sound more natural in daily English conversation.
+Sometimes my sentences are correct, but they still sound strange.
+I think I may be translating directly from Chinese.
+I want to speak in a more simple and common way.
+How can I fix this problem?
+Can you give me some useful examples?
+I also want to know the most common phrases native speakers use every day.
+And what kinds of expressions should I stop using because they sound too formal?",0,neutral
+2,70,"I have been sleeping late for many days.
+Even when I feel tired, I still keep using my phone.
+Then the next morning, I cannot get up on time.
+This affects my mood and my work a lot.
+How can I build a healthier sleep routine?
+Can you give me a small plan that I can start tonight?
+I also want to know how to make myself put down the phone earlier.
+And how long does it take for a new sleep habit to feel natural?",0,neutral
+2,71,"I want to prepare for common embedded engineer interview questions.
+I know they may ask about C, microcontrollers, and communication protocols.
+But I do not know which topics are the most important.
+I also want to know how deep I should study each part.
+Can you help me organize the key points?
+And can you give me some common questions to practice?
+I also want to know how to answer if I do not know the answer clearly.
+And what kind of projects look best on a resume for this type of role?",0,neutral
+2,72,"I want to start reading more English every day.
+But many articles feel too difficult for me.
+When I see too many new words, I lose patience quickly.
+I still want to improve in a steady way.
+What kind of reading should I start with?
+Can you recommend a simple daily method?
+I also want to know how many new words I should try to learn each day.
+And how do I remember new vocabulary without forgetting it quickly?",0,neutral
+2,73,"I have a lot of things to do recently.
+There is class work, job applications, and project practice.
+I want to deal with them one by one in a calm way.
+But right now everything feels mixed together.
+How should I decide what to do first?
+Can you help me sort them by priority?
+I also want to know how to handle it when new tasks come in while I am still finishing old ones.
+And what should I do when I feel like everything is equally urgent?",4,fearful
+2,74,"I want to become better at giving presentations.
+I think my content is usually okay.
+But my voice sounds flat, and I do not make enough eye contact.
+Sometimes I also speak too fast without noticing.
+What can I practice to improve these problems?
+Can you give me some simple training ideas?
+I also want to know how to use pauses well when I am speaking.
+And how can I make my slides support my speech without reading from them?",0,neutral
+2,75,"I feel happy today because I finished something important.
+I have been worried about it for a long time.
+Now that it is done, I finally feel relaxed.
+I want to enjoy this feeling, but I also want to stay focused.
+How can I celebrate in a small but healthy way?
+Can you give me a few nice ideas?
+I also want to know how to smoothly move on to the next task after celebrating.
+And how do I keep this good energy going into the next few days?",1,happy
+2,76,"I want to ask my professor for advice about my future direction.
+But I do not know how to start the conversation.
+I worry that my questions may sound too vague.
+I want to ask about study, projects, and career planning.
+How should I organize my thoughts before talking to them?
+Can you help me prepare a few questions?
+I also want to know the best way to reach out, whether by email or in person.
+And how should I follow up after the conversation?",4,fearful
+2,77,"I recently started doubting whether I am capable enough.
+When I see other people doing well, I feel pressure.
+I know comparing myself too much is not good.
+But it still happens again and again.
+How can I stop thinking like this?
+Can you help me build a healthier mindset?
+I also want to know how to focus more on my own progress instead of others.
+And what can I say to myself when these thoughts come back?",2,sad
+2,78,"I want to be more disciplined in daily life.
+I often make plans, but I do not follow them for long.
+At first I feel motivated, then I slowly give up.
+This happens with study, exercise, and sleep.
+Why is it so hard for me to stay consistent?
+Can you help me build habits in a realistic way?
+I also want to know how to restart after I have already broken a habit.
+And how do I make a habit feel easier so I do not want to quit?",0,neutral
+2,79,"I need to send a follow-up email after an interview.
+I want to sound polite and professional.
+At the same time, I do not want to sound too formal or fake.
+I just want to thank them and show my interest again.
+What should I write in the email?
+Can you help me make it short and natural?
+I also want to know the best time to send it after the interview.
+And what should I do if I do not hear back after sending it?",0,neutral
+2,80,"I am trying to improve my spoken English for daily life.
+I do not want to learn very difficult words first.
+I want to start with common and useful expressions.
+I also hope the sentences are easy to remember.
+What should I practice every day?
+Can you give me some examples for real situations?
+I also want to know how to practice even when I do not have anyone to talk to.
+And how do I know when my speaking is actually getting better?",0,neutral
+2,81,"Sometimes I feel guilty when I rest.
+Even when I am tired, I think I should keep working.
+If I take a break, I feel like I am wasting time.
+But when I do not rest, I become less efficient.
+How can I change this way of thinking?
+Can you help me see rest in a healthier way?
+I also want to know what a good break actually looks like.
+And how long should breaks be to feel refreshing rather than lazy?",2,sad
+2,82,"I want to learn how to answer interview questions more clearly.
+Sometimes I know what I want to say in my head.
+But when I start speaking, my answer becomes messy.
+I worry that I sound unprepared or not confident.
+How can I make my answers more structured?
+Can you teach me a simple speaking method?
+I also want to practice with some common interview questions.
+And how do I know when my answer is the right length?",0,neutral
+2,83,"I want to start exercising again.
+But after studying and working all day, I feel too tired.
+Then I tell myself I will do it tomorrow.
+But tomorrow often becomes next week.
+How can I make exercise easier to start?
+Can you give me a simple beginner plan?
+I also want to know how to exercise even in a small room with no equipment.
+And how do I stay motivated after the first few days?",2,sad
+2,84,"I want to speak more confidently in meetings and discussions.
+When other people talk fast, I become quiet.
+Sometimes I have ideas, but I am afraid to say them.
+I worry that my English is not good enough.
+How can I become more active in conversations?
+Can you give me some useful sentence starters?
+I also want to know how to politely interrupt or join in when others are already talking.
+And what should I do when I do not understand something someone said?",4,fearful
+2,85,"I had a bad day today and I feel very tired inside.
+Nothing was a huge disaster, but many small things went wrong.
+Now I do not feel like doing anything else.
+I just want to lie down and forget the whole day.
+How can I comfort myself tonight?
+Can you talk to me like a gentle friend?
+I also want to know how to wake up tomorrow feeling a little better.
+And how do I stop one bad day from ruining the rest of the week?",2,sad
+2,86,"I want to improve my email writing in English.
+Sometimes my emails are understandable, but they do not sound natural.
+I am not sure how formal I should be.
+I also worry about sounding too direct.
+What are some common email phrases I should know?
+Can you give me simple examples for study and work?
+I also want to know how to write a good subject line.
+And what is the best way to end an email politely?",0,neutral
+2,87,"I am preparing for several things at the same time now.
+There are interviews, course tasks, and personal plans.
+Because of this, I often feel mentally tired.
+Even when I finish one thing, I cannot fully relax.
+How can I manage my energy better?
+Can you help me balance work and rest?
+I also want to know how to protect my focus when I have many things on my mind.
+And how do I decide which thing to give the most attention to?",4,fearful
+2,88,"I want to sound more positive when I talk about myself.
+Sometimes I focus too much on my weaknesses.
+Even when I have done something well, I do not mention it clearly.
+I know this is not helpful in interviews.
+How can I talk about myself in a more confident way?
+Can you help me practice that?
+I also want to know how to turn a weakness into something that sounds honest but still good.
+And what phrases can help me sound confident without sounding arrogant?",0,neutral
+2,89,"I often feel nervous before making important decisions.
+I keep thinking about all the possible bad results.
+Then I delay the decision for too long.
+This makes me more stressed in the end.
+How can I make decisions more calmly?
+Can you teach me a simple way to think through them?
+I also want to know how to deal with the worry that comes after making a decision.
+And what should I do if I realize later that I made the wrong choice?",4,fearful
+2,90,"I want to prepare better answers for behavioral interview questions.
+Questions like teamwork, conflict, and failure make me nervous.
+I have experiences to talk about, but I do not know how to present them well.
+I want my answers to sound clear and real.
+How should I structure these stories?
+Can you help me prepare a few examples?
+I also want to know how to make my answers feel natural and not memorized.
+And how long should each answer be in an interview?",0,neutral
+2,91,"Recently my mood changes quite easily.
+Sometimes I feel okay during the day, but low at night.
+When that happens, small problems also feel much bigger.
+I know I may just be tired, but it still feels heavy.
+What can I do when my mood drops like this?
+Can you give me some simple coping ideas?
+I also want to know how to tell if my mood swings are normal or something I should take more seriously.
+And what daily habits might help make my mood more stable overall?",2,sad
+2,92,"I need to talk to someone about a problem, but I do not know how to begin.
+I am afraid the conversation may become awkward.
+I also worry that I may sound too emotional.
+But I do want to explain how I feel.
+How can I start the conversation in a calm way?
+Can you help me choose the right words?
+I also want to know how to stay calm if the other person reacts in a way I do not expect.
+And what should I do if the conversation does not go well?",4,fearful
+2,93,"I want to get better at small talk in English.
+When I meet new people, I do not know what to say first.
+I can answer questions, but I am not good at keeping the conversation going.
+Because of that, I often seem too quiet.
+What are some easy topics and questions I can use?
+Can you give me some natural examples?
+I also want to know how to end a small talk conversation politely when I need to leave.
+And what should I do when there is an awkward silence?",4,fearful
+2,94,"I feel like I have too many thoughts in my head lately.
+Even when I want to rest, my mind keeps moving.
+I think about study, work, the future, and many small worries.
+This makes me feel mentally crowded.
+How can I clear my mind a little?
+Can you suggest a simple habit for that?
+I also want to know how to stop a worry spiral once it has already started.
+And are there any quick techniques I can use before bed to wind down?",2,sad
+2,95,"I want to become better at asking AI useful questions.
+Sometimes I know my problem, but I cannot describe it clearly.
+Then the answer I get is too general.
+I want to ask in a smarter and more efficient way.
+What should I include when I ask for help?
+Can you teach me a simple question pattern?
+I also want to know how to follow up if the first answer is not quite what I needed.
+And how can I check whether the answer I got is actually reliable?",0,neutral
+2,96,"I want to stop procrastinating so much.
+I often wait until I feel pressure before I start.
+But that makes the whole process more painful.
+I know I would feel better if I began earlier.
+Why do I keep doing this?
+Can you help me break this habit step by step?
+I also want to know how to make myself start even when I do not feel ready.
+And what should I do when I fall back into the old pattern again?",2,sad
+2,97,"I need to explain a technical project in simple English.
+The listener may not know much about the topic.
+I want my explanation to be clear and easy to follow.
+I do not want to use too many difficult words.
+How can I simplify the way I describe my project?
+Can you help me make it more natural?
+I also want to know how to handle questions if someone does not understand part of my explanation.
+And how do I explain what I learned from the project in an interesting way?",0,neutral
+2,98,"Sometimes I feel like I am trying very hard, but moving very slowly.
+Other people seem to improve faster than me.
+I know everyone has a different pace.
+But I still feel frustrated when progress is not obvious.
+How can I stay patient with myself?
+Can you help me think in a kinder way?
+I also want to know how to notice small progress that I might be ignoring.
+And what can I do on the days when nothing feels like it is working?",2,sad
+2,99,"I want to make my daily life more organized.
+Right now I remember things only when they become urgent.
+Because of that, I often feel rushed and messy.
+I want to manage my tasks in a calmer way.
+What simple tools or habits should I use?
+Can you help me create a daily system?
+I also want to know how to review my tasks at the end of each day without feeling stressed.
+And how do I keep the system going when life gets very busy?",0,neutral
+2,100,"I want to feel more hopeful about the future.
+Recently there have been many small pressures in my life.
+They are not huge problems, but they make me tired.
+Sometimes I worry that I am falling behind.
+How can I stay positive while still being realistic?
+Can you say something that helps me feel stronger?
+I also want to know how to enjoy where I am right now instead of always worrying about later.
+And what is one small thing I can do today to feel a little more hopeful?",2,sad
+3,101,"The neighbour next door plays loud music now, and it is really starting to bother me more than I expected. I was hoping to have a quiet evening so I could relax or focus on what I needed to do, but the noise keeps pulling my attention away. It is not just a little background sound either. It is loud enough to make me feel irritated and tense. I am not sure whether I should go and speak to them directly, wait for a while and hope it stops, or find some other way to deal with it without making the situation awkward.",3,angry
+3,102,"I opened the fridge and something smelled absolutely awful. I dont know what went bad, but it honestly made me feel sick. How do I get rid of the smell and stop it happening again? I feel like something must have been left in there for too long, but I cannot immediately tell what caused it. Now I am worried that even after I throw the bad food away, the smell might still stay inside the fridge. I really want to clean it properly instead of just making it smell slightly better for a short time. I also want to avoid this happening again, because it is such an unpleasant surprise.",5,disgust
+3,103,"No wayI just checked my grade and its much higher than I expected. Im honestly shocked because I thought I did badly. How should I reply to my tutor, or should I ask for feedback anyway? I am obviously happy and relieved, but I also feel a little confused because this was not the outcome I had prepared myself for. I had already assumed that I had made quite a few mistakes, so seeing a much better result feels strange in a good way. At the same time, I still want to understand what I did well and what I could improve, so I am wondering whether asking for feedback would still be useful.",6,surprise
+3,104,"I finally have a quiet evening with nothing urgent to do. I just want to slow down and reset after a busy week. Can you suggest a simple wind-down routine so I can feel calm and sleep well? I do not want to waste the evening doing something that leaves me feeling more tired or mentally overloaded. What I really need is something simple and realistic that helps me switch off properly. The past few days have been quite full, and I can feel that I need a bit of space to breathe and settle down. I would love a routine that helps me feel relaxed, clear-headed, and ready for a better night of sleep.",7,calm
+3,105,"My Wi-Fi keeps cutting out and its driving me crazy. Every time Im uploading something or joining an online meeting, it disconnects. Ive restarted it so many times and nothing seems to help. It is becoming really frustrating because I cannot rely on the connection when I actually need it most. It always seems to fail at the worst possible moment, which makes even simple tasks feel stressful. I have already tried the obvious first step by restarting everything, but since that has not solved it, I feel stuck and annoyed. I just want a practical way to figure out what is causing the problem and how I can fix it properly.",3,angry
+3,106,"Ive been feeling a bit down lately, and I dont know why. Nothing terrible has happened, but I still feel heavy and unmotivated. Even simple tasks feel harder than usual. That is what makes it more confusing, because there is no one clear reason I can point to. On the outside everything seems fine, but inside I feel lower on energy and less interested in doing things I would normally just get on with. It is not dramatic, but it does affect my daily life in a quiet way. I think I mainly want to understand how to respond to this kind of feeling and what small steps might help me feel more like myself again.",2,sad
+3,107,"Im going on a trip soonwoohoo! I want to make the most of it because I have really been looking forward to having a change of scene. It feels exciting to know that I will get a break from my normal routine and have something enjoyable to focus on. At the same time, I want to be organised enough that I do not leave everything until the last minute and turn the trip into a stressful experience. I am already thinking about what to pack, what I should prepare in advance, and how to make sure I can properly enjoy the whole experience once it starts.",1,happy
+3,108,"Im nervous about my presentation next week because I really want it to go well, and I keep thinking about all the things that could go wrong. I worry that I might speak too quickly, forget part of what I want to say, or feel tense when everyone is looking at me. Even though I know preparation will help, the pressure is still there in the back of my mind. I think what I need most is a way to feel more steady and confident before the day arrives, so I can focus on delivering my points clearly instead of getting overwhelmed by anxiety.",4,fearful
+3,109,"I finally fixed the bugyes! Ive been stuck on it for longer than I expected, so solving it feels incredibly satisfying. There was a point where I honestly started doubting whether I would find the cause at all, because every small change seemed to create more confusion instead of giving me a clear answer. That is why fixing it now feels like such a relief. It is not only about getting the code to work again. It also gives me a sense of progress and reminds me that being patient and testing things carefully usually pays off in the end.",1,happy
+3,110,"Im not sure what to eat today and I dont want to spend ages overthinking it. I just want something that is simple, satisfying, and realistic for how much time and energy I have right now. Sometimes choosing food feels harder than it should, especially when I am a bit tired or do not feel strongly about anything in particular. I do not necessarily want a big meal or anything complicated. I just want something that fits my mood, is easy to get or make, and leaves me feeling comfortably full without turning it into a whole decision-making process.",0,neutral
+3,111,"I miss home a lot right now. I keep thinking about the people, the familiar places, and the small things I usually do not notice until I am away from them. It is a strange feeling because part of me is fine and carrying on with life as usual, but another part of me feels a little heavy and emotionally tired. Sometimes it gets stronger when things are quiet, and I suddenly become very aware of the distance. I know homesickness is normal, but at the moment it feels quite real, and I think I just need a bit of comfort or something that helps me feel more connected.",2,sad
+3,112,"I tried a new meal from the supermarket and the taste was so unexpected that I still cannot decide whether I liked it or not. At first I thought it would be a safe choice, but once I started eating it, I realised it was very different from what I had imagined. It was not necessarily terrible, but it definitely caught me off guard and made the whole experience a bit strange. Now I keep thinking about whether I would buy it again or whether it was just one of those things that seemed better in theory than in reality. It was definitely memorable, even if I am still undecided.",6,surprise
+3,113,"Im sitting in the library with a cup of tea and everything feels unusually quiet and still at the moment. It is actually quite nice to have this kind of calm space, especially when life has been busy or noisy. I am not in a rush right now, and that makes a big difference to how I feel mentally. There is something comforting about just sitting here, having a warm drink, and letting myself slow down a little. It is not an exciting moment in a dramatic way, but it feels peaceful and grounding, and I think I really needed that kind of atmosphere today.",7,calm
+3,114,"I dont feel like talking much today. Im not up for a lot of conversation, and I think I just need a bit more quiet than usual. It is not that I am angry with anyone or that something specific has happened. I just feel more withdrawn and low-energy, and speaking a lot feels like more effort than normal. Sometimes I think people assume silence means something is wrong, but for me it can simply mean I need space to reset. I would rather keep things gentle and simple today, and maybe once I have had enough time to myself, I will feel more open again.",2,sad
+3,115,"I need to email my professor to ask about the right way to handle something, but I keep putting it off because I do not know how to phrase it properly. I want to sound polite and clear without making the message too long or confusing. Sometimes writing these kinds of emails feels more stressful than it probably should, because I keep second-guessing every sentence. I know it would be better to just send it and get an answer, but I still feel hesitant. I think what I really need is a simple structure so I can say what I need to say confidently and stop delaying it.",4,fearful
+3,116,"The coursework instructions are so unclear and it is making the whole task more stressful than it needs to be. I keep reading through the guidance and still feel unsure about what is actually expected, which makes it hard to start with confidence. The frustrating part is that I want to do the work properly, but when the instructions are vague, I end up worrying about whether I might misunderstand something important. That uncertainty wastes a lot of time and mental energy. I really wish the requirements were more straightforward, because then I could focus on the task itself instead of constantly trying to interpret what they mean.",3,angry
+3,117,"Im worried my experiment results wont be good enough, and that thought has been sitting in the back of my mind for a while. I know that experiments do not always go perfectly and that unexpected results are part of the process, but it is still hard not to worry. A lot of time and effort goes into planning, testing, and collecting everything, so of course I want the outcome to be useful and meaningful. What makes it stressful is the uncertainty, because I cannot fully control how the results will turn out. I just hope that even if they are not ideal, they will still show something valuable.",4,fearful
+3,118,"I have a lecture recording to review, but its easy to keep postponing it because it feels like one of those tasks that should be simple, yet somehow takes more effort to start than expected. I know reviewing it would probably help me feel more prepared and less rushed later on, but right now I do not feel especially motivated. Maybe it is because watching a recording requires attention without feeling immediately urgent. Still, I know it would be better to do it sooner rather than later. I think once I actually start, it will probably be fine, but getting started is the hardest part.",0,neutral
+3,119,"I just checked the timetable and our room has looked different from what I expected, which immediately made me pause and double-check everything. It is a small thing, but changes like that can be surprisingly stressful because they make me wonder whether I have misunderstood some detail or missed an update. I do not want to turn up to the wrong place or realise too late that the plan has changed. Even when the issue is minor, it can still create that quick feeling of uncertainty and tension. I think I just need to confirm the correct information so I can stop thinking about it and feel settled again.",4,fearful
+3,120,"I took a slow walk after dinner and it helped me feel noticeably calmer than I was before. I did not do anything special, but just moving at an easy pace and getting a bit of fresh air seemed to clear my head. Sometimes when the day feels full or mentally noisy, a quiet walk is enough to create a small reset. I came back feeling lighter and more settled, which was nice because I had not realised how much tension I was carrying before. It reminded me that simple things can sometimes help more than expected when I need to slow down.",7,calm
+3,121,"I need to reorganise my desk because it has become a bit messy lately. There is nothing urgent or dramatic about it, but I can tell the clutter is starting to make things less convenient. Papers, chargers, and small items are all mixed together, so even simple things take longer to find than they should. I do not feel upset about it, but I do think a cleaner space would help me focus better. I just want to sort everything out properly, put things back in the right place, and make the desk feel easier to use again.",0,neutral
+3,122,"I have a few errands to do this afternoon, and Im trying to decide the best order to do them in. None of them are especially difficult, but I do not want to waste time going back and forth unnecessarily. I need to think a little about what is most practical, what is closest, and what can be done quickly. It is one of those small everyday situations where being organised makes everything smoother. I am not stressed about it, but I would still like to plan it sensibly so I can finish everything efficiently and still have some time left afterwards.",0,neutral
+3,123,"Im thinking about changing my phone wallpaper because Ive had the same one for ages. It is obviously not a major decision, but sometimes small changes make things feel a bit fresher. I have looked at a few options already, but I still have not chosen one because I want something simple that I will not get tired of too quickly. I am not emotionally attached to the current one, so it is really just a matter of preference. I just want something that looks clean, feels nice to open every day, and suits my mood at the moment.",0,neutral
+3,124,"I need to choose a time to do my laundry this week, and Im trying to fit it around everything else. It is a pretty ordinary task, but it still needs a bit of planning because I do not want it to interrupt other things I need to do. If I leave it too late, it becomes inconvenient, but if I do it at the right time, it is easy to manage. I am not bothered by it, and I am not in a hurry either. I just want to pick a practical time, get it done, and not have to think about it again afterwards.",0,neutral
+3,125,"My package finally arrived today, and I was so pleased when I saw it at the door. I had been waiting for it for a while, so it felt really satisfying to know it had finally turned up. It is not only about the item itself, but also the small excitement that comes with receiving something you have been looking forward to. Opening the package instantly made my mood better. Even though it is a simple everyday thing, it still felt like a nice little win. Moments like that can be surprisingly uplifting when the rest of the week feels busy or routine.",1,happy
+3,126,"I cooked something today and it actually turned out really well. I was half expecting it to be average or for something to go wrong along the way, so I was genuinely happy when it came out tasting good. It made the whole process feel more rewarding, because cooking feels much more enjoyable when the result is satisfying. I also liked the feeling of being able to make something for myself instead of just choosing the easiest option. It is a small thing, but it gave me a sense of accomplishment and made the meal feel much more enjoyable than usual.",1,happy
+3,127,"I got a really nice message from a friend today, and it honestly made my day better. It was unexpected, which made it feel even more meaningful. Sometimes when you are busy, you forget how much a simple message can affect your mood, but this one really made me smile. It reminded me that being thought of by someone else can be very comforting. I was already having a normal day, but after reading it, everything felt a bit lighter and warmer. Small moments of kindness like that stay with me longer than people probably realise.",1,happy
+3,128,"I finished a task earlier than I expected, and I felt so relieved afterwards. I had been mentally preparing myself for it to take much longer, so completing it ahead of time felt surprisingly rewarding. It gave me a nice sense of progress and also freed up some mental space, because I no longer had it hanging over me. What I liked most was the feeling of being back in control of my time. Even though it was not something huge, I still felt proud of getting it done efficiently. It is always satisfying when effort pays off more smoothly than expected.",1,happy
+3,129,"I found an old photo on my phone today, and it made me feel unexpectedly emotional. It brought back memories I had not thought about for a while, and for a moment I just sat there looking at it. The photo itself was simple, but it reminded me of a time, place, or feeling that I miss more than I usually notice. That kind of sadness is quiet rather than dramatic, but it still lingers. It makes you pause and realise how quickly things change. I think what affected me most was the contrast between that memory and where life feels now.",2,sad
+3,130,"I had plans that got cancelled at the last minute, and it left me feeling a bit low. I know things change and people cannot always help it, so I am not angry about it. Still, when you have already imagined how something will go, it is disappointing when it suddenly does not happen. What makes it worse is that the time then feels strangely empty, because I had already set it aside in my mind. It is not a huge problem, but it still changed my mood more than I expected. I think I just felt let down in a quiet kind of way.",2,sad
+3,131,"Ive been thinking about how quickly time is passing, and its made me feel a little melancholy. There is nothing specifically wrong, but sometimes I suddenly become very aware that certain stages of life do not last forever. That feeling can be a bit heavy, especially when I think about people, routines, or moments that I know will change one day. It is not exactly fear, and it is not exactly regret either. It is more like a soft sadness that comes from realising how temporary things are. It makes me want to appreciate things more, but it also leaves me feeling reflective and slightly low.",2,sad
+3,132,"I was too tired to do something I had been hoping to enjoy, and that felt disappointing. I had wanted to use the time well and do something that would make the day feel a bit better, but by the time I got to it, I had no energy left. That kind of situation always leaves me feeling slightly frustrated with myself, even when I know being tired is normal. It is not a major setback, but it still feels like I missed a small opportunity. I think that is why it feels a bit sad, because I wanted more from the day than I could actually manage.",2,sad
+3,133,"Someone kept interrupting me while I was trying to explain something, and it really annoyed me. I was already making an effort to be clear and patient, so being cut off again and again felt disrespectful. It is frustrating when you cannot even finish your point properly, especially when what you are saying is relevant and worth hearing. What made it worse was the feeling that I had to stay calm while becoming more irritated inside. I do not like reacting too strongly in situations like that, but it definitely affected my mood. I just wanted the basic chance to speak without constantly being interrupted.",3,angry
+3,134,"My computer froze right in the middle of something important, and I was so frustrated. It happened at exactly the wrong moment, which somehow made the whole thing even more irritating. I had already been concentrating for quite a while, and then suddenly everything stopped responding. What annoys me most in situations like that is the loss of momentum, because even if nothing is permanently lost, the interruption ruins your focus. I had to sit there waiting and hoping it would recover, which only made me more impatient. It is the kind of problem that feels small from the outside but incredibly annoying in the moment.",3,angry
+3,135,"There was a long queue somewhere I needed to be, and it put me in a bad mood almost immediately. Usually I try to be patient, because I know queues are just part of daily life, but this one moved so slowly that it became genuinely irritating. I kept feeling like time was being wasted while I could do nothing about it. The worst part was not even the waiting itself, but the feeling of being stuck and unable to move things along. After a while, small inconveniences like that build up and affect my mood much more than they probably should.",3,angry
+3,136,"I spent ages looking for something, and then realised it had been moved by someone else. That really annoyed me, because if something is no longer where it usually is, it turns a simple task into an unnecessary problem. I wasted time checking obvious places, retracing my steps, and wondering if I had misplaced it myself. Then finding out it had simply been moved made the whole situation feel even more frustrating. It is not just about the item. It is the feeling of losing time and energy over something that could easily have been avoided. That kind of thing irritates me much more than it should.",3,angry
+3,137,"I have to wait for an important reply, and the uncertainty is making me anxious. The hardest part is not being able to do much while I wait. My mind keeps imagining different possibilities, and even though I know some of them are probably unrealistic, it is still difficult to stay fully calm. Waiting like this makes time feel slower, because the situation sits in the background of everything else I do. I think what I find most stressful is not knowing what to expect. If I had more clarity, I would feel much better, but right now the uncertainty itself is the main source of stress.",4,fearful
+3,138,"Im worried I might be forgetting something important for tomorrow. I have checked things already, but that nagging feeling is still there, which makes it hard to fully relax. Sometimes anxiety is like that. Even when you have prepared reasonably well, your mind keeps searching for the one thing that might have been missed. I do not have clear evidence that there is actually a problem, but the possibility still makes me uneasy. I think what I need is a more systematic way to go through everything once, so I can reassure myself properly instead of just worrying in circles.",4,fearful
+3,139,"I need to make a decision soon, and Im nervous about choosing the wrong option. It feels like one of those moments where even a small choice seems to carry more weight than usual. I keep thinking through the different possibilities and trying to predict which one will lead to the best outcome, but that also makes me more uncertain. The fear is not only about making a mistake. It is also about regretting the choice later and wondering whether I should have done something differently. I know I cannot predict everything perfectly, but right now the pressure of deciding still feels quite stressful.",4,fearful
+3,140,"I keep thinking about a conversation I need to have, and it makes me uneasy. It is not necessarily going to go badly, but because it matters to me, I cannot stop anticipating different outcomes. I worry about saying the wrong thing, sounding unclear, or creating unnecessary tension. Difficult conversations often feel heavier in your head before they even happen, and I think that is exactly what is happening here. Part of me wants to get it over with, but another part keeps delaying it because of that anxious feeling. I think I just want to handle it calmly without making the situation worse.",4,fearful
+3,141,"I touched something sticky by accident, and it was honestly horrible. It was one of those immediate physical reactions where you want to pull your hand away straight away and wash it as quickly as possible. Even after cleaning it off, the unpleasant feeling somehow stayed in my mind. It is strange how something so small can create such a strong sense of discomfort. I think what makes it worse is the uncertainty of not knowing exactly what it was or how long it had been there. It was not dangerous or dramatic, but it was definitely enough to leave me feeling deeply uncomfortable.",5,disgust
+3,142,"I saw food that had clearly been left out for far too long, and it looked really off-putting. Even from a distance, it was obvious that it was no longer fresh, and the sight of it alone was enough to make me not want to go near it. There is something particularly unpleasant about food when it starts to look wrong, because your brain immediately reacts with rejection. I did not even need to smell it to feel uncomfortable. It was just one of those moments that creates an instant sense of disgust. I wanted it gone immediately so I would not have to look at it any longer.",5,disgust
+3,143,"There was a really unpleasant smell in the corridor, and it made the whole area feel uncomfortable. Smells can affect me very quickly, and this one was strong enough that I immediately wanted to move away. What is difficult about bad smells is that they are hard to ignore once you notice them. Even if you try to focus on something else, the discomfort stays there in the background. I think that is why my reaction was so strong. It was not just a mild inconvenience. It genuinely changed how I felt in that space and made me want to leave as soon as possible.",5,disgust
+3,144,"I noticed something dirty that clearly should have been cleaned earlier, and it really put me off. It was the kind of thing that instantly makes you not want to touch anything nearby, because it changes how clean the whole place feels. Even if it is not directly affecting you, it still creates that strong reaction of wanting distance. I think disgust is such a physical emotion, because it is not only a thought. It is an immediate feeling in the body as well. My first instinct was just that it needed to be dealt with properly, because seeing it there was genuinely unpleasant.",5,disgust
+3,145,"I ran into someone unexpectedly today, and I was genuinely surprised to see them. It took me a second to recognise what was happening, because I had absolutely not expected to meet them there. That kind of moment always feels slightly unreal at first, especially when the person is connected to a different part of your life. The surprise itself was not negative. It was just strong because it was so unplanned. For a brief moment, it completely changed the direction of my thoughts. Encounters like that are memorable because they interrupt the normal rhythm of the day in a very sudden way.",6,surprise
+3,146,"I opened my email and found something I really wasnt expecting. At first I had to read it twice just to make sure I had understood it properly, because it was so different from what I had assumed would be there. The unexpected part is what made the reaction feel strong. Even though it was only a message, it immediately changed my mood and made me stop everything else for a moment. I think surprise can be strange like that. It does not last forever, but it creates a very clear instant reaction. I was definitely caught off guard in that moment.",6,surprise
+3,147,"Something worked on the first try today, and that honestly surprised me. I had already prepared myself for at least one small problem, delay, or adjustment, because that is usually how these things go. So when it worked immediately, I almost did not trust it at first. I had to pause and check again just to make sure I was not missing something. It was a good surprise, but a surprise nonetheless. I think that is why it stood out so clearly. When you are used to expecting complications, a smooth result can feel unexpectedly striking and leave a stronger impression than it normally would.",6,surprise
+3,148,"I sat by the window for a while this morning, and it felt surprisingly peaceful. I was not doing anything particularly productive, but that was part of why the moment felt so calm. There was no pressure, no rush, and no need to immediately move on to the next thing. I think I often underestimate how much quiet moments like that help me settle mentally. Just sitting there and letting myself pause for a little while made everything feel slower in a good way. It reminded me that calm does not always come from doing something special. Sometimes it comes from simply allowing stillness.",7,calm
+3,149,"I made myself a warm drink and took a proper break, and it helped me feel much more settled. Before that, my mind felt busy and slightly scattered, even though I was not doing anything dramatic. Taking a step back for a few minutes made a bigger difference than I expected. There is something about slowing down and focusing on one simple, comforting thing that helps everything else feel more manageable. It was not excitement or relief exactly. It was more like a steady, quiet feeling of balance. I think those small moments are really useful when I need to reset without overcomplicating things.",7,calm
+3,150,"I spent some time tidying a small area of my room, and afterwards I felt much calmer. It was not a big task, but the process itself was quite soothing because it gave me something simple and clear to focus on. When the space looked better, my mind also felt less cluttered somehow. I think that is why tidying can sometimes be more calming than people expect. It creates a small sense of order without requiring too much effort. By the end, I was not only pleased that it was done. I also felt more settled and more comfortable in the space around me.",7,calm
+4,151,"I need to compare early fusion and late fusion in our project report, and I want the explanation to sound clear, concise, and properly academic rather than casual. Right now I understand the rough idea, but I keep mixing up where the modalities are combined, what the advantages are, and what kinds of errors each method is more sensitive to. I also need to explain why one approach might be better for our current system without sounding too biased. Could you help me turn this into a short outline with key points, limitations, and a sensible structure for the paragraph?",0,neutral
+4,152,"Our supervisor might ask why our evaluation metric is lower than we hoped, and I am already nervous because I do not want to freeze or give a weak answer in the meeting. I keep thinking that if I explain it badly, it will sound like we do not understand our own project, even though we have actually done a lot of work. I want to prepare something honest but still confident, covering issues like dataset size, label quality, task difficulty, and trade-offs in the current setup. Could you help me rehearse a calm explanation before I overthink this even more?",4,fearful
+4,153,"I spent a long time trying to make my coursework code run in WSL, but every time I fix one issue, another problem appears, and it is becoming really draining. First it was the environment, then a missing package, then a path problem, and now VS Code is using the wrong interpreter again. I know these are normal technical issues, but right now it feels like I am wasting hours on setup instead of actually learning or making progress on the task itself. Could you help me make a clear troubleshooting order so I can stop jumping around and feeling stuck?",3,angry
+4,154,"I had a plan for this week to make real progress on my project, but in the end I did much less than I expected, and now I feel disappointed in myself. What makes it worse is that I was not doing nothing the whole time, but somehow the important parts still remain unfinished, so it feels like effort was spent without visible results. I know one bad week should not define everything, but it is hard not to compare myself with people who seem much more disciplined and productive. Could you help me reset my plan without making me feel even worse about falling behind?",2,sad
+4,155,"I am honestly annoyed because some coursework instructions are written in a way that is far less clear than they should be, and then students are expected to somehow guess the intended meaning. I do not mind difficult work, but I really dislike wasting time trying to interpret vague wording, hidden requirements, or inconsistent examples. It feels unfair when so much effort goes into understanding what the task even wants rather than actually doing the intellectual part of the assignment. Could you help me rewrite the task requirements into plain, structured language so I can finally focus on solving the real problem?",3,angry
+4,156,"I have been sleeping badly recently, and the worst part is that when I lie down, my brain suddenly starts replaying every unfinished task, awkward conversation, and possible future problem. Then I become stressed about not sleeping, which makes it even harder to fall asleep, and the whole thing turns into a cycle. The next day I feel tired, less focused, and even more worried that I am falling behind in work because of poor sleep. Could you help me come up with a realistic plan for tonight that is simple, calm, and does not rely on extreme self-discipline?",4,fearful
+4,157,"I finally got one part of my code working properly after struggling with it for quite a while, and I felt genuinely relieved and happy when I saw the result run without errors. It was not even a huge module, but because I had been stuck on it for so long, solving it gave me a strong sense of momentum that I had not felt in days. Moments like this remind me that progress can suddenly become visible after a lot of confusion and failed attempts. Could you help me turn this positive mood into a sensible plan so I can keep moving while my confidence is still high?",1,happy
+4,158,"I want to prepare a short explanation of why we use an LLM-as-a-judge setup for our experiment, especially because I know someone may question whether that evaluation method is reliable. I do not want to oversell it, but I also do not want to make it sound weak or arbitrary. Ideally I need a balanced explanation that covers practicality, consistency, scalability, and the fact that human evaluation is still valuable even if we cannot afford it at full scale. Could you help me write a paragraph that sounds measured, technically informed, and suitable for a project report or presentation?",0,neutral
+4,159,"I have a presentation coming up, and I am worried that someone will ask a question right at the edge of what I understand, and then I will panic and say something unclear. It is not that I know nothing about the topic, but under pressure my mind sometimes goes blank, especially when I feel that everyone is watching for mistakes. I want to prepare for the kinds of questions that sound simple at first but are actually difficult to answer well, such as limitations, alternative methods, and reasons for design choices. Could you help me practice a few safe but intelligent ways to answer when I am nervous?",4,fearful
+4,160,"I am trying to make my experiment design more rigorous, but every time I think I have finalised the variables, another issue appears, such as fairness, prompt leakage, inconsistent conditions, or the cost of making too many API calls. It feels like the more carefully I think, the more complicated everything becomes, and then I start doubting whether the whole design is still practical. I know this is part of research, but it is frustrating when refinement makes the plan feel less stable rather than more stable. Could you help me simplify the design while keeping the important controls and not turning it into something messy?",4,fearful
+4,161,"Sometimes I feel like even when I spend many hours working, the result still looks too small compared with the effort I put in, and that makes me strangely discouraged. I know progress in technical projects is often hidden for a while, especially when the work involves debugging, reading, and redesigning rather than producing something obvious. Still, emotionally it is hard not to feel that I should have more visible outcomes by now. Could you help me think about my workload in a healthier way, so I do not keep equating invisible effort with failure?",2,sad
+4,162,"I get irritated when group work becomes unbalanced, especially when one person keeps delaying their part and the rest of us have to adjust everything around that delay. I do not expect perfect coordination, but I do expect basic responsibility and communication. When that does not happen, it creates extra stress because the people who care more end up doing extra planning, extra checking, and sometimes extra implementation as well. I want to respond in a firm but professional way rather than sounding emotional or hostile. Could you help me phrase a message that sets expectations clearly without making the situation even more tense?",3,angry
+4,163,"I need to email a department administrator about something important, but I always hesitate too much before sending formal emails because I worry the wording will sound awkward, unclear, or too demanding. Then I delay sending it, which only creates more stress because the issue remains unresolved. I want the email to be respectful and concise, but also specific enough that they can actually answer the question without misunderstanding me. Could you help me structure an email that sounds polite, organised, and appropriately formal for a university setting?",4,fearful
+4,164,"I had a surprisingly productive day today, and that feels good because it has been a while since I ended the day feeling genuinely satisfied rather than vaguely guilty. I managed to finish some difficult tasks, reply to messages I had postponed, and make the kind of progress that is visible enough to boost my mood. What I want now is to protect that momentum instead of wasting it by either overworking tonight or becoming lazy tomorrow because I feel I have already earned a break. Could you help me plan the next day in a balanced way so this good rhythm does not disappear immediately?",1,happy
+4,165,"I want to understand how to explain the difference between valence and arousal in a way that is technically correct but still easy to follow for someone who is not deeply familiar with affective computing. I know the basic definitions, but when I try to explain them out loud, I often sound repetitive or vague, and I am not sure I connect them well to practical examples. It would help if I had a short explanation that includes intuitive examples, such as calm happiness versus tense excitement, without becoming too informal. Could you help me phrase that clearly for a report, presentation, or spoken explanation?",0,neutral
+4,166,"I am worried about whether my current project progress is enough for the deadline, because even though I am not doing nothing, the remaining tasks still look large when I see them all together. What scares me is not just the workload itself, but the possibility that I may realise too late that I should have narrowed the scope earlier. I keep thinking about worst-case scenarios, such as unfinished evaluation, weak writing, or not having enough polished results to defend my choices properly. Could you help me assess the situation more realistically and make a priority list that reduces panic?",4,fearful
+4,167,"I am tired of spending so much time on formatting issues in reports and slides, especially when I know the actual content matters more than whether every line break, figure placement, or caption style is visually perfect. Of course presentation quality matters, but sometimes it feels like the tool is fighting me and absorbing energy that should go into the argument or analysis itself. I end up wasting attention on small layout problems and then feel mentally exhausted before I even return to the substantive writing. Could you help me create a simple standard format so I stop over-focusing on appearance?",3,angry
+4,168,"Lately I have had moments where I feel emotionally flat, not dramatically bad, but just tired, unmotivated, and not especially interested in things that usually make me feel better. It is a strange feeling because nothing catastrophic has happened, yet the combination of deadlines, uncertainty, and mental fatigue seems to have slowly reduced my energy. I do not want to become overly negative, but I also do not want to ignore the fact that my mood has clearly been lower than usual. Could you help me think through a gentle recovery plan that fits around academic pressure rather than pretending I can fully rest?",2,sad
+4,169,"It really annoys me when software gives vague error messages that do not actually tell you what went wrong, because then you have to waste extra time guessing the cause instead of fixing it directly. I can accept that bugs happen, but I hate when the message is so generic that it is almost useless, especially in situations where one missing file, wrong path, or bad environment variable could each produce the same unclear result. When I am already under pressure, that kind of ambiguity makes me much more impatient than it probably should. Could you help me design a systematic debugging checklist so I stop reacting emotionally every time this happens?",3,angry
+4,170,"I have been thinking about the future a lot, especially things like graduation timing, job applications, and whether one delay or one weaker result now will have a bigger long-term effect than I expect. I know people say that careers are not destroyed by one imperfect semester, but when deadlines and uncertainty pile up together, it becomes hard to believe that emotionally. Part of me wants to plan carefully, but another part keeps spiralling into broad worries that are too vague to solve directly. Could you help me separate what is actually controllable in the short term from what I am just catastrophising about?",4,fearful
+4,171,"I had a conversation recently that made me feel much lighter than before, because for once I felt understood rather than judged when I explained what had been stressing me. That kind of emotional relief is surprisingly powerful, and it reminded me that sometimes the problem is not only the workload itself but also carrying it alone in my head for too long. I want to remember this feeling and make better use of support when I need it, instead of always waiting until I am already overwhelmed. Could you help me turn that insight into a practical habit rather than just a temporary emotional moment?",1,happy
+4,172,"I need to explain why prompt strategy is treated as an experimental variable in our study, and I want the wording to sound methodologically clear rather than just intuitive. The main idea is that different prompt styles may change how the model uses emotional signals, but I need to phrase that in a way that sounds like a proper research rationale. I also want to show that controlling prompt wording is important for fair comparison, not just for making the outputs look nicer. Could you help me write a clean explanation that connects prompt strategy, model behaviour, and evaluation design in a logical way?",0,neutral
+4,173,"I am worried that if I speak too quickly in a presentation, I will sound nervous and unclear, but if I slow down too much, I might lose my place or sound unnatural. Public speaking becomes harder for me when I start monitoring myself too much, because then even basic things like breathing, pacing, and pronunciation suddenly feel awkward. I want a simple strategy that I can actually remember under pressure, rather than a long list of advice that disappears from my head the moment I stand up. Could you help me build a small speaking checklist that keeps me steady without making me more self-conscious?",4,fearful
+4,174,"I keep trying to organise my week properly, but my plans often become unrealistic because I underestimate how long focused academic work actually takes, especially when there is reading, debugging, or rewriting involved. Then once the schedule slips, I feel irritated and disappointed, and the whole plan starts to feel useless even if parts of it were reasonable. I do not think the problem is laziness alone; I think my time estimates are simply too optimistic, which makes everything feel more chaotic than it needs to. Could you help me redesign my planning method so it is stricter in structure but more realistic in workload?",3,angry
+4,175,"There are times when I look at how much other people seem to have achieved and feel quietly discouraged, even though I know comparison is usually misleading and incomplete. Rationally I understand that everyone has different starting points, different support, and different challenges, but emotionally it is still hard not to measure myself against visible results. The problem is that this kind of comparison rarely motivates me in a healthy way; instead it makes me feel smaller and less effective. Could you help me build a better way of judging my own progress that does not depend so much on what other people appear to be doing?",2,sad
+4,176,"I get especially frustrated when I finally sit down to work seriously and then something external breaks my concentration, such as unnecessary noise, pointless interruptions, or software behaving strangely for no obvious reason. It feels like I have to spend so much energy just reaching a focused state that once it is lost, the interruption seems much bigger than it might seem to someone else. After that, I sometimes become disproportionately irritated, not because the trigger was huge, but because it interrupted something I had worked hard to build. Could you help me create a recovery routine for getting back into focus without staying angry?",3,angry
+4,177,"I need to ask for help on something technical, but I always worry that my question will sound stupid, incomplete, or too basic, especially if I am asking someone who seems much more experienced than me. Because of that, I sometimes spend too long struggling alone before I finally ask, and by then I am already more stressed than necessary. I know that asking clear questions is a skill, and that people are usually more willing to help when the problem is framed well. Could you help me structure technical questions so they sound thoughtful and competent even when I am confused?",4,fearful
+4,178,"I was relieved today because something I had been worrying about for quite a while turned out to be less serious than I feared, and that changed my mood almost immediately. It is strange how much mental space one uncertain issue can occupy, especially when you keep imagining the worst possible version of it. Once the uncertainty reduces, even ordinary tasks feel lighter and more manageable. I want to use this as a reminder that anxiety often exaggerates future problems before enough evidence is available. Could you help me turn that lesson into a habit so I react more calmly next time uncertainty builds up?",1,happy
+4,179,"I want to produce a more professional-sounding paragraph in English for my report, but sometimes when I write in English, the meaning is correct while the tone still feels slightly awkward or too direct. I am especially unsure when writing academic explanations that need to sound formal, precise, and not overly repetitive. What I need is not fancy vocabulary for its own sake, but a more natural academic rhythm with better transitions and cleaner sentence structure. Could you help me understand the difference between grammatically correct writing and writing that actually sounds polished in an academic context?",0,neutral
+4,180,"I am a bit scared that my current experiment results may not look impressive enough, and that people will focus more on the numbers than on the reasoning, controls, and limitations behind them. I know negative or modest results can still be meaningful, but it is hard not to imagine that others will treat them as signs of failure rather than part of honest research. What worries me most is not criticism itself, but being unable to explain clearly why the result still matters. Could you help me frame weaker results in a way that is honest, rigorous, and still academically defensible?",4,fearful
+4,181,"I have too many small unfinished tasks open at the same time, and that fragmented feeling is becoming mentally exhausting because even when I complete one thing, several others are still sitting there demanding attention. None of them is impossible on its own, but together they create a constant sense of pressure that makes it hard to concentrate deeply on any one task. I think part of the problem is that I keep switching contexts instead of closing things properly. Could you help me make a method for reducing open loops so my brain does not keep treating every minor task like an emergency?",3,angry
+4,182,"Sometimes when I think about how quickly time is passing, especially this academic year, I feel a kind of low, quiet sadness that is hard to describe. It is not only about stress or deadlines; it is also about the sense that certain periods of life are ending before I have fully made use of them. That thought can make ordinary evenings feel heavier, especially when I feel that I should have done more, enjoyed more, or been more certain about what comes next. Could you help me think about this in a more grounded way so it feels reflective rather than depressing?",2,sad
+4,183,"I dislike it when people give overly simple advice about stress, like saying I should just relax, sleep earlier, or stop thinking so much, as if the problem disappears once it is described in one sentence. Usually I already know the obvious advice, and what I actually need is help turning that advice into something realistic under current constraints. When people skip that part, it can feel dismissive rather than supportive, even if they mean well. Could you help me turn common stress advice into a version that is specific, practical, and suited to a busy student rather than sounding like empty slogans?",3,angry
+4,184,"I have been putting off one important task for a while, and the delay itself is now becoming part of the stress because every day I do not do it, the task starts to feel heavier and more unpleasant. The strange part is that I often know exactly what the first step should be, but emotionally I still resist starting because I imagine the entire difficulty all at once. I want to break this pattern because it keeps turning manageable tasks into psychological burdens. Could you help me create a way to start important tasks earlier without depending on sudden bursts of motivation?",4,fearful
+4,185,"I felt unexpectedly encouraged after someone recognised that I had actually been working hard, because sometimes external acknowledgement makes a bigger difference than I admit to myself. It is not that I only work for praise, but when effort has been mostly invisible, being seen properly can restore energy and confidence very quickly. It reminded me that encouragement is not trivial; it can change how heavy the same workload feels. Could you help me think about how to maintain motivation in a healthier way, so I do not rely entirely on either external praise or harsh self-pressure?",1,happy
+4,186,"I need to make my spoken English sound more natural during presentations and meetings, especially when explaining technical material, because sometimes I know the content but still feel slightly unnatural in delivery. The issue is not basic vocabulary, but rhythm, confidence, and the ability to link ideas smoothly without sounding like I am reading from a script. I think this matters because even good content can sound less convincing if the spoken delivery feels hesitant or overly rigid. Could you help me build a simple practice method for improving spoken academic English in a way that fits into a busy week?",0,neutral
+4,187,"I worry that if I rest too much, I will fall behind, but if I do not rest enough, I become less efficient and make more mistakes, so it often feels like either choice carries some kind of risk. Because of that, breaks can stop feeling restorative and start feeling guilty, which defeats their purpose. I know the balance should be somewhere in the middle, but it is surprisingly hard to judge when I am mentally tired but still have many tasks left. Could you help me define what a responsible break looks like, so I can rest without immediately turning it into another source of stress?",4,fearful
+4,188,"I am tired of making plans that look very sensible on paper but fall apart in practice because they assume I will always feel focused, disciplined, and emotionally steady. Realistically, some days I will be tired, distracted, or discouraged, and plans that ignore that end up feeling like they were designed for someone else. Then when I fail to follow them perfectly, I become frustrated and sometimes abandon the plan altogether. Could you help me build a system that works not only on good days, but also on average and difficult days when my energy is lower?",3,angry
+4,189,"There are evenings when I suddenly feel the emotional weight of everything at once, including study pressure, uncertainty about the future, unfinished tasks, and the general tiredness that builds up over time. In those moments, even small problems feel larger, and it becomes difficult to tell whether I am reacting to one specific issue or simply the accumulation of many things. I do not necessarily need dramatic advice, but I do need a way to stabilise myself when the heaviness comes all at once. Could you help me think of a calm evening routine for those lower moments?",2,sad
+4,190,"I become annoyed with myself when I waste time in ways that do not even feel properly enjoyable, because then I get the worst combination of both guilt and low-quality rest. It would be easier if I at least felt that the time off had refreshed me, but often it just leaves me more irritated because I avoided work without truly recovering. That pattern makes self-discipline feel harder, because the line between rest and avoidance becomes blurry. Could you help me define the difference between intentional recovery and passive procrastination so I can manage my time with less self-anger?",3,angry
+4,191,"I am often unsure how much detail to include when explaining technical work, because if I simplify too much, I worry it sounds shallow, but if I include too much detail, I worry the audience will get lost or bored. This becomes especially stressful when I need to present to people with mixed levels of familiarity, such as classmates, supervisors, or external listeners. I want to learn how to judge the right depth more effectively instead of always second-guessing myself. Could you help me build a rule for layering technical explanations so I can adapt without panicking in real time?",0,neutral
+4,192,"I felt good after finally organising part of my project properly, because even though the actual research questions are still challenging, having a cleaner folder structure and clearer files made the whole task feel much more manageable. It is interesting how much order and clarity in the working environment can improve mood and reduce resistance. I want to use that as a reminder that productivity is not only about effort, but also about reducing friction in the system around the work. Could you help me make a small maintenance routine so my project stays organised instead of slowly becoming messy again?",1,happy
+4,193,"I need a clearer way to talk about limitations in my report so that they sound academically mature rather than defensive. I do not want the limitations section to read like a list of excuses, but I also do not want to understate genuine weaknesses in the dataset, design, or evaluation. Ideally the writing should show that I understand what the weaknesses are, why they matter, and what reasonable future improvements could address them. Could you help me structure that kind of paragraph so it sounds thoughtful, balanced, and professional?",0,neutral
+4,194,"I am nervous about interviews because I worry that even if I prepare well, one unexpected question or one awkward moment could make me seem less competent than I really am. The uncertainty is what makes it difficult, because I can study common questions, but I cannot completely control the atmosphere, the interviewers style, or my own nerves on the day. I want to prepare in a way that improves both my answers and my emotional steadiness rather than focusing only on memorising content. Could you help me build an interview preparation plan that includes mindset, structure, and recovery if I make a small mistake?",4,fearful
+4,195,"I feel frustrated when I spend a long time reading papers or documentation and still come away feeling that I only half understand the important point. It is not just about difficulty; sometimes the writing itself seems dense, indirect, or too compressed, which makes the learning process much slower. Then I start doubting whether the problem is the material or my own concentration, and that self-doubt wastes even more energy. Could you help me build a reading strategy for technical material that improves understanding without making every session feel like a battle?",3,angry
+4,196,"I sometimes miss feeling more carefree, because lately so much of my mental space has been occupied by responsibility, deadlines, and the sense that there is always something unfinished waiting in the background. Of course growing up means carrying more responsibility, but there are moments when I feel nostalgic for periods when my mind felt lighter and less constantly burdened. I do not want to become childish or avoid responsibility; I just want to feel more mentally breathable again. Could you help me think about how to create a little more emotional space without neglecting what I need to do?",2,sad
+4,197,"I get annoyed when I finally decide to ask for guidance and the response I receive is overly vague, because then I am still stuck but now with the added frustration of feeling that I asked and still got nowhere. I do not expect others to solve everything for me, but I do hope for at least enough specificity to point me in the right direction. When that does not happen, it can feel like effort has been wasted twice, first in being confused and then in trying to get help. Could you help me figure out how to ask better follow-up questions so vague answers become less of a dead end?",3,angry
+4,198,"I am thinking a lot about whether my current work habits are sustainable over the long term, because even if I can force myself through a busy period, I am not sure that constantly relying on pressure and urgency is a good system. Part of me worries that if I do not push hard, I will underperform, but another part worries that if I keep operating like this, I will burn out or become emotionally numb. I want to find a healthier pace that still keeps standards high. Could you help me think through what sustainable ambition should look like in practice?",4,fearful
+4,199,"I felt a real sense of relief after resolving a misunderstanding with someone, because unresolved tension often sits in the background of my mind much longer than I want to admit. Once things became clear, I noticed how much energy had been quietly tied up in replaying the situation and imagining different outcomes. It reminded me that emotional clarity can improve concentration just as much as solving a practical task. Could you help me think about how to address small interpersonal tensions earlier before they grow larger in my head?",7,calm
+4,200,"I want to make my responses in experiments sound natural, coherent, and realistic, especially if they are supposed to resemble something a person might genuinely say in a conversational setting. The challenge is that if the text is too short, it may not sound emotionally rich enough, but if it is too long or too formal, it can start to sound artificial. I need a better sense of how to balance realism, clarity, and emotional content when writing or revising prompt texts. Could you help me define a few practical principles for writing longer but still natural-sounding conversational data?",0,neutral

@@ -1,0 +1,15 @@
+﻿pair,dimension,dimension_group,label_a,label_b,n,a_win_rate,b_win_rate,tie_rate,avg_score_a,avg_score_b
+feature_vs_early,D1,quality,feature-based external system,early fusion (no PPG in classifier) + PPG in prompt,50,0.0,48.0,52.0,4.02,4.4
+feature_vs_early,D2,quality,feature-based external system,early fusion (no PPG in classifier) + PPG in prompt,50,0.0,52.0,48.0,4.05,4.46
+feature_vs_early,D3,quality,feature-based external system,early fusion (no PPG in classifier) + PPG in prompt,50,18.0,46.0,36.0,4.66,4.81
+feature_vs_early,D4,quality,feature-based external system,early fusion (no PPG in classifier) + PPG in prompt,50,22.0,12.0,66.0,4.46,4.36
+feature_vs_early,D5,quality,feature-based external system,early fusion (no PPG in classifier) + PPG in prompt,50,0.0,10.0,90.0,4.95,5.0
+feature_vs_early,D6,mechanism,feature-based external system,early fusion (no PPG in classifier) + PPG in prompt,50,0.0,100.0,0.0,2.28,3.74
+feature_vs_early,OVERALL_D1_D5,overall,feature-based external system,early fusion (no PPG in classifier) + PPG in prompt,50,16.0,66.0,18.0,85.7,90.15
+feature_vs_late,D1,quality,feature-based external system,late fusion (no PPG in classifier) + PPG in prompt,50,0.0,70.0,30.0,3.86,4.37
+feature_vs_late,D2,quality,feature-based external system,late fusion (no PPG in classifier) + PPG in prompt,50,0.0,70.0,30.0,3.93,4.48
+feature_vs_late,D3,quality,feature-based external system,late fusion (no PPG in classifier) + PPG in prompt,50,22.0,50.0,28.0,4.66,4.8
+feature_vs_late,D4,quality,feature-based external system,late fusion (no PPG in classifier) + PPG in prompt,50,36.0,8.0,56.0,4.52,4.23
+feature_vs_late,D5,quality,feature-based external system,late fusion (no PPG in classifier) + PPG in prompt,50,0.0,20.0,80.0,4.9,5.0
+feature_vs_late,D6,mechanism,feature-based external system,late fusion (no PPG in classifier) + PPG in prompt,50,0.0,100.0,0.0,2.24,3.83
+feature_vs_late,OVERALL_D1_D5,overall,feature-based external system,late fusion (no PPG in classifier) + PPG in prompt,50,22.0,70.0,8.0,84.35,89.4

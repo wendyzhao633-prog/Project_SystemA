@@ -1,0 +1,44 @@
+PAIRWISE JUDGE SUMMARY
+Generated: 2026-04-06 16:50:49 UTC
+
+early_vs_baseline
+A: early fusion (no PPG in classifier) + PPG in prompt
+B: text-only baseline
+n: 50
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 26.0% | 4.0% | 70.0% | 4.460 | 4.330
+Emotion-to-Response Strategy Fit | 26.0% | 4.0% | 70.0% | 4.490 | 4.370
+Task Usefulness & Correctness | 4.0% | 8.0% | 88.0% | 4.500 | 4.520
+Clarity & Cognitive Load Fit | 14.0% | 4.0% | 82.0% | 4.520 | 4.470
+Tone Safety, Respect & Risk Calibration | 0.0% | 0.0% | 100.0% | 4.540 | 4.540
+Emotion Signal Utilization | 94.0% | 0.0% | 6.0% | 3.820 | 2.240
+Overall (D1-D5 only) | 28.0% | 8.0% | 64.0% | 87.550 | 86.150
+
+early_vs_late
+A: early fusion (no PPG in classifier) + PPG in prompt
+B: late fusion (no PPG in classifier) + PPG in prompt
+n: 50
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 0.0% | 4.0% | 96.0% | 4.460 | 4.480
+Emotion-to-Response Strategy Fit | 0.0% | 4.0% | 96.0% | 4.540 | 4.560
+Task Usefulness & Correctness | 2.0% | 2.0% | 96.0% | 4.610 | 4.610
+Clarity & Cognitive Load Fit | 4.0% | 8.0% | 88.0% | 4.580 | 4.600
+Tone Safety, Respect & Risk Calibration | 0.0% | 0.0% | 100.0% | 4.620 | 4.620
+Emotion Signal Utilization | 0.0% | 2.0% | 98.0% | 3.530 | 3.540
+Overall (D1-D5 only) | 6.0% | 10.0% | 84.0% | 89.050 | 89.350
+
+late_vs_baseline
+A: late fusion (no PPG in classifier) + PPG in prompt
+B: text-only baseline
+n: 50
+
+dimension | a_win_rate | b_win_rate | tie_rate | avg_score_a | avg_score_b
+Emotional Attunement & Calibration | 30.0% | 0.0% | 70.0% | 4.430 | 4.220
+Emotion-to-Response Strategy Fit | 32.0% | 0.0% | 68.0% | 4.510 | 4.300
+Task Usefulness & Correctness | 10.0% | 10.0% | 80.0% | 4.530 | 4.530
+Clarity & Cognitive Load Fit | 16.0% | 2.0% | 82.0% | 4.570 | 4.500
+Tone Safety, Respect & Risk Calibration | 0.0% | 0.0% | 100.0% | 4.580 | 4.580
+Emotion Signal Utilization | 94.0% | 0.0% | 6.0% | 3.920 | 2.220
+Overall (D1-D5 only) | 38.0% | 4.0% | 58.0% | 88.100 | 85.650

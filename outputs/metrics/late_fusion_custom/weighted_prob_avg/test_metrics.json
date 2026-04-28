@@ -1,0 +1,31 @@
+{
+  "split": "test",
+  "mode": "weighted_prob_avg",
+  "audio_weight": 0.87,
+  "video_weight": 0.13,
+  "accuracy": 0.22,
+  "macro_f1": 0.08639021796916534,
+  "uar": 0.11362942612942613,
+  "per_class_recall": {
+    "neutral": 0.2222222222222222,
+    "calm": 0.0,
+    "happy": 0.0,
+    "sad": 0.6153846153846154,
+    "angry": 0.07142857142857142,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "per_class_f1": {
+    "neutral": 0.2222222222222222,
+    "calm": 0.0,
+    "happy": 0.0,
+    "sad": 0.36363636363636365,
+    "angry": 0.10526315789473682,
+    "fearful": 0.0,
+    "disgust": 0.0,
+    "surprise": 0.0
+  },
+  "labels_are_placeholder": false,
+  "evaluation_time_sec": 0.030828600050881505
+}

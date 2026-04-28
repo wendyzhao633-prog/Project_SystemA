@@ -1,10 +1,12 @@
 {
   "split": "train",
   "mode": "weighted_prob_avg",
+  "loss": 1.111438636524081,
   "accuracy": 1.0,
   "macro_f1": 1.0,
   "uar": 1.0,
-  "confusion_matrix_path": "/home/tonyhe/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/weighted_prob_avg/train_confusion_matrix.csv",
+  "evaluation_time_sec": 0.000726599944755435,
+  "confusion_matrix_path": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/outputs/metrics/late_fusion/ecapa_video_reuse_baseline/weighted_prob_avg/train_confusion_matrix.csv",
   "per_class_precision": {
     "neutral": 1.0,
     "calm": 1.0,

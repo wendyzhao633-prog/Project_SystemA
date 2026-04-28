@@ -1,0 +1,24 @@
+================================================================================
+RAVDESS AV-FUSION LLM EVALUATION REPORT
+================================================================================
+
+1. SINGLE RESPONSE SCORES
+--------------------------------------------------------------------------------
+Total scored responses: 50
+Models: ['gpt-5.4']
+Judge:  ['gpt-5.4']
+
+Per-strategy weighted overall (D1-D5, emotion-aware weights):
+  empathy_then_help: 1.433 ± 0.935  (n=50)
+
+Per-strategy unweighted overall (D1-D5, equal weights):
+  empathy_then_help: 9.80
+
+D6 Signal Utilization by strategy:
+  empathy_then_help: 1.18 / 5
+
+3. RECOMMENDATIONS
+--------------------------------------------------------------------------------
+Best prompt strategy (by weighted overall): empathy_then_help (1.433)
+
+================================================================================

@@ -435,7 +435,9 @@ def write_prediction_jsonl(
             handle.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
-def load_embedding_features_and_labels(rows: list[dict[str, str]]) -> tuple[np.ndarray, np.ndarray]:
+def load_embedding_features_and_labels(
+    rows: list[dict[str, str]],
+) -> tuple[np.ndarray, np.ndarray]:
     audio_embeddings = load_audio_embeddings(rows)
     video_embeddings = load_video_sequence_embeddings(rows)
     features = np.concatenate([audio_embeddings, video_embeddings], axis=1)

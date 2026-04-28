@@ -1,0 +1,41 @@
+{
+  "split": "train",
+  "mode": "embedding_mlp_ppg",
+  "loss": 0.007588199973106384,
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "uar": 1.0,
+  "per_class_precision": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "per_class_recall": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "per_class_f1": {
+    "neutral": 1.0,
+    "calm": 1.0,
+    "happy": 1.0,
+    "sad": 1.0,
+    "angry": 1.0,
+    "fearful": 1.0,
+    "disgust": 1.0,
+    "surprise": 1.0
+  },
+  "best_epoch": 5,
+  "checkpoint_path": "C:/Users/User/OneDrive/\u684c\u9762/Project_SystemA/ravdess_avfusion/checkpoints/late_fusion_custom/embedding_mlp_ppg/best_model.pt",
+  "labels_are_placeholder": false
+}

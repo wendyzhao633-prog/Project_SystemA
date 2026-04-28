@@ -40,6 +40,8 @@ class EarlyFusionDataConfig:
     train_video_horizontal_flip_prob: float = 0.0
     train_video_brightness_jitter: float = 0.0
     train_video_contrast_jitter: float = 0.0
+    # Set to False for non-RAVDESS datasets to skip filename-based av_key validation.
+    validate_ravdess_av_key: bool = True
 
     def manifest_for_split(self, split: str) -> Path:
         if split == "train":
@@ -98,7 +100,7 @@ class EarlyFusionDataset(Dataset[dict[str, Any]]):
         if example.split == "train":
             audio_tensor = _apply_train_audio_augmentations(audio_tensor, self.config)
             video_tensor = _apply_train_video_augmentations(video_tensor, self.config)
-        return {
+        batch: dict[str, Any] = {
             "av_key": example.av_key,
             "split": example.split,
             "actor_id": example.actor_id,
@@ -112,6 +114,7 @@ class EarlyFusionDataset(Dataset[dict[str, Any]]):
             "audio_input": audio_tensor,
             "video_input": video_tensor,
         }
+        return batch
 
     def _load_audio_tensor(self, example: EarlyFusionExample) -> torch.Tensor:
         cache_path = self._audio_cache_path(example)
@@ -189,6 +192,7 @@ def build_split_datasets(
             repo_root / config.manifest_for_split(split),
             repo_root=repo_root,
             limit=limit,
+            validate_av_key=config.validate_ravdess_av_key,
         )
         datasets[split] = EarlyFusionDataset(
             repo_root=repo_root,
@@ -203,6 +207,7 @@ def load_manifest_examples(
     *,
     repo_root: Path,
     limit: int | None = None,
+    validate_av_key: bool = True,
 ) -> list[EarlyFusionExample]:
     rows: list[dict[str, str]]
     with Path(manifest_path).open("r", encoding="utf-8", newline="") as handle:
@@ -218,10 +223,11 @@ def load_manifest_examples(
         if not video_path.is_file():
             raise FileNotFoundError(f"Missing video file for av_key '{row['av_key']}': {video_path}")
 
-        if build_av_key(row["audio_sample_id"]) != row["av_key"]:
-            raise ValueError(f"Audio av_key mismatch in manifest row: {row}")
-        if build_av_key(row["video_sample_id"]) != row["av_key"]:
-            raise ValueError(f"Video av_key mismatch in manifest row: {row}")
+        if validate_av_key:
+            if build_av_key(row["audio_sample_id"]) != row["av_key"]:
+                raise ValueError(f"Audio av_key mismatch in manifest row: {row}")
+            if build_av_key(row["video_sample_id"]) != row["av_key"]:
+                raise ValueError(f"Video av_key mismatch in manifest row: {row}")
 
         examples.append(
             EarlyFusionExample(

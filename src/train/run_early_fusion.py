@@ -209,6 +209,7 @@ def load_run_config(config_path: Path, *, repo_root: Path) -> EarlyFusionRunConf
         train_video_horizontal_flip_prob=float(data_raw.get("train_video_horizontal_flip_prob", 0.0)),
         train_video_brightness_jitter=float(data_raw.get("train_video_brightness_jitter", 0.0)),
         train_video_contrast_jitter=float(data_raw.get("train_video_contrast_jitter", 0.0)),
+        validate_ravdess_av_key=bool(data_raw.get("validate_ravdess_av_key", True)),
     )
     if data_config.n_mels != 80:
         raise ValueError(f"Expected 80 mel bins for the canonical baseline, got {data_config.n_mels}.")
